@@ -5,20 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+        <div class="segment">
+            <div class="intro"><a>Welcome to my <span>Portfolio</span></a></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="segment">
+            <div class="home-text">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Zachary Bournand</div>
+                <div class="text-3">And I am a <span>Computer Science student</span> at the <span>University of Florida</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="segment">
+            <h2 class="title">About me</h2>
+            <div class="about-image-text">
+                <div class="left-column">
+                    <img src="images/profile-picture.jfif" alt="">
+                </div>
+                <div class="right-column">
+                    <p class="text">
+                        <div class="text-1">After learning the basics of Python, I decided to do a 6-month full-stack JavaScript program at a coding bootcamp called O’clock, in the Paris region, that ended in May of 2021.<br></div>
+                        <div class="text-2">For the last month of my coding program, I and my awesome team of 3 other members built an MVP of our e-commerce website for medical professionals in France to buy and sell soon-to-expire medicine otherwise wasted because it cannot be sold to individuals. Then, I did a summer internship at a large publishing company called Eyrolles. I developed a web application using PHP and its framework Symfony.  And in April of 2022, I built a clone of the Minesweeper game in C++.<br></div>
+                        <div class="text-3">I want to pursue this career path because it allows me to be creative, and I get to continuously improve myself through the challenges I face. I am currently a Computer Science student at the University of Florida in my junior year of college, and I am looking for a summer internship.<br></div>
+                    </p>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <section class="skills" id="skills">
+        <div class="segment">
+            <h2 class="title">My skills</h2>
+            <ul class="skills-list">
+                <li>
+                    <img src="images/technologies/HTML5_logo.png" alt="HTML">
+                    <div>HTML</div>
+                </li>
+                <li>
+                    <img src="images/technologies/CSS3_logo.png" alt="CSS">
+                    <div>CSS</div>
+                </li>
+                <li>
+                    <img src="images/technologies/JavaScript_logo.png" alt="JavaScript">
+                    <div>JavaScript</div>
+                </li>
+                <li>
+                    <img src="images/technologies/Node.js_logo.png" alt="Node.js">
+                    <div>Node.js</div>
+                </li>
+                <li>
+                    <img src="images/technologies/PostgreSQL_logo.png" alt="PostgreSQL">
+                    <div>PostreSQL</div>
+                </li>
+                <li>
+                    <img src="images/technologies/PHP_logo.png" alt="PHP">
+                    <div>PHP</div>
+                </li>
+                <li>
+                    <img src="images/technologies/Symfony_logo.png" alt="Symfony">
+                    <div>Symfony</div>
+                </li>
+                <li>
+                    <img src="images/technologies/C++_logo.png" alt="C++">
+                    <div>C++</div>
+                </li>
+                <li>
+                    <img src="images/technologies/Python_logo.png" alt="Python">
+                    <div>Python</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <div class="segment">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-info">
+                <div class="left-column">
+                    <div class="text">Get in Touch</div>
+                    <div class="info">
+                        <div class="name">
+                            <img src="images/contact-icons/538642.png" alt="">
+                            <div class="info-detail">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Zachary Bournand</div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <img src="images/contact-icons/email-western-libraries-12.png" alt="">
+                            <div class="info-detail">
+                                <div class="head">Email</div>
+                                <div class="sub-title">zacharybournand@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="text">Message me</div>
+                    <form action="" method="get">
+                        <div class="form-name-email">
+                            <div class="form-name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="form-email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-subject">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-message">
+                            <textarea cols="30" rows="10" placeholder="Message..."></textarea>
+                        </div>
+                        <div class="button">
+                            <butto type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
