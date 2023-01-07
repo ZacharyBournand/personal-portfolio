@@ -8,7 +8,7 @@ body{
 /* each section */
 .segment{
     max-width: 1700px;
-    padding: 0 65px;
+    padding: 0 25px;
     margin: auto 0;
 }
 
@@ -81,6 +81,28 @@ body{
     color: red;
     font-weight: 550;   
 }
+.home-icons{
+    text-align: center;
+    margin-top: 10vh;
+}
+.home #email{
+    width: 2.6rem;
+    height: 1.6rem;
+    position: relative;
+    top: 0.1rem;
+    margin-right: 1rem;
+}
+.home #resume{
+    width: 1.65rem;
+    height: 1.65rem;
+    position: relative;
+    top: 0.1rem;
+}
+.home img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
 
 /* about section styling */
 .about{
@@ -99,16 +121,19 @@ body{
     width: 100%;
 }
 .about .left-column{
-    width: 20%;
+    width: 60%;
+    text-align: end;
+    padding-right: 2rem;
 }
 .about .left-column img{
+    text-align: end;
     height: 300px;
     width: 300px;
     margin-top: 30px;
     /*border-radius: 6px;*/
 }
 .about .right-column{
-    width: 60%;
+    width: 100%;
 }
 .about .text{
     color: white;
@@ -164,6 +189,9 @@ body{
 }
 
 /* skills section styling */
+.skills{
+    margin-bottom: 30vh;
+}
 .skills .title{
     color: white;
     text-align: center;
@@ -172,23 +200,48 @@ body{
 .skills .segment{
     margin: 0 auto;
 }
-.skills .skills-list li{
+.skills .skills-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.skills .skills-list .skills-list-front:hover{
+    background: black;
+    width: 30%;
+    border-radius: 1rem;
+}
+.skills .skills-list .skills-list-back:hover{
+    background: black;
+    width: 30%;
+    border-radius: 1rem;
+}
+.skills .skills-list .skills-list-dbms:hover{
+    background: black;
+    width: 30%;
+    border-radius: 1rem;
+}
+.skills .skills-list h3{
     color: white;
-    font-size: 20px;
+    font-style: serif;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-thickness: 0.5rem;
+    text-decoration-color: red;
+}
+.skills .skills-list li{
+    color: rgb(197, 197, 197);
+    font-style: proxima nova;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 10px;
     text-align: center;
     text-decoration: none;
+    list-style-type: none;
 }
 .skills .skills-list li{
-    display: inline-block;
+    /*display: inline-block;*/
     text-decoration: none;
     margin: 60px; 
-}
-.skills img{
-    height: 100px;
-    width: 100px;
-    margin-bottom: 5px;
 }
 .skills .skills-list{
     padding: 0 20vh;
@@ -213,77 +266,85 @@ body{
     padding-left: 20vh;
 }
 .contact .right-column{
-    width: 50%;
+    width: 80%;
 }
 .contact .name{
     display: flex;
+    margin-top: 3vh;
 }
 .contact .email{
     display: flex;
 }
 .contact .name img{
-    height: 70px;
-    width: 70px;
-    margin-left: 1.5vh;
-    margin-right: 5vh;
+    height: 40px;
+    width: 40px;
+    margin-left: 0.9rem;
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 .contact .email img{
-    height: 70px;
-    width: 100px;
-    margin-right: 5vh;
+    height: 45px;
+    width: 65px;
+    margin-right: 2rem;
+    margin-top: 1rem;
 }
 .contact .text{
     color: white;
-    font-size: 2.5vh;
+    font-size: 2.5rem;
     font-weight: 600;
     margin: 2vh 0;
 }
 .contact .head{
     color: white;
-    font-size: 1.8vh;
+    font-size: 1.5rem;;
     font-weight: 600;
 }
 .contact .sub-title{
     color: white;
-    font-size: 1.7vh;
-    margin-top: 1.5vh;
-    margin-bottom: 5vh;
+    font-size: 1.5rem;
+    margin-top: 1vh;
+    margin-bottom: 8vh;
 }
 .contact .form-name-email{
     display: flex;
 }
+.contact .form-name{
+    width: 100%;
+}
+.contact .form-email{
+    width: 100%;
+}
 .contact .form-name input{
-    width: 120%;
-    font-size: 1.5vh;
-    padding: 0.4vh;
-    margin-right: 1vh;
-    border: 0.35vh solid darkblue;
+    width: 94%;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    border: 0.2rem solid darkslategrey;
 }
 .contact .form-email input{
-    margin-left: 7vh;
-    width: 95%;
-    font-size: 1.5vh;
-    padding: 0.4vh;
-    border: 0.35vh solid darkblue;
+    width: 94%;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    border: 0.3vh solid darkslategrey;
 }
 .contact .form-subject input{
-    font-size: 1.5vh;
-    padding: 0.4vh;
+    font-size: 1.3rem;
+    padding: 0.3rem;
     width: 97%;
-    margin: 1vh 0;
-    border: 0.35vh solid darkblue;
+    margin: 0.7rem 0;
+    border: 0.2rem solid darkslategrey;
 }
 .contact .form-message textarea{
-    font-size: 1.5vh;
-    padding: 0.4vh;
+    font-size: 1.3rem;
+    padding: 0.3rem;
     width: 97%;
-    border: 0.35vh solid darkblue;
+    border: 0.2rem solid darkslategrey;
 }
 .contact .button{
     color: white;
     font: sans-serif;
-    font-size: 1.7vh;
-    width: 18%;
+    font-size: 1.3rem;
+    width: 8rem;
     background-color: red;
     padding: 0.8vh;
     margin-top: 0.5vh;
@@ -293,7 +354,7 @@ body{
     border-radius: 0.5vh;
 }
 .contact .button:hover{
-    background-color: black;
+    background-color: #131325; /*rgb(13, 22, 22);*/
     color: red;
 }
 
