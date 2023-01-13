@@ -7,17 +7,22 @@ body{
 
 /* each section */
 .segment{
-    max-width: 1700px;
+    /*max-width: 1700px;*/
     padding: 0 25px;
     margin: auto 0;
+}
+.title{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
 }
 
 /* navbar */
 .navbar{
     width: 100%;
     position: fixed;
-    padding: 30px 0;
-    background: #000029;
+    padding: 1.3rem 0;
+    background: #000044;
     font: Arial;
 }
 .navbar .segment{
@@ -41,8 +46,8 @@ body{
 .navbar .menu li a{
     color: white;
     text-decoration: none;
-    font-size: 19px;
-    margin-left: 25px;
+    font-size: 1.3rem;
+    margin-right: 2rem;
 }
 .navbar .menu li a:hover{
     color: red;
@@ -85,43 +90,25 @@ body{
     text-align: center;
     margin-top: 10vh;
 }
-.home #email{
-    width: 2.6rem;
-    height: 1.6rem;
-    position: relative;
-    top: 0.1rem;
-    margin-right: 1rem;
-}
-.home #resume{
-    width: 1.65rem;
-    height: 1.65rem;
-    position: relative;
-    top: 0.1rem;
-}
 .home img{
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 1rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 1.5rem;
 }
 
 /* about section styling */
 .about{
-    margin-bottom: 60vh;
+    margin-bottom: 220px;
 }
 .about .segment{
     margin: 0 auto;
-}
-.about .title{
-    color: white;
-    text-align: center;
-    font-size: 50px;
 }
 .about .about-image-text{
     display: flex;
     width: 100%;
 }
 .about .left-column{
-    width: 60%;
+    width: 40%;
     text-align: end;
     padding-right: 2rem;
 }
@@ -134,34 +121,35 @@ body{
 }
 .about .right-column{
     width: 100%;
+    margin-right: 15vh;
 }
 .about .text{
     color: white;
     font: Verdana;
     font-size: 21px;
-    line-height: 2rem;
+    line-height: 3.5rem;
     margin-bottom: 10px;
 }
 .about .right-column .text-1{
-    color: white;
+    color: rgba(255, 255, 255, 0.87);
     font: Verdana;
     font-size: 21px;
-    line-height: 2rem;
-    margin-bottom: 15px;
+    line-height: 2.6rem;
+    margin-bottom: 1.8rem;
 }
 .about .right-column .text-2{
-    color: white;
+    color: rgba(255, 255, 255, 0.87);
     font: Verdana;
     font-size: 21px;
-    line-height: 2rem;
-    margin-bottom: 15px;
+    line-height: 2.6rem;
+    margin-bottom: 1.8rem;
 }
 .about .right-column .text-3{
-    color: white;
+    color: rgba(255, 255, 255, 0.87);
     font: Verdana;
     font-size: 21px;
-    line-height: 2rem;
-    margin-bottom: 15px;
+    line-height: 2.6rem;
+    margin-bottom: 1.8rem;
 }
 .about .about-image-text .right-column .text span{
     color: red;
@@ -190,12 +178,7 @@ body{
 
 /* skills section styling */
 .skills{
-    margin-bottom: 30vh;
-}
-.skills .title{
-    color: white;
-    text-align: center;
-    font-size: 50px;
+    margin-bottom: 220px;
 }
 .skills .segment{
     margin: 0 auto;
@@ -216,7 +199,7 @@ body{
 }
 .skills .skills-list .skills-list-dbms:hover{
     background: black;
-    width: 30%;
+    width: 20%;
     border-radius: 1rem;
 }
 .skills .skills-list h3{
@@ -248,18 +231,23 @@ body{
     text-align: center;
 }
 
-/* Contact section styling */
+/* projects section styling */
+.projects{
+    text-align: center;
+}
+#project-omedocs{
+    height: 60vh;
+    width: 117.54vh;
+    text-align: center;
+}
+
+/* contact section styling */
 .contact .segment{
     margin: 0 auto;
 }
 .contact-info{
     display: flex;
     margin: 0 auto;
-}
-.contact .title{
-    color: white;
-    text-align: center;
-    font-size: 50px;
 }
 .contact .left-column{
     width: 50%;
@@ -319,37 +307,41 @@ body{
     width: 94%;
     font-size: 1.3rem;
     padding: 0.3rem;
-    border: 0.2rem solid darkslategrey;
+    border: 0.19rem solid rgb(61, 102, 102);
+    border-radius: 0.5rem;
 }
 .contact .form-email input{
     width: 94%;
     font-size: 1.3rem;
     padding: 0.3rem;
-    border: 0.3vh solid darkslategrey;
+    border: 0.19rem solid rgb(61, 102, 102);
+    border-radius: 0.5rem;
 }
 .contact .form-subject input{
     font-size: 1.3rem;
     padding: 0.3rem;
     width: 97%;
     margin: 0.7rem 0;
-    border: 0.2rem solid darkslategrey;
+    border: 0.19rem solid rgb(61, 102, 102);
+    border-radius: 0.5rem;
 }
 .contact .form-message textarea{
     font-size: 1.3rem;
     padding: 0.3rem;
     width: 97%;
-    border: 0.2rem solid darkslategrey;
+    border: 0.19rem solid rgb(61, 102, 102);
+    border-radius: 0.5rem;
 }
 .contact .button{
     color: white;
     font: sans-serif;
     font-size: 1.3rem;
-    width: 8rem;
+    width: 11rem;
     background-color: red;
     padding: 0.8vh;
     margin-top: 0.5vh;
     margin-top: 1vh;
-    margin-bottom: 10vh;
+    margin-bottom: 12vh;
     border: 0.1vh solid red;
     border-radius: 0.5vh;
 }

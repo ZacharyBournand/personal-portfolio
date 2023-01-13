@@ -29,10 +29,8 @@
                 <div class="text-3">And I am a <span>Computer Science student</span> at the <span>University of Florida</span></div>
             </div>
             <div class="home-icons">
-                <img id="linkedin" src="images/home-icons/LinkedIn_icon.png" alt="LinkedIn logo">
-                <img id="github" src="images/home-icons/GitHub_icon.png" alt="GitHub logo">
-                <!-- <img id="email" src="images/contact-icons/email_icon.png" alt="Email logo">
-                <img id="resume" src="images/home-icons/resume_icon.png" alt="Resume logo"> -->
+                <a href="https://www.linkedin.com/in/zachary-bournand-6908a5168/" target="_blank"><img id="linkedin" src="images/home-icons/LinkedIn_icon.png" alt="LinkedIn logo"></a>
+                <a href="https://github.com/ZacharyBournand" target="_blank"><img id="github" src="images/home-icons/GitHub_icon.png" alt="GitHub logo"></a>
             </div>
         </div>
     </section>
@@ -51,7 +49,7 @@
                         <div class="text-2">For the last month of my coding program, I and my awesome team of 3 other members built an MVP of our e-commerce website for medical professionals in France to buy and sell soon-to-expire medicine otherwise wasted because it cannot be sold to individuals. Then, I did a summer internship at a large publishing company called Eyrolles. I developed a web application using PHP and its framework Symfony.  And in April of 2022, I built a clone of the Minesweeper game in C++.<br></div>
                         <div class="text-3">I want to pursue this career path because it allows me to be creative, and I get to continuously improve myself through the challenges I face. I am currently a Computer Science student at the University of Florida in my junior year of college, and I am looking for a summer internship.<br></div>
                     </p>
-                    <a href="#">Download Resume</a>
+                    <a href="resume/Resume - Zachary Bournand.pdf" download>Download Resume</a>
                 </div>
             </div>
         </div>
@@ -95,7 +93,7 @@
                 <div class="skills-list-dbms">
                     <h3 class="dbms">DBMS</h3>
                     <li>
-                        <div class="dbms-list">PostreSQL</div>
+                        <div class="dbms-list">PostgreSQL</div>
                     </li>
                 </div>
             </ul>
@@ -104,7 +102,17 @@
 
     <!-- projects section -->
     <section class="projects" id="projects">
+        <div class="segment">
+            <h2 class="title">My projects</h2>
+            <div class="projects">
+                <div class="project-1">
+                    <a href="http://o-medocs.surge.sh/"><img id="project-omedocs" src="images/projects/project-1.PNG"></a> 
+                </div>
+                <div class="project-2">
 
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- contact section -->
@@ -116,14 +124,12 @@
                     <div class="text">Get in Touch</div>
                     <div class="info">
                         <div class="name">
-                            <!-- <img src="images/contact-icons/person_icon.png" alt="Contact icon"> -->
                             <div class="info-detail">
                                 <div class="head">Name</div>
                                 <div class="sub-title">Zachary Bournand</div>
                             </div>
                         </div>
                         <div class="email">
-                            <!-- <img src="images/contact-icons/email_icon.png" alt="Email icon"> -->
                             <div class="info-detail">
                                 <div class="head">Email</div>
                                 <div class="sub-title">zacharybournand@gmail.com</div>
@@ -133,30 +139,40 @@
                 </div>
                 <div class="right-column">
                     <div class="text">Message me</div>
-                    <form action="" method="get">
+
+                    <div>
                         <div class="form-name-email">
                             <div class="form-name">
-                                <input type="text" placeholder="Name" required>
+                                <input id="name" type="text" placeholder="Name" required>
                             </div>
                             <div class="form-email">
-                                <input type="email" placeholder="Email" required>
+                                <input id="email" type="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="form-subject">
-                            <input type="text" placeholder="Subject" required>
+                            <input id="subject" type="text" placeholder="Subject" required>
                         </div>
                         <div class="form-message">
-                            <textarea cols="30" rows="10" placeholder="Message..."></textarea>
+                            <textarea id="message" cols="30" rows="10" placeholder="Message..."></textarea>
                         </div>
-                        <div class="button">
-                            <butto type="submit">Send message</button>
-                        </div>
-                    </form>
+                        <button class="button" onclick="SendMail()">Send message</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+
+    <script src="script.js" type="text/javascript"></script>
+    <!--<script src="https://smtpjs.com/v3/smtp.js"></script>-->
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("T9GzFZWR60K0pdkYP");
+        })();
+    </script>
 </body>
 </html>

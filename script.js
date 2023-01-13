@@ -10,6 +10,41 @@ let dbmsSkills = document.querySelector('.skills-list-dbms');
 let dbmsTitle = document.querySelector('.dbms');
 let dbmsList = document.querySelectorAll('.dbms-list');
 
+let linkedinIcon = document.querySelector('#linkedin');
+let githubIcon = document.querySelector('#github');
+
+
+// Prevent "Confirm Resubmission Form" notification every time the user reloads the page
+if ( window.history.replaceState ) {
+    window.history.replaceState( null, null, window.location.href );
+}
+
+
+function SendMail() {
+    var params = {
+        from_name: document.getElementById('name').value,
+        email_id: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value, 
+    };
+    
+    const serviceID = "service_77m7tca";
+    const templateID = "template_m4o1c6k";
+
+    emailjs.send(serviceID, templateID, params)
+    .then(
+        function(res) {
+            document.getElementById('name').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('subject').value = "";
+            document.getElementById('message').value = "";
+            
+            console.log(res);
+            alert("Your message was sent successfully");
+        }
+    ).catch((err) => console.log(err));
+}
+
 
 frontEndSkills.addEventListener('mouseover', (event) => {
     for (i = 0; i < frontEndList.length; i++) {
@@ -59,4 +94,21 @@ dbmsSkills.addEventListener('mouseout', (event) => {
     }
     dbmsTitle.style.cssText = 'color: white; text-decoration-color: red';
     dbmsSkills.style.cssText = 'border: none';
+});
+
+
+linkedinIcon.addEventListener('mouseover', (event) => {
+    linkedinIcon.style.cssText = 'width: 2.5rem; height: 2.5rem';
+});
+
+linkedinIcon.addEventListener('mouseout', (event) => {
+    linkedinIcon.style.cssText = 'width: 1.6rem; height: 1.6rem';
+});
+
+
+githubIcon.addEventListener('mouseover', (event) => {
+    githubIcon.style.cssText = 'width: 2.5rem; height: 2.5rem';
+});
+githubIcon.addEventListener('mouseout', (event) => {
+    githubIcon.style.cssText = 'width: 1.6rem; height: 1.6rem';
 });
