@@ -22,8 +22,9 @@ body{
     width: 100%;
     position: fixed;
     padding: 1.3rem 0;
-    background: #000044;
+    background: #000083;
     font: Arial;
+    z-index: 1;
 }
 .navbar .segment{
     display: flex;
@@ -94,11 +95,15 @@ body{
     width: 1.6rem;
     height: 1.6rem;
     margin: 0 1.5rem;
+    transition: .5s;
 }
 
 /* about section styling */
 .about{
-    margin-bottom: 220px;
+    margin-bottom: 10vh;
+    background-color: #00003b;
+    padding-top: 1vh;
+    padding-bottom: 10vh;
 }
 .about .segment{
     margin: 0 auto;
@@ -178,29 +183,32 @@ body{
 
 /* skills section styling */
 .skills{
-    margin-bottom: 220px;
+    margin-bottom: 10vh;
 }
 .skills .segment{
     margin: 0 auto;
 }
 .skills .skills-list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .skills .skills-list .skills-list-front:hover{
     background: black;
     width: 30%;
     border-radius: 1rem;
+    transition: 0.2s;
 }
 .skills .skills-list .skills-list-back:hover{
     background: black;
     width: 30%;
     border-radius: 1rem;
+    transition: 0.2s;
 }
 .skills .skills-list .skills-list-dbms:hover{
     background: black;
     width: 20%;
     border-radius: 1rem;
+    transition: 0.2s;
 }
 .skills .skills-list h3{
     color: white;
@@ -234,14 +242,144 @@ body{
 /* projects section styling */
 .projects{
     text-align: center;
+    background-color: #00003b;
+    padding-top: 7vh;
+    padding-bottom: 3vh;
+}
+.project-1{
+    height: 70vh;
+    width: 137.13vh;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3vh;
+    border: 0.3rem solid rgb(56, 80, 80);
+}
+.project-2{
+    height: 70vh;
+    width: 137.13vh;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border: 0.19rem solid rgb(74, 87, 87);
 }
 #project-omedocs{
-    height: 60vh;
-    width: 117.54vh;
-    text-align: center;
+    height: 70vh;
+    width: 137.13vh;
+    left: 0;
+    position: absolute;
+    /* Transition for hover off */
+    transition: 1s;
+}
+#project-movie-search-engine{
+    height: 70vh;
+    width: 137.13vh;
+    left: 0;
+    position: absolute;
+    /* Transition for hover off */
+    transition: 1s;
+}
+.project-text-container-1{
+    position: absolute;
+    color: white;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: black;
+    visibility: hidden;
+}
+.project-text-container-2{
+    position: absolute;
+    color: white;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: black;
+    visibility: hidden;
+}
+.projects h2{
+    font-size: 3.2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: white;
+}
+.projects h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+    color: white;
+}
+.projects p{
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 2rem;
+    color: white;
+}
+.project-1-links{
+    display: flex;
+    align-items: center;
+}
+.project-2-links{
+    display: flex;
+    align-items: center;
+}
+.project-1 #github{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+    transition: .5s;
+}
+.project-1 #github:hover{
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-right: 2rem;
+    transition: .5s;
+}
+.project-2 #github{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+    transition: .5s;
+}
+.project-2 #github:hover{
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-right: 2rem;
+    transition: .5s;
+}
+.project-link-text-1{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgba(135, 206, 250, 0.733);
+    transition: .5s;
+}
+.project-link-text-1:hover{
+    font-size: 1.9rem;
+    color: rgba(135, 206, 250, 0.733);
+    text-shadow: black 0.2rem 0.2rem 0.2rem;
+    transition: .5s;
+}
+.project-1 a{
+    text-decoration-color: rgba(135, 206, 250, 0.733);
+}
+.project-2 a{
+    text-decoration-color: rgba(135, 206, 250, 0.733);
 }
 
 /* contact section styling */
+.contact{
+    margin-top: 10vh;
+}
 .contact .segment{
     margin: 0 auto;
 }
@@ -351,128 +489,68 @@ body{
 }
 
 /* responsive media query start */
-@media (max-width: 1104px) {
-    .about .about-image-text .left img{
-        height: 350px;
-        width: 350px;
+@media (max-width: 1210px) {
+    .skills .skills-list h3{
+        text-decoration: none;
+    }
+    .skills-list span::before{
+        content: "\A";
+        white-space: pre;
+    }
+    .skills-list span{
+        margin-top: 10vh;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-thickness: 0.5rem;
+        text-decoration-color: red;
+    }
+    .skills .skills-list .dbms::before{
+        content: "\A";
+        white-space: pre;
+    }
+    .skills .skills-list .dbms{
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-thickness: 0.5rem;
+        text-decoration-color: red;
     }
 }
-
-@media (max-width: 991px) {
-    .segment{
-        padding: 0 50px;
+@media (max-width: 1031px) {
+    .contact .left-column{
+        padding-left: 0vh;
+    }
+    .home .home-text .text-1{
+        margin-top: 10vh;
     }
 }
-@media (max-width: 947px){
-    .menu-btn{
-        display: block;
-        z-index: 999;
+@media (max-width: 995px) {
+    .navbar .menu li a{
+        margin-right: 1rem;
     }
-    .menu-btn i.active:before{
-        content: "\f00d";
+}
+@media (max-width: 977px) {
+    .contact .left-column{
+        padding-left: 0vh;
+    }
+}
+@media (max-width: 950px) {
+    .navbar{
+        width: 100%;
+    }
+}
+@media (max-width: 871px) {
+    .navbar .segment{
+        display: grid;
+        justify-content: center;    
     }
     .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
+        margin-top: 5vh;
+        margin-bottom: auto;
     }
-    .navbar .menu.active{
-        left: 0;
+    .home .home-text .text-1{
+        margin-top: 25vh;
     }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    .home .home-text .text-2{
-        font-size: 70px;
-    }
-    .home .home-text .text-3{
-        font-size: 35px;
-    }
-    .home .home-text a{
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-    .segment{
-        max-width: 930px;
-    }
-    .about .about-image-text .column{
-        width: 100%;
-    }
-    .about .about-image-text .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-    .about .about-image-text .right{
-        flex: 100%;
-    }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .skills .skills-list .column,
-    .contact .contact-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-    }
-}
-
-@media (max-width: 690px) {
-    .segment{
-        padding: 0 23px;
-    }
-    .home .home-text .text-2{
-        font-size: 60px;
-    }
-    .home .home-text .text-3{
-        font-size: 32px;
-    }
-    .home .home-text a{
-        font-size: 20px;
-    }
-    .services .serv-content .card{
-        width: 100%;
-    }
-}
-
-@media (max-width: 500px) {
-    .home .home-text .text-2{
-        font-size: 50px;
-    }
-    .home .home-text .text-3{
-        font-size: 27px;
-    }
-    .about .about-image-text .right .text,
-    .skills .skills-list .left .text{
-        font-size: 19px;
-    }
-    .contact .right form .form-name-email{
-        flex-direction: column;
-    }
-    .contact .right form .name,
-    .contact .right form .email{
-        margin: 0;
-    }
-    .right form .error-box{
-       width: 150px;
-    }
-    .scroll-up-btn{
-        right: 15px;
-        bottom: 15px;
-        height: 38px;
-        width: 35px;
-        font-size: 23px;
-        line-height: 38px;
+    .home-icons{
+        margin-top: 5vh;
     }
 }
