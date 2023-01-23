@@ -533,7 +533,8 @@ body{
     }
 }
 
-@media (orientation: portrait) {
+
+@media (min-width: 730px) and (orientation: portrait) {
     /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
@@ -557,7 +558,6 @@ body{
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
-        /*overflow-x: hidden;*/
     }
     /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure, 
@@ -610,7 +610,7 @@ body{
         margin-bottom: 0;
     }
     .home .home-text .text-1{
-        font-size: 2h;
+        font-size: 2vh;
     }
     .home .home-text .text-2{
         font-size: 6vh;
@@ -740,5 +740,338 @@ body{
     }
     .contact .left-column{
         padding-left: 2vh;
+    }
+}
+@media (max-width: 730px) and (orientation: portrait) {
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+       margin: 0;
+       padding: 0;
+       border: 0;
+       font-size: 100%;
+       font: inherit;
+       vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+       display: block;
+   }
+   body {
+       line-height: 1;
+   }
+   ol, ul {
+       list-style: none;
+   }
+   blockquote, q {
+       quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+       content: '';
+       content: none;
+   }
+   table {
+       border-collapse: collapse;
+       border-spacing: 0;
+   }
+   /* End of CSS reset */
+
+   /* each section */
+   .title{
+        font-size: 4vh;
+    }
+    .segment{
+        padding: 0 1.5vh;
+    }
+
+    /* navbar */
+    .navbar{
+        width: 95%;
+    }
+    .navbar .segment{
+        display: grid;
+        justify-content: center;    
+    }
+    .navbar .intro a{
+        font-size: 3.8vh;
+    }
+    .navbar .menu{
+        margin-top: 3vh;
+        margin-bottom: auto;
+    }
+    .navbar .menu li a{
+        font-size: 2vh;
+        margin-right: 2vh;
+    }
+
+    /* home section styling */
+    .home{
+        height: 40vh;
+    }
+    .home .segment{
+        margin-top: 17vh;
+        margin-bottom: 0;
+    }
+    .home .home-text .text-1{
+        font-size: 2vh;
+    }
+    .home .home-text .text-2{
+        font-size: 4vh;
+        font-weight: 550;
+        margin: 2.3vh 0;
+    }
+    .home .home-text .text-3{
+        font-size: 2.2vh;
+    }
+    .home-icons{
+        margin-top: 3vh;
+    }
+    .home img{
+        width: 2vh;
+        height: 2vh;
+        margin: 0 1.5vh;
+    }
+
+    /* about section styling */
+    .about{
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+        margin-bottom: 4vh;
+    }
+    .about .right-column{
+        margin-right: 0;
+    }
+    .about .about-image-text{
+        display: grid;
+        justify-content: center;   
+    }
+    .about .left-column{
+        width: 100%;
+        text-align: center;
+    }
+    .about .left-column img{
+        text-align: center;
+        height: 25vh;
+        width: 25vh;
+    }
+    .about .right-column .text-1{
+        font-size: 2vh;
+        line-height: 3.2vh;
+        margin-bottom: 2.1vh;
+    }
+    .about .right-column .text-2{
+        font-size: 2vh;
+        line-height: 3.2vh;
+        margin-bottom: 2.1vh;
+    }
+    .about .right-column .text-3{
+        font-size: 2vh;
+        line-height: 3.2vh;
+        margin-bottom: 2.1vh;
+    }
+    .about .about-image-text .right-column a{
+        font-size: 2vh;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 45%;
+        padding: 0.8vh 0;
+        margin-top: 1vh;
+    }
+
+    /* skills section styling */
+    .skills{
+        margin-bottom: 3vh;
+    }
+    .skills .skills-list{
+        margin-top: 4vh;
+        padding: 0;
+        width: 100%;
+    }
+    .skills .skills-list li{
+        margin: 4.6vh 0;
+    }
+    .skills .skills-list .skills-list-front{
+        width: 35%;
+    }
+    .skills .skills-list .skills-list-back{
+        width: 35%;
+    }
+    .skills .skills-list .skills-list-dbms{
+        width: 35%;
+    }
+    .skills .skills-list h3{
+        text-decoration: none;
+    }
+    .skills-list span::before{
+        content: "\A";
+        white-space: pre;
+    }
+    .skills-list span{
+        margin-top: 10vh;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-thickness: 0.5rem;
+        text-decoration-color: red;
+    }
+    .skills .skills-list .dbms::before{
+        content: "\A";
+        white-space: pre;
+    }
+    .skills .skills-list .dbms{
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-thickness: 0.5rem;
+        text-decoration-color: red;
+    }
+    .skills .skills-list h3{
+        font-size: 2.4vh;
+    }
+    .skills .skills-list li{
+        font-size: 2vh;
+    }
+    
+    /* projects section styling */
+    .projects{
+        padding-top: 2vh;
+        margin-top: 0;
+        padding-bottom: 0.3vh;
+    }
+    .projects h2 {
+        margin-bottom: 0;
+        font-size: 4vh;
+    }
+    .project-1{
+        height: 20.4vh;
+        width: 40vh;
+        margin-top: 1vh;
+    }
+    .project-2{
+        height: 20.4vh;
+        width: 40vh;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+    #project-omedocs{
+        height: 20.4vh;
+        width: 40vh;
+    }
+    #project-movie-search-engine{
+        height: 20.4vh;
+        width: 40vh;
+    }
+    
+    /* contact section styling */
+    .contact{
+        margin-top: 3vh;    
+    }
+    .contact .title{
+        margin-bottom: 1vh;
+    }
+    .contact .left-column{
+        padding-left: 0;
+    }
+
+
+
+    .contact .right-column{
+        width: 60%;
+    }
+    .contact .name{
+        display: flex;
+        margin-top: 3vh;
+    }
+    .contact .email{
+        display: flex;
+    }
+    .contact .right-column .text{
+        text-align: center;
+    }
+    .contact .text{
+        color: white;
+        font-size: 2.8vh;
+        font-weight: 600;
+        margin: 2vh 0;
+    }
+    .contact .head{
+        color: white;
+        font-size: 2.2vh;;
+        font-weight: 600;
+    }
+    .contact .sub-title{
+        color: white;
+        font-size: 2vh;
+        margin-top: 1vh;
+        margin-bottom: 8vh;
+        line-height: 2.5vh;
+    }
+    .contact .sub-title span::before{
+        content: "\A";
+        white-space: pre;
+    }
+    .contact .form-name-email{
+        display: block;
+    }
+    .contact .form-name{
+        width: 100%;
+    }
+    .contact .form-email{
+        width: 100%;
+    }
+    .contact .form-name input{
+        width: 95%;
+        font-size: 1.8vh;
+        padding: 0.3rem;
+        border: 0.19rem solid rgb(61, 102, 102);
+        border-radius: 0.5rem;
+    }
+    .contact .form-email input{
+        width: 95%;
+        font-size: 1.8vh;
+        padding: 0.3rem;
+        border: 0.19rem solid rgb(61, 102, 102);
+        border-radius: 0.5rem;
+    }
+    .contact .form-subject input{
+        font-size: 1.8vh;
+        padding: 0.3rem;
+        width: 95%;
+        margin: 0.7rem 0;
+        border: 0.19rem solid rgb(61, 102, 102);
+        border-radius: 0.5rem;
+    }
+    .contact .form-message textarea{
+        font-size: 1.8vh;
+        padding: 0.3rem;
+        width: 95%;
+        border: 0.19rem solid rgb(61, 102, 102);
+        border-radius: 0.5rem;
+    }
+    .contact .button{
+        display: block;
+        font-size: 1.8vh;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact .button:hover{
+        background-color: #131325;
+        color: red;
     }
 }
