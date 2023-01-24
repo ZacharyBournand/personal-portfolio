@@ -465,6 +465,21 @@ body{
     color: red;
 }
 
+/* Footer */
+.footer{
+    background-color:rgba(25, 51, 51, 0.733);
+    height: 4vh;
+}
+.footer .segment{
+    height: 100%;
+}
+.copyright{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 0.9vh;
+}
+
 
 /* Responsive media query */
 @media (max-width: 1210px) and (orientation: landscape) {
@@ -492,6 +507,15 @@ body{
         text-decoration-thickness: 0.5rem;
         text-decoration-color: red;
     }
+
+    /* Footer */
+    .footer{
+        height: 5.5vh;
+    }
+    .copyright{
+        font-size: 2.5vh;
+        padding-top: 0.9vh;
+    }
 }
 @media (max-width: 1031px) and (orientation: landscape) {
     .contact .left-column{
@@ -500,20 +524,56 @@ body{
     .home .home-text .text-1{
         margin-top: 10vh;
     }
+
+    /* Footer */
+    .footer{
+        height: 7vh;
+    }
+    .copyright{
+        font-size: 3vh;
+        padding-top: 1vh;
+    }
 }
 @media (max-width: 995px) and (orientation: landscape) {
     .navbar .menu li a{
         margin-right: 1rem;
+    }
+
+    /* Footer */
+    .footer{
+        height: 7vh;
+    }
+    .copyright{
+        font-size: 3vh;
+        padding-top: 1.2vh;
     }
 }
 @media (max-width: 977px) and (orientation: landscape) {
     .contact .left-column{
         padding-left: 0vh;
     }
+
+    /* Footer */
+    .footer{
+        height: 7vh;
+    }
+    .copyright{
+        font-size: 3vh;
+        padding-top: 1.2vh;
+    }
 }
 @media (max-width: 950px) and (orientation: landscape) {
     .navbar{
         width: 100%;
+    }
+
+    /* Footer */
+    .footer{
+        height: 8vh;
+    }
+    .copyright{
+        font-size: 3.5vh;
+        padding-top: 1.3vh;
     }
 }
 @media (max-width: 871px) and (orientation: landscape) {
@@ -530,6 +590,15 @@ body{
     }
     .home-icons{
         margin-top: 5vh;
+    }
+
+    /* Footer */
+    .footer{
+        height: 9vh;
+    }
+    .copyright{
+        font-size: 4vh;
+        padding-top: 1.7vh;
     }
 }
 
@@ -741,6 +810,15 @@ body{
     .contact .left-column{
         padding-left: 2vh;
     }
+    .contact .button{
+        margin-bottom: 7vh;
+    }
+
+    /* Footer */
+    .copyright{
+        font-size: 1.7vh;
+        padding-top: 0.9vh;
+    }
 }
 @media (max-width: 730px) and (orientation: portrait) {
         /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -825,7 +903,7 @@ body{
 
     /* home section styling */
     .home{
-        height: 40vh;
+        height: 42vh;
     }
     .home .segment{
         margin-top: 17vh;
@@ -1081,5 +1159,14 @@ body{
     .contact .button:hover{
         background-color: #131325;
         color: red;
+    }
+    .contact .button{
+        margin-bottom: 5vh;
+    }
+
+    /* Footer */
+    .copyright{
+        font-size: 1.7vh;
+        padding-top: 0.9vh;
     }
 }
