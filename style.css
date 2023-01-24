@@ -772,9 +772,11 @@ body{
     footer, header, hgroup, menu, nav, section {
         display: block;
     }
-    body.modal-open {
-        overflow: hidden;
-        position: fixed;
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative;
     }
     ol, ul {
         list-style: none;
@@ -804,7 +806,6 @@ body{
     /* navbar */
     .navbar{
         padding: 1.5vh 0;
-        width: 95%;
     }
     .navbar .segment{
         display: grid;
