@@ -850,6 +850,11 @@ body{
         height: 2vh;
         margin: 0 1.5vh;
     }
+    .home img:hover{
+        width: 2vh;
+        height: 2vh;
+        margin: 0 1.5vh;
+    }
 
     /* about section styling */
     .about{
@@ -926,7 +931,7 @@ body{
     .skills-list span{
         margin-top: 20vh;
         text-decoration: underline;
-        text-underline-offset: 3rem;
+        text-underline-offset: 1.5vh;
         text-decoration-thickness: 0.5rem;
         text-decoration-color: red;
     }
@@ -935,15 +940,19 @@ body{
         white-space: pre;
     }
     .skills .skills-list .dbms{
+        text-decoration: underline;
         text-underline-offset: 1.5vh;
+        text-decoration-thickness: 0.5rem;
+        text-decoration-color: red;
     }
     .skills .skills-list h3{
         font-size: 2.4vh;
         height: 20%;
-        text-underline-offset: 4vh;
+        text-decoration: none;
     }
     .skills .skills-list li{
         font-size: 2vh;
+        margin: 3vh 0;
     }
     
     /* projects section styling */
