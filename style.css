@@ -775,6 +775,9 @@ body{
    body {
        line-height: 1;
    }
+   html, body{
+    overflow-x: hidden;
+   }
    ol, ul {
        list-style: none;
    }
