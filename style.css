@@ -766,6 +766,7 @@ body{
        font-size: 100%;
        font: inherit;
        vertical-align: baseline;
+       overflow-x: hidden;
    }
    /* HTML5 display-role reset for older browsers */
    article, aside, details, figcaption, figure, 
@@ -802,7 +803,7 @@ body{
 
     /* navbar */
     .navbar{
-        width: 95%;
+        padding: 1.5vh 0;
     }
     .navbar .segment{
         display: grid;
@@ -908,25 +909,22 @@ body{
         margin: 4.6vh 0;
     }
     .skills .skills-list .skills-list-front{
-        width: 35%;
+        width: 25%;
     }
     .skills .skills-list .skills-list-back{
-        width: 35%;
+        width: 25%;
     }
     .skills .skills-list .skills-list-dbms{
-        width: 35%;
-    }
-    .skills .skills-list h3{
-        text-decoration: none;
+        width: 25%;
     }
     .skills-list span::before{
         content: "\A";
         white-space: pre;
     }
     .skills-list span{
-        margin-top: 10vh;
+        margin-top: 20vh;
         text-decoration: underline;
-        text-underline-offset: 1rem;
+        text-underline-offset: 3rem;
         text-decoration-thickness: 0.5rem;
         text-decoration-color: red;
     }
@@ -936,7 +934,7 @@ body{
     }
     .skills .skills-list .dbms{
         text-decoration: underline;
-        text-underline-offset: 1rem;
+        text-underline-offset: 0rem;
         text-decoration-thickness: 0.5rem;
         text-decoration-color: red;
     }
