@@ -14,9 +14,9 @@ let dbmsSkills = document.querySelector('.skills-list-dbms');
 let dbmsTitle = document.querySelector('.dbms');
 let dbmsList = document.querySelectorAll('.dbms-list');
 
-/* Icons in the home section */
+/* Icons in the home section 
 let linkedinIcon = document.querySelector('#linkedin');
-let githubIcon = document.querySelector('#github');
+let githubIcon = document.querySelector('#github');*/
 
 /* projects sections */
 // Project 1 
@@ -112,7 +112,7 @@ dbmsSkills.addEventListener('mouseout', (event) => {
 });
 
 
-linkedinIcon.addEventListener('mouseover', (event) => {
+/*linkedinIcon.addEventListener('mouseover', (event) => {
     linkedinIcon.style.cssText = 'width: 2.5rem; height: 2.5rem; transition: .5s;';
 });
 
@@ -126,7 +126,7 @@ githubIcon.addEventListener('mouseover', (event) => {
 });
 githubIcon.addEventListener('mouseout', (event) => {
     githubIcon.style.cssText = 'width: 1.6rem; height: 1.6rem; transition: .5s;';
-});
+});*/
 
 
 project1.addEventListener('mouseover', (event) => {

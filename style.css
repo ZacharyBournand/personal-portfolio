@@ -95,6 +95,16 @@ body{
     margin: 0 1.5rem;
     transition: .5s;
 }
+.home #linkedin:hover{
+    width: 2.5rem; 
+    height: 2.5rem; 
+    transition: .5s;
+}
+.home #github:hover{
+    width: 2.5rem; 
+    height: 2.5rem; 
+    transition: .5s;
+}
 
 /* about section styling */
 .about{
@@ -692,6 +702,18 @@ body{
     .home-icons{
         margin-top: 5vh;
     }
+    .home #linkedin:hover{
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0 1.5rem;
+        transition: .5s;
+    }
+    .home #github:hover{
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0 1.5rem;
+        transition: .5s;
+    }
     
     /* about section styling */
     .about{
@@ -932,6 +954,18 @@ body{
         width: 2vh;
         height: 2vh;
         margin: 0 1.5vh;
+    }
+    .home #linkedin:hover{
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0 1.5rem;
+        transition: .5s;
+    }
+    .home #github:hover{
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0 1.5rem;
+        transition: .5s;
     }
 
     /* about section styling */
