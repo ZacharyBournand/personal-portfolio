@@ -148,13 +148,16 @@ body{
     line-height: 2.6rem;
     margin-bottom: 1.8rem;
 }
-.about .right-column .text-2{
+.dates{
+    color: rgba(255, 255, 255, 0.568);
+}
+/*.about .right-column .text-2{
     color: rgba(255, 255, 255, 0.87);
     font: Verdana;
     font-size: 2.3vh;
     line-height: 2.6rem;
     margin-bottom: 1.8rem;
-}
+}*/
 .about .right-column .text-3{
     color: rgba(255, 255, 255, 0.87);
     font: Verdana;
@@ -740,13 +743,15 @@ body{
     .about .right-column .text-1{
         font-size: 2vh;
         line-height: 3.2vh;
+    }
+    .about .right-column .text-1 li{
         margin-bottom: 2.1vh;
     }
-    .about .right-column .text-2{
+    /*.about .right-column .text-2{
         font-size: 2vh;
         line-height: 3.2vh;
         margin-bottom: 2.1vh;
-    }
+    }*/
     .about .right-column .text-3{
         font-size: 2vh;
         line-height: 3.2vh;
@@ -1009,11 +1014,8 @@ body{
     .about .right-column .text-1{
         font-size: 2vh;
         line-height: 3.2vh;
-        margin-bottom: 2.1vh;
     }
-    .about .right-column .text-2{
-        font-size: 2vh;
-        line-height: 3.2vh;
+    .about .right-column .text-1 li{
         margin-bottom: 2.1vh;
     }
     .about .right-column .text-3{
@@ -1134,10 +1136,10 @@ body{
         margin-bottom: 1vh;
     }
     .project-text-1 h2{
-        font-size: 3vh;
+        font-size: 3.5vh;
     }
     .project-text-2 h2{
-        font-size: 3vh;
+        font-size: 3.5vh;
     }
     .projects h3{
         font-size: 1.9vh;
