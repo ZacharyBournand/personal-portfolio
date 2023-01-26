@@ -320,11 +320,15 @@ body{
     line-height: 2.5rem;
     color: white;
 }
-.projects p{
+.projects .paragraph-1{
     font-size: 1.4rem;
     text-align: left;
     line-height: 2rem;
     color: white;
+}
+.projects .paragraph-2{
+    position: absolute;
+    color: transparent;
 }
 .project-1-links{
     display: flex;
@@ -706,13 +710,11 @@ body{
         width: 1.6rem;
         height: 1.6rem;
         margin: 0 1.5rem;
-        transition: .5s;
     }
     .home #github:hover{
         width: 1.6rem;
         height: 1.6rem;
         margin: 0 1.5rem;
-        transition: .5s;
     }
     
     /* about section styling */
@@ -808,18 +810,34 @@ body{
     .project-1{
         height: 30.6vh;
         width: 60vh;
+        border: 0.19rem solid rgb(61, 102, 102); 
+        border-radius: 0.5rem;
     }
     .project-2{
         height: 30.6vh;
         width: 60vh;
+        border: 0.19rem solid rgb(61, 102, 102); 
+        border-radius: 0.5rem;
     }
     #project-omedocs{
         height: 30.6vh;
         width: 60vh;
+        filter: blur(1vh) brightness(25%);
     }
     #project-movie-search-engine{
         height: 30.6vh;
         width: 60vh;
+        filter: blur(1vh) brightness(90%);
+    }
+    .project-text-container-1{
+        visibility: visible; 
+        opacity: 1; 
+        transition: opacity 1.5s linear;
+    }
+    .project-text-container-2{
+        visibility: visible; 
+        opacity: 1; 
+        transition: opacity 1.5s linear;
     }
     
     /* contact section styling */
@@ -959,13 +977,11 @@ body{
         width: 1.6rem;
         height: 1.6rem;
         margin: 0 1.5rem;
-        transition: .5s;
     }
     .home #github:hover{
         width: 1.6rem;
         height: 1.6rem;
         margin: 0 1.5rem;
-        transition: .5s;
     }
 
     /* about section styling */
@@ -1073,30 +1089,105 @@ body{
         margin-top: 0;
         padding-bottom: 0.3vh;
     }
-    .projects h2 {
-        margin-bottom: 0;
-        font-size: 4vh;
-    }
     .project-1{
         height: 20.4vh;
         width: 40vh;
         margin-top: 1vh;
+
+        border: 0.19rem solid rgb(61, 102, 102); 
+        border-radius: 0.5rem;
+    }
+    .project-1-bonus-info{
+        position: absolute;
+        color: transparent;
     }
     .project-2{
         height: 20.4vh;
         width: 40vh;
         margin-top: 4vh;
         margin-bottom: 4vh;
+
+        border: 0.19rem solid rgb(61, 102, 102); 
+        border-radius: 0.5rem;
+    }
+    .project-text-container-1{
+        visibility: visible; 
+        opacity: 1; 
+    }
+    .project-text-container-2{
+        visibility: visible; 
+        opacity: 1; 
     }
     #project-omedocs{
         height: 20.4vh;
         width: 40vh;
+        filter: blur(1vh) brightness(25%);
     }
     #project-movie-search-engine{
         height: 20.4vh;
         width: 40vh;
+        filter: blur(1vh) brightness(90%);
     }
-    
+    .projects h2{
+        font-size: 4vh;
+        margin-top: 0;
+        margin-bottom: 1vh;
+    }
+    .project-text-1 h2{
+        font-size: 3vh;
+    }
+    .project-text-2 h2{
+        font-size: 3vh;
+    }
+    .projects h3{
+        font-size: 1.9vh;
+        margin-bottom: 3vh;
+        line-height: 2vh;
+    }
+    .projects .paragraph-1{
+        position: absolute;
+        color: transparent;
+    }
+    .projects .paragraph-2{
+        position: static;
+        font-size: 2.4vh;
+        text-align: left;
+        line-height: 2vh;
+        color: white;
+        margin-bottom: 3vh;
+        text-align: center;
+    }
+    .project-1 #github{
+        width: 2.5vh;
+        height: 2.5vh;
+        margin-right: 2.5vh;
+    }
+    .project-1 #github:hover{
+        width: 2.5vh;
+        height: 2.5vh;
+        margin-right: 2.5vh;
+    }
+    .project-2 #github{
+        width: 2.5vh;
+        height: 2.5vh;
+        margin-right: 2.5vh;
+    }
+    .project-2 #github:hover{
+        width: 2.5vh;
+        height: 2.5vh;
+        margin-right: 2.5vh;
+    }
+    .project-link-text-1{
+        font-size: 2vh;
+        font-weight: bold;
+        color: rgba(135, 206, 250, 0.733);
+    }
+    .project-link-text-1:hover{
+        font-size: 2vh;
+        font-weight: bold;
+        color: rgba(135, 206, 250, 0.733);
+    }
+
     /* contact section styling */
     .contact{
         margin-top: 3vh;    
@@ -1107,9 +1198,6 @@ body{
     .contact .left-column{
         padding-left: 0;
     }
-
-
-
     .contact .right-column{
         width: 60%;
     }
