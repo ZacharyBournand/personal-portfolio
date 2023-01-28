@@ -325,11 +325,19 @@ body{
     margin-bottom: 2rem;
     color: white;
 }
+.project-text-1 h2{
+    font-weight: bold;
+    font-style: italic;
+}
+.project-text-2 h2{
+    font-weight: bold;
+    font-style: italic;
+}
 .projects h3{
     font-size: 1.5rem;
     margin-bottom: 2rem;
     line-height: 2.5rem;
-    color: white;
+    color: rgba(255, 255, 255, 0.815);
 }
 .projects .paragraph-1{
     font-size: 1.4rem;
@@ -1199,9 +1207,10 @@ body{
     .navbar .menu{
         margin-top: 3vh;
         margin-bottom: auto;
+        text-align: center;
     }
     .navbar .menu li a{
-        font-size: 2vh;
+        font-size: 2.2vh;
         margin-right: 2vh;
     }
 
@@ -1396,15 +1405,20 @@ body{
         margin-bottom: 1vh;
     }
     .project-text-1 h2{
-        font-size: 3.5vh;
+        font-size: 3vh;
+        font-weight: bold;
+        font-style: italic;
     }
     .project-text-2 h2{
-        font-size: 3.5vh;
+        font-size: 3vh;
+        font-weight: bold;
+        font-style: italic;
     }
     .projects h3{
         font-size: 1.9vh;
         margin-bottom: 3vh;
         line-height: 2vh;
+        color: rgba(255, 255, 255, 0.815);
     }
     .projects .paragraph-1{
         position: absolute;
@@ -1417,7 +1431,7 @@ body{
         text-align: left;
         line-height: 2vh;
         color: white;
-        margin-bottom: 3vh;
+        margin-bottom: 2.5vh;
         text-align: center;
     }
     .project-1 #github{
@@ -1476,18 +1490,18 @@ body{
     }
     .contact .text{
         color: white;
-        font-size: 2.8vh;
+        font-size: 3vh;
         font-weight: 600;
         margin: 2vh 0;
     }
     .contact .head{
         color: white;
-        font-size: 2.2vh;;
+        font-size: 2.4vh;;
         font-weight: 600;
     }
     .contact .sub-title{
         color: white;
-        font-size: 2vh;
+        font-size: 2.2vh;
         margin-top: 1vh;
         margin-bottom: 8vh;
         line-height: 2.5vh;
@@ -1507,20 +1521,20 @@ body{
     }
     .contact .form-name input{
         width: 95%;
-        font-size: 1.8vh;
+        font-size: 2.2vh;
         padding: 0.3rem;
         border: 0.19rem solid rgb(61, 102, 102);
         border-radius: 0.5rem;
     }
     .contact .form-email input{
         width: 95%;
-        font-size: 1.8vh;
+        font-size: 2.2vh;
         padding: 0.3rem;
         border: 0.19rem solid rgb(61, 102, 102);
         border-radius: 0.5rem;
     }
     .contact .form-subject input{
-        font-size: 1.8vh;
+        font-size: 2.2vh;
         padding: 0.3rem;
         width: 95%;
         margin: 0.7rem 0;
@@ -1528,7 +1542,7 @@ body{
         border-radius: 0.5rem;
     }
     .contact .form-message textarea{
-        font-size: 1.8vh;
+        font-size: 2.2vh;
         padding: 0.3rem;
         width: 95%;
         border: 0.19rem solid rgb(61, 102, 102);
@@ -1536,8 +1550,8 @@ body{
     }
     .contact .button{
         display: block;
-        font-size: 1.8vh;
-        width: 60%;
+        font-size: 2.2vh;
+        width: 75%;
         margin-left: auto;
         margin-right: auto;
     }
