@@ -327,11 +327,9 @@ body{
 }
 .project-text-1 h2{
     font-weight: bold;
-    font-style: italic;
 }
 .project-text-2 h2{
     font-weight: bold;
-    font-style: italic;
 }
 .projects h3{
     font-size: 1.5rem;
@@ -1406,13 +1404,9 @@ body{
     }
     .project-text-1 h2{
         font-size: 3vh;
-        font-weight: bold;
-        font-style: italic;
     }
     .project-text-2 h2{
         font-size: 3vh;
-        font-weight: bold;
-        font-style: italic;
     }
     .projects h3{
         font-size: 1.9vh;
