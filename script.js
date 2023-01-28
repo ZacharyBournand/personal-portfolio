@@ -130,23 +130,31 @@ githubIcon.addEventListener('mouseout', (event) => {
 
 
 project1.addEventListener('mouseover', (event) => {
-    project1.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
-    image1.style.cssText = 'filter: blur(1vh) brightness(25%)';
-    text1.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        project1.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
+        image1.style.cssText = 'filter: blur(1vh) brightness(25%)';
+        text1.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
+    }
 });
 project1.addEventListener('mouseout', (event) => {
-    project1.style.cssText = 'border: 0.3rem solid rgb(56, 80, 80);';
-    image1.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
-    text1.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        project1.style.cssText = 'border: 0.3rem solid rgb(56, 80, 80);';
+        image1.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
+        text1.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
+    }
 });
 
 project2.addEventListener('mouseover', (event) => {
-    project2.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
-    image2.style.cssText = 'filter: blur(1vh) brightness(90%)';
-    text2.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        project2.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
+        image2.style.cssText = 'filter: blur(1vh) brightness(90%)';
+        text2.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
+    }
 });
 project2.addEventListener('mouseout', (event) => {
-    project2.style.cssText = 'border: 0.19rem solid rgb(74, 87, 87);';
-    image2.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
-    text2.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        project2.style.cssText = 'border: 0.19rem solid rgb(74, 87, 87);';
+        image2.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
+        text2.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
+    }
 });
