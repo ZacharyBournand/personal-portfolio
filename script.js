@@ -1,3 +1,9 @@
+/* navbar section */
+let homeLink = document.querySelector('.home-link');
+let aboutLink = document.querySelector('.about-link');
+let skillsLink = document.querySelector('.skills-about');
+let projectsLink = document.querySelector('.projects-about');
+
 /* skills section */
 // Front-end skills
 let frontEndSkills = document.querySelector('.skills-list-front');
@@ -59,6 +65,13 @@ function SendMail() {
         }
     ).catch((err) => console.log(err));
 }
+
+
+/*aboutLink.addEventListener('click', (event) => {
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        document.querySelector('.about').scrollIntoView();
+    }    
+})*/
 
 
 frontEndSkills.addEventListener('mouseover', (event) => {
