@@ -1159,7 +1159,7 @@ body{
         .title{
             font-size: 12vh;
             margin-top: 3vh;
-            margin-bottom: 4vh;
+            margin-bottom: 8vh;
         }
 
         /* navbar */
@@ -1224,26 +1224,30 @@ body{
             text-underline-offset: 4vh;
             text-decoration-thickness: 3.5vh;
         }
+        .skills .skills-list .dbms {
+            text-underline-offset: 4vh;
+            text-decoration-thickness: 3.5vh;
+        }
 
         /* projects */
         .projects .title {
             font-size: 12vh;
         }
         .project-1{
-            height: 30vh;
-            width: 58.77vh;
+            height: 60vh;
+            width: 117.54vh;
         }
         .project-2{
-            height: 30vh;
-            width: 58.77vh;
+            height: 60vh;
+            width: 117.54vh;
         }
         #project-omedocs{
-            height: 30vh;
-            width: 58.77vh;
+            height: 60vh;
+            width: 117.54vh;
         }
         #project-movie-search-engine{
-            height: 30vh;
-            width: 58.77vh;
+            height: 60vh;
+            width: 117.54vh;
         }
         .project-text-1 h2 {
             font-size: 10vh;
