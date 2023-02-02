@@ -1041,6 +1041,7 @@ body{
 
     .contact .button {
         font-size: 5.5vh;
+        width: 43%;
     }
 
     /* Footer */
@@ -1102,6 +1103,165 @@ body{
         }
         .skills .skills-list .skills-list-dbms:hover {
             width: 30%;
+        }
+    }
+    @media(max-width: 350px){
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+        */
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        /* End of CSS reset */
+
+        /* each section */
+        .title{
+            font-size: 12vh;
+            margin-top: 3vh;
+            margin-bottom: 4vh;
+        }
+
+        /* navbar */
+        .navbar .intro a {
+            font-size: 11vh;
+        }
+        .navbar .menu-3 li a {
+            margin-right: 0.5rem;
+            margin-left: 0.5rem;
+        }
+
+        .home {
+            height: 67vh;
+        }
+        .home .segment {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+        .home .home-text .text-2 {
+            margin-bottom: 4vh;
+        }
+        .home img {
+            width: 9vh;
+            height: 9vh;
+        }
+
+        .about .about-image-text {
+            display: grid;
+            justify-content: center;
+        }
+        .about .left-column {
+            width: 100%;
+            text-align: center;
+        }
+        .about .left-column img {
+            height: 55vh;
+            width: 55vh;
+        }
+        .about .right-column .text-1 {
+            font-size: 6vh
+        }
+        .about .right-column .text-3 {
+            font-size: 6vh
+        }
+        .about .right-column .text-1 li {
+            line-height: 8vh;
+            margin-bottom: 8vh;
+        }
+        .about .about-image-text .right-column a{
+            font-size: 6vh;
+        }
+
+        .skills .skills-list h3 {
+            font-size: 7vh;
+            margin-bottom: 10vh;
+        }
+        .skills .skills-list li{
+            margin-top: 6vh;
+            font-size: 5.5vh;
+        }
+        .skills-list span {
+            text-underline-offset: 4vh;
+            text-decoration-thickness: 3.5vh;
+        }
+
+        /* projects */
+        .projects .title {
+            font-size: 12vh;
+        }
+        .project-1{
+            height: 30vh;
+            width: 58.77vh;
+        }
+        .project-2{
+            height: 30vh;
+            width: 58.77vh;
+        }
+        #project-omedocs{
+            height: 30vh;
+            width: 58.77vh;
+        }
+        #project-movie-search-engine{
+            height: 30vh;
+            width: 58.77vh;
+        }
+        .project-text-1 h2 {
+            font-size: 10vh;
+            margin-bottom: 3vh;
+        }
+        .project-text-2 h2 {
+            font-size: 10vh;
+            margin-bottom: 3vh;
+        }
+
+        .contact .text {
+            font-size: 5vh;
+        }
+        .contact .head {
+            font-size: 3vh;
+        }
+        .contact .sub-title {
+            font-size: 2.5vh;
         }
     }
 }
@@ -1209,37 +1369,6 @@ body{
         margin-bottom: 1rem;
     }
 
-
-
-
-    /*.projects{
-        padding-top: 2vh;
-        margin-top: 0;
-        padding-bottom: 0.3vh;
-    }
-    .project-1{
-        height: 20.4vh;
-        width: 40vh;
-        margin-top: 1vh;
-
-        border: 0.19rem solid rgb(61, 102, 102); 
-        border-radius: 0.5rem;
-    }
-    .project-1-bonus-info{
-        position: absolute;
-        color: transparent;
-        display: none;
-        z-index: -1;
-    }
-    .project-2{
-        height: 20.4vh;
-        width: 40vh;
-        margin-top: 4vh;
-        margin-bottom: 4vh;
-
-        border: 0.19rem solid rgb(61, 102, 102); 
-        border-radius: 0.5rem;
-    }*/
     .project-text-container-1{
         visibility: visible; 
         opacity: 1; 
@@ -1248,16 +1377,6 @@ body{
         visibility: visible; 
         opacity: 1; 
     }
-    /*#project-omedocs{
-        height: 70vh;
-        width: 137.13vh;
-        filter: blur(1vh) brightness(25%);
-    }
-    #project-movie-search-engine{
-        height: 70vh;
-        width: 137.13vh;
-        filter: blur(1vh) brightness(90%);
-    }*/
     .projects h2{
         margin-top: 0;
         margin-bottom: 1vh;
@@ -2561,18 +2680,26 @@ body{
         }
     }
     @media (min-aspect-ratio: 280/653) and (max-width: 245px){
-        .navbar {
+        .navbar{
             padding-bottom: 3vh;
             padding-top: 1vh;
         }
-        .navbar .menu-2 {
+        .navbar .menu-2{
             margin-top: 0;
             z-index: 1;
         }
     }
     @media (min-aspect-ratio: 350/667) and (max-aspect-ratio: 380/667){
-        .skills .skills-list .skills-list-dbms:hover {
+        .about .about-image-text .right-column a{
+            width: 35%;
+        }
+        
+        .skills .skills-list .skills-list-dbms:hover{
             width: 25%;
+        }
+
+        .contact .button {
+            width: 60%;
         }
     }
     @media (max-width: 450px){
