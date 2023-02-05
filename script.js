@@ -1,9 +1,3 @@
-/* navbar section */
-let homeLink = document.querySelector('.home-link');
-let aboutLink = document.querySelector('.about-link');
-let skillsLink = document.querySelector('.skills-about');
-let projectsLink = document.querySelector('.projects-about');
-
 /* skills section */
 // Front-end skills
 let frontEndSkills = document.querySelector('.skills-list-front');
@@ -67,13 +61,6 @@ function SendMail() {
 }
 
 
-/*aboutLink.addEventListener('click', (event) => {
-    if (window.matchMedia("(orientation: portrait)").matches) {
-        document.querySelector('.about').scrollIntoView();
-    }    
-})*/
-
-
 frontEndSkills.addEventListener('mouseover', (event) => {
     for (i = 0; i < frontEndList.length; i++) {
         frontEndList[i].style.color = 'white';
@@ -125,49 +112,51 @@ dbmsSkills.addEventListener('mouseout', (event) => {
 });
 
 
-/*linkedinIcon.addEventListener('mouseover', (event) => {
-    linkedinIcon.style.cssText = 'width: 2.5rem; height: 2.5rem; transition: .5s;';
-});
-
-linkedinIcon.addEventListener('mouseout', (event) => {
-    linkedinIcon.style.cssText = 'width: 1.6rem; height: 1.6rem; transition: .5s;';
-});
-
-
-githubIcon.addEventListener('mouseover', (event) => {
-    githubIcon.style.cssText = 'width: 2.5rem; height: 2.5rem; transition: .5s;';
-});
-githubIcon.addEventListener('mouseout', (event) => {
-    githubIcon.style.cssText = 'width: 1.6rem; height: 1.6rem; transition: .5s;';
-});*/
-
-
-project1.addEventListener('mouseover', (event) => {
-    if (window.matchMedia("(orientation: landscape)").matches) {
+if (window.matchMedia("(orientation: landscape)").matches) {
+    project1.addEventListener('mouseover', (event) => {
         project1.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
         image1.style.cssText = 'filter: blur(1vh) brightness(25%)';
         text1.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
-    }
-});
-project1.addEventListener('mouseout', (event) => {
-    if (window.matchMedia("(orientation: landscape)").matches) {
+    });
+    project1.addEventListener('mouseout', (event) => {
         project1.style.cssText = 'border: 0.3rem solid rgb(56, 80, 80);';
         image1.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
         text1.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
-    }
-});
-
-project2.addEventListener('mouseover', (event) => {
-    if (window.matchMedia("(orientation: landscape)").matches) {
+    });
+    
+    project2.addEventListener('mouseover', (event) => {
         project2.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
         image2.style.cssText = 'filter: blur(1vh) brightness(90%)';
         text2.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
-    }
-});
-project2.addEventListener('mouseout', (event) => {
-    if (window.matchMedia("(orientation: landscape)").matches) {
+    });
+    project2.addEventListener('mouseout', (event) => {
         project2.style.cssText = 'border: 0.19rem solid rgb(74, 87, 87);';
         image2.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
         text2.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
-    }
-});
+    });    
+}
+
+
+if (window.matchMedia("(orientation: portrait)").matches) {
+    project1.addEventListener('click', (event) => {
+        project1.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
+        image1.style.cssText = 'filter: blur(1vh) brightness(25%)';
+        text1.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
+    });
+    project1.addEventListener('mouseout', (event) => {
+        project1.style.cssText = 'border: 0.3rem solid rgb(56, 80, 80);';
+        image1.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
+        text1.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
+    });
+
+    project2.addEventListener('click', (event) => {
+        project2.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
+        image2.style.cssText = 'filter: blur(1vh) brightness(90%)';
+        text2.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
+    });
+    project2.addEventListener('mouseout', (event) => {
+        project2.style.cssText = 'border: 0.19rem solid rgb(74, 87, 87);';
+        image2.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
+        text2.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
+    });
+}
