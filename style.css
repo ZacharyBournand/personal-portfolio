@@ -115,16 +115,6 @@ body {
     margin: 0 4vw;
     transition: .5s;
 }
-.home #linkedin:hover {
-    width: 3.5vw; 
-    height: 3.5vw; 
-    transition: .5s;
-}
-.home #github:hover {
-    width: 3.5vw; 
-    height: 3.5vw; 
-    transition: .5s;
-}
 
 /* about section styling */
 .about {
@@ -193,9 +183,9 @@ body {
     color: #fff;
     font-size: 1.8vw;
     font-weight: 500;
-    padding: .4vw 2vw;
+    padding: .6vw 1.5vw;
     margin-top: 2vw;
-    border-radius: 0.2vw;
+    border-radius: .5vw;
     border: 0.1vw solid red;
     transition: all 0.3s ease;
 }
@@ -375,21 +365,9 @@ body {
     margin-right: 2.5vw;
     transition: .5s;
 }
-.project-1 #github:hover {
-    width: 3vw;
-    height: 3vw;
-    margin-right: 2rem;
-    transition: .5s;
-}
 .project-2 #github {
     width: 2.5vw;
     height: 2.5vw;
-    margin-right: 2.5vw;
-    transition: .5s;
-}
-.project-2 #github:hover {
-    width: 3.1vw;
-    height: 3.1vw;
     margin-right: 2.5vw;
     transition: .5s;
 }
@@ -493,11 +471,10 @@ body {
     border-radius: 1vw;
 }
 .contact .button {
-    color: white;
-    font: sans-serif;
+    color: #fff;
     font-size: 1.8vw;
     width: 15vw;
-    background-color: red;
+    background: red;
     padding: 0.6vw;
     margin-top: 0.5vw;
     margin-top: 1vw;
@@ -525,7 +502,18 @@ body {
     padding-top: .5vw;
 }
 
+/* Accomodate screens with high aspect ratios (in landscape orientation) */
+@media (min-aspect-ratio: 653/350) {
+    .home .segment {
+        margin: 30vh auto;
+    }
+    .home-icons {
+        text-align: center;
+        margin-top: 7vh;
+    }
+}
 
+/* Media responsive design for portrait orientation */
 @media (orientation: portrait) {
     .title {
         font-size: 9vw;
@@ -535,7 +523,7 @@ body {
 
     .navbar .segment{
         display: grid;
-        justify-content: center;    
+        justify-content: center;
     }
     .navbar .intro a {
         font-size: 9vw;
@@ -584,6 +572,16 @@ body {
         height: 7vw;
         margin: 0 8vw;
     }
+    .home #linkedin:hover {
+        width: 7vw;
+        height: 7vw;
+        margin: 0 8vw;
+    }
+    .home #github:hover {
+        width: 7vw;
+        height: 7vw;
+        margin: 0 8vw;
+    }
 
     .about .about-image-text{
         display: grid;
@@ -617,6 +615,8 @@ body {
         font-size: 5vw;
         margin-left: 3vw;
         margin-bottom: 4vw;
+        padding: 1vw 3vw;
+        border-radius: 1vw;
     }
 
     .skills .skills-list {
@@ -684,26 +684,6 @@ body {
         height: 45vw;
         width: 88.155vw;
     }
-    
-    
-    /*#project-omedocs:active {
-        filter: blur(1vh) brightness(25%);
-    }
-    #project-movie-search-engine:active {
-        filter: blur(1vh) brightness(25%);
-    }
-    .project-text-container-1:active {
-        visibility: visible; 
-        opacity: 1; 
-        transition: opacity 1.5s linear;
-    }
-    .project-text-container-2:active {
-        visibility: visible; 
-        opacity: 1; 
-        transition: opacity 1.5s linear;
-    }*/
-
-
     .project-text-1 h2 {
         font-size: 7vw;
     }
@@ -739,7 +719,19 @@ body {
         width: 5vw;
         height: 5vw;
     }
+    .project-1 #github:hover {
+        width: 5vw;
+        height: 5vw;
+        margin-right: 5vw;
+    }
+    .project-2 #github:hover {
+        width: 5vw;
+        height: 5vw;
+    }
     .project-link-text-1 {
+        font-size: 4.3vw;
+    }
+    .project-link-text-1:hover {
         font-size: 4.3vw;
     }
 
@@ -791,7 +783,8 @@ body {
         margin-left: auto;
         font-size: 5vw;
         width: 40vw;
-        padding: 0.4vw 2vw;
+        padding: 1vw 3vw;
+        border-radius: 1vw;
     }
 
     .footer {
@@ -800,6 +793,13 @@ body {
     .copyright {
         font-size: 3.5vw;
         padding-top: 0.8vw;
+    }
+}
+
+/* Accomodate screens with high aspect ratios (in portrait orientation) */
+@media (max-aspect-ratio: 306/653) {
+    .navbar .menu-2 li a {
+        font-size: 4.88vw;
     }
 }
 

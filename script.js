@@ -1,3 +1,8 @@
+/* home section */
+// Icons in the home section 
+let linkedinHomeIcon = document.querySelector('.home #linkedin');
+let githubHomeIcon = document.querySelector('.home #github');
+
 /* skills section */
 // Front-end skills
 let frontEndSkills = document.querySelector('.skills-list-front');
@@ -14,10 +19,6 @@ let dbmsSkills = document.querySelector('.skills-list-dbms');
 let dbmsTitle = document.querySelector('.dbms');
 let dbmsList = document.querySelectorAll('.dbms-list');
 
-/* Icons in the home section 
-let linkedinIcon = document.querySelector('#linkedin');
-let githubIcon = document.querySelector('#github');*/
-
 /* projects sections */
 // Project 1 
 let project1 = document.querySelector('.project-1');
@@ -28,6 +29,11 @@ let image2 = document.getElementById('project-movie-search-engine');
 
 let text1 = document.querySelector('.project-text-container-1');
 let text2 = document.querySelector('.project-text-container-2');
+
+let githubProject1 = document.querySelector('.project-1 #github');
+let githubProject2 = document.querySelector('.project-2 #github');
+ 
+let linkProject1 = document.querySelector('.project-link-text-1');
 
 // Prevent "Confirm Resubmission Form" notification every time the user reloads the page
 if ( window.history.replaceState ) {
@@ -58,6 +64,29 @@ function SendMail() {
             alert("Your message was sent successfully");
         }
     ).catch((err) => console.log(err));
+}
+
+if (window.matchMedia("(orientation: landscape)").matches) {
+    linkedinHomeIcon.addEventListener('click', (event) => {
+        linkedinHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+    });
+    githubHomeIcon.addEventListener('click', (event) => {
+        githubHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+    });
+    
+    linkedinHomeIcon.addEventListener('mouseover', (event) => {
+        linkedinHomeIcon.style.cssText = 'width: 3.5vw; height: 3.5vw; transition: .5s';
+    });
+    githubHomeIcon.addEventListener('mouseover', (event) => {
+        githubHomeIcon.style.cssText = 'width: 3.5vw; height: 3.5vw; transition: .5s';
+    });
+    
+    linkedinHomeIcon.addEventListener('mouseout', (event) => {
+        linkedinHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+    });
+    githubHomeIcon.addEventListener('mouseout', (event) => {
+        githubHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+    });
 }
 
 
@@ -110,6 +139,39 @@ dbmsSkills.addEventListener('mouseout', (event) => {
     dbmsTitle.style.cssText = 'color: white; text-decoration-color: red';
     dbmsSkills.style.cssText = 'border: none';
 });
+
+
+if (window.matchMedia("(orientation: landscape)").matches) {
+    githubProject1.addEventListener('click', (event) => {
+        githubProject1.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
+    });
+    githubProject2.addEventListener('click', (event) => {
+        githubProject2.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
+    });
+    linkProject1.addEventListener('click', (event) => {
+        linkProject1.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
+    });
+    
+    githubProject1.addEventListener('mouseover', (event) => {
+        githubProject1.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+    });
+    githubProject2.addEventListener('mouseover', (event) => {
+        githubProject2.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+    });
+    linkProject1.addEventListener('mouseover', (event) => {
+        linkProject1.style.cssText = 'font-size: 2.5vw; color: rgba(135, 206, 250, 0.733); text-shadow: black 0.2rem 0.2rem 0.2rem; transition: .5s';
+    });
+    
+    githubProject1.addEventListener('mouseout', (event) => {
+        githubProject1.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
+    });
+    githubProject2.addEventListener('mouseout', (event) => {
+        githubProject2.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
+    });
+    linkProject1.addEventListener('mouseout', (event) => {
+        linkProject1.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
+    });
+}
 
 
 if (window.matchMedia("(orientation: landscape)").matches) {
