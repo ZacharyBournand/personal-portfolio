@@ -1,63 +1,61 @@
+/* Background color used in the 'home', 'skills', and 'contact' sections */
 html {
     background: #000029;
 }
+
 body {
     margin: 0;
 }
 
-/* each section */
+/* Applies to each section */
 .segment {
     padding: 0 1vw;
     margin: auto 0;
 }
+/* The h2 header of each section */
 .title {
     color: white;
     text-align: center;
     font-size: 5vw;
 }
 
-/* navbar */
+/* The navigation bar */
 .navbar {
     width: 100%;
+    /* It does not movve when the page is scrolled */
     position: fixed;
     padding: 1vw 0;
-    /*background: #000083;*/
     background: #252d53;
-
     font: Arial;
+    /* Set to the highest position order of any attribute on this website */
     z-index: 1;
 }
+/* Applies to the elements in the navbar section */
 .navbar .segment {
+    /* Sets the introduction and the list of navigation links on the same line */
     display: flex;
+    /* Vertically center the introduction within the navigation bar */ 
     align-items: center;
+    /* Separates the introduction and list of navigation links on opposite ends of the navigaiton bar */
     justify-content: space-between;
-    text-align: center;
     margin: 0 auto;
 }
+/* The introduction part of the navigation bar: 'Welcome to my Portfolio */
 .navbar .intro a {
     color: white;
     font-size: 3vw;
     font-weight: 600;
 }
+/* The word 'Portfolio' of the introduction */
 .navbar .intro a span {
     color: red;
 }
+/* The navigaiton links */
 .navbar .menu-1 li {
     display: inline-block;
 }
+/* The navigation links for portrait orientation are hidden in landscape orientation*/
 .navbar .menu-2 {
-    position: absolute;
-    color: transparent;
-    display: none;
-    z-index: -1;
-}
-.navbar .menu-3 {
-    position: absolute;
-    color: transparent;
-    display: none;
-    z-index: -1;
-}
-.navbar .menu-4 {
     position: absolute;
     color: transparent;
     display: none;
@@ -69,10 +67,11 @@ body {
     font-size: 1.8vw;
     margin-right: 1.8vw;
 }
-.navbar .menu-1 li a:hover {
+/* Change the text color of each navigation link when the mouse hovers over them */
+/*.navbar .menu-1 li a:hover {
     color: red;
     text-decoration: none;
-}
+}*/
 
 /* home section styling */
 .home {
@@ -482,10 +481,6 @@ body {
     border: 0.1vw solid red;
     border-radius: 0.5vw;
 }
-/*.contact .button:hover {
-    background-color: #131325;
-    color: red;
-}*/
 
 /* Footer */
 .footer {
@@ -533,6 +528,7 @@ body {
         position: relative;
         padding-left: 0;
         z-index: 1;
+        margin-bottom: 3vw;
     }
     .navbar .menu-2 li {
         display: inline-block;
@@ -665,7 +661,7 @@ body {
 
     .projects .title {
         font-size: 9vw;
-        margin-top: 3vw;
+        margin-top: 2vw;
         margin-bottom: 3vw;
     }
     .project-1 {
@@ -783,7 +779,7 @@ body {
         margin-right: auto;
         margin-left: auto;
         font-size: 5vw;
-        width: 40vw;
+        width: 41vw;
         padding: 1vw 3vw;
         border-radius: 1vw;
     }

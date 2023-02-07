@@ -1,3 +1,12 @@
+/* navbar section */
+// Navigation links
+let homeNavLink = document.getElementById('menu-1-home');
+let aboutNavLink = document.getElementById('menu-1-about');
+let skillsNavLink = document.getElementById('menu-1-skills');
+let projectsNavLink = document.getElementById('menu-1-projects');
+let contactNavLink = document.getElementById('menu-1-contact');
+
+
 /* home section */
 // Icons in the home section 
 let linkedinHomeIcon = document.querySelector('.home #linkedin');
@@ -73,7 +82,67 @@ function SendMail() {
 }
 
 
+/* navbar section */
 // Only for lanscape orientation (width > height)
+if (window.matchMedia("(orientation: landscape)").matches) {
+    // home navigation link
+    homeNavLink.addEventListener('click', (event) => {
+        homeNavLink.style.cssText = 'color: white';
+    });
+    homeNavLink.addEventListener('mouseover', (event) => {
+        homeNavLink.style.cssText = 'color: red';
+    });
+    homeNavLink.addEventListener('mouseout', (event) => {
+        homeNavLink.style.cssText = 'color: white';
+    });
+
+    // about navigation link
+    aboutNavLink.addEventListener('click', (event) => {
+        aboutNavLink.style.cssText = 'color: white';
+    });
+    aboutNavLink.addEventListener('mouseover', (event) => {
+        aboutNavLink.style.cssText = 'color: red';
+    });
+    aboutNavLink.addEventListener('mouseout', (event) => {
+        aboutNavLink.style.cssText = 'color: white';
+    });
+
+    // skills navigation link 
+    skillsNavLink.addEventListener('click', (event) => {
+        skillsNavLink.style.cssText = 'color: white';
+    });
+    skillsNavLink.addEventListener('mouseover', (event) => {
+        skillsNavLink.style.cssText = 'color: red';
+    });
+    skillsNavLink.addEventListener('mouseout', (event) => {
+        skillsNavLink.style.cssText = 'color: white';
+    });
+
+    // projects navigation link
+    projectsNavLink.addEventListener('click', (event) => {
+        projectsNavLink.style.cssText = 'color: white';
+    });
+    projectsNavLink.addEventListener('mouseover', (event) => {
+        projectsNavLink.style.cssText = 'color: red';
+    });
+    projectsNavLink.addEventListener('mouseout', (event) => {
+        projectsNavLink.style.cssText = 'color: white';
+    });
+
+    // contact navigation link
+    contactNavLink.addEventListener('click', (event) => {
+        contactNavLink.style.cssText = 'color: white';
+    });
+    contactNavLink.addEventListener('mouseover', (event) => {
+        contactNavLink.style.cssText = 'color: red';
+    });
+    contactNavLink.addEventListener('mouseout', (event) => {
+        contactNavLink.style.cssText = 'color: white';
+    });
+}
+
+
+/* home section */
 // Only allows icons in the home section to change style when the mouse hovers over them, not clicked on
 if (window.matchMedia("(orientation: landscape)").matches) {
     linkedinHomeIcon.addEventListener('click', (event) => {
@@ -99,6 +168,7 @@ if (window.matchMedia("(orientation: landscape)").matches) {
 }
 
 
+/* skills sections */
 // Changes the style of the list of my front-end skills
 frontEndSkills.addEventListener('mouseover', (event) => {
     for (i = 0; i < frontEndList.length; i++) {
@@ -148,19 +218,7 @@ dbmsSkills.addEventListener('mouseout', (event) => {
 });
 
 
-// Only allows the contact button to change style when the mouse hovers over it, not clicked on
-contactButton.addEventListener('click', (event) => {
-    contactButton.style.cssText = 'color: #fff; background-color: none';
-});
-contactButton.addEventListener('mouseover', (event) => {
-    contactButton.style.cssText = 'background-color: #131325; color: red';
-});
-contactButton.addEventListener('mouseout', (event) => {
-    contactButton.style.cssText = 'color: #fff; background-color: none';
-});
-
-
-// Only for lanscape orientation (width > height)
+/* projects section */
 // Only allows icons in the projects section to change style when the mouse hovers over them, not clicked on
 if (window.matchMedia("(orientation: landscape)").matches) {
     githubProject1.addEventListener('click', (event) => {
@@ -195,7 +253,6 @@ if (window.matchMedia("(orientation: landscape)").matches) {
 }
 
 
-// Only for lanscape orientation (width > height)
 if (window.matchMedia("(orientation: landscape)").matches) {
     // Project images change style when the mouse hovers over them or they are clicked on,
     // which then displays information about each project (depending on the one hovered over/clicked on)
@@ -259,3 +316,16 @@ if (window.matchMedia("(orientation: portrait)").matches) {
         text2.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
     });
 }
+
+
+/* contact section */
+// Only allows the contact button to change style when the mouse hovers over it, not clicked on
+contactButton.addEventListener('click', (event) => {
+    contactButton.style.cssText = 'color: #fff; background-color: none';
+});
+contactButton.addEventListener('mouseover', (event) => {
+    contactButton.style.cssText = 'background-color: #131325; color: red';
+});
+contactButton.addEventListener('mouseout', (event) => {
+    contactButton.style.cssText = 'color: #fff; background-color: none';
+});
