@@ -84,6 +84,7 @@ function SendMail() {
 
 /* navbar section */
 // Only for lanscape orientation (width > height)
+// Only allows the navigation links to change style when the mouse hovers over them, not clicked on
 if (window.matchMedia("(orientation: landscape)").matches) {
     // home navigation link
     homeNavLink.addEventListener('click', (event) => {

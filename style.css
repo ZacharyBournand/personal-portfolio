@@ -19,7 +19,10 @@ body {
     font-size: 5vw;
 }
 
-/* The navigation bar */
+
+/* 
+** navigation bar styling
+*/
 .navbar {
     width: 100%;
     /* It does not movve when the page is scrolled */
@@ -54,26 +57,24 @@ body {
 .navbar .menu-1 li {
     display: inline-block;
 }
-/* The navigation links for portrait orientation are hidden in landscape orientation*/
+/* The navigation links for portrait orientation are hidden in landscape orientation */
 .navbar .menu-2 {
     position: absolute;
     color: transparent;
     display: none;
     z-index: -1;
 }
+/* Displays the navigation links for landscape orientation */
 .navbar .menu-1 li a {
     color: white;
     text-decoration: none;
     font-size: 1.8vw;
     margin-right: 1.8vw;
 }
-/* Change the text color of each navigation link when the mouse hovers over them */
-/*.navbar .menu-1 li a:hover {
-    color: red;
-    text-decoration: none;
-}*/
 
-/* home section styling */
+/*
+** home section styling 
+*/
 .home {
     display: flex;
     height: 100vh;
@@ -104,6 +105,7 @@ body {
     color: red;
     font-weight: 550;   
 }
+/* Applies to the 2 icons: LinkedIn & GitHub */
 .home-icons {
     text-align: center;
     margin-top: 7vw;
@@ -112,10 +114,13 @@ body {
     width: 3vw;
     height: 3vw;
     margin: 0 4vw;
+    /* Occurs when the mouse hovers over one the 2 icons */
     transition: .5s;
 }
 
-/* about section styling */
+/* 
+** about section styling 
+*/
 .about {
     margin-bottom: 6vw;
     background-color: #000e3b;
@@ -125,10 +130,12 @@ body {
 .about .segment {
     margin: 0 auto;
 }
+/* Separates the left column to the left & the right column to the right */
 .about .about-image-text {
     display: flex;
     width: 100%;
 }
+/* The left column contains the profile picture */
 .about .left-column {
     width: 35vw;
     text-align: end;
@@ -139,6 +146,7 @@ body {
     width: 20vw;
     margin-top: 1.5vw;
 }
+/* The right column contains the text and button */
 .about .right-column {
     width: 90vw;
     margin-right: 8vw;
@@ -147,6 +155,7 @@ body {
     color: white;
     font: Verdana;
 }
+/* Contains the list */
 .about .right-column .text-1 {
     color: rgba(255, 255, 255, 0.87);
     font: Verdana;
@@ -158,6 +167,7 @@ body {
 .about .right-column .text-1 li {
     margin-bottom: 2.7vw;
 }
+/* The dates are each listed under each bullet point in the list */
 .dates{
     color: rgba(255, 255, 255, 0.568);
 }
@@ -169,12 +179,7 @@ body {
     margin-top: 0.6vw;
     margin-bottom: .9vw;
 }
-.about .about-image-text .right-column .text span {
-    color: red;
-}
-.about .about-image-text .right-column p {
-    text-align: justify;
-}
+/* The button */
 .about .about-image-text .right-column a {
     display: inline-block;
     text-decoration: none;
@@ -188,50 +193,68 @@ body {
     border: 0.1vw solid red;
     transition: all 0.3s ease;
 }
+/* Style change when the mouse hovers over the button */
 .about .about-image-text .right-column a:hover {
     color: red;
     text-decoration: none;
     background: none;
 }
 
-/* skills section styling */
+/* 
+** skills section styling 
+*/
 .skills {
     margin-bottom: 7vw;
 }
 .skills .segment {
     margin: 0 auto;
 }
+/* Separates the 3 types of skills (front-end, back-end, DBMS) on the same line */
 .skills .skills-list {
     display: flex;
     justify-content: space-between;
+    padding: 0 5vw;
+    text-align: center;
 }
+/* Elements inside the div that contains the list of front-end skills 
+changes style when the mouse hovers over it */
 .skills .skills-list .skills-list-front:hover {
     background: black;
     width: 30%;
     border-radius: 1vw;
     transition: 0.2s;
 }
+/* Elements inside the div that contains the list of back-end skills 
+changes style when the mouse hovers over it */
 .skills .skills-list .skills-list-back:hover {
     background: black;
     width: 30%;
     border-radius: 1vw;
     transition: 0.2s;
 }
+/* Elements inside the div that contains the list of DBMS skills 
+changes style when the mouse hovers over it */
 .skills .skills-list .skills-list-dbms:hover {
     background: black;
     width: 29%;
     border-radius: 1vw;
     transition: 0.2s;
 }
+/* Applies to the headers for each list of skills */
 .skills .skills-list h3 {
     color: white;
     font-style: serif;
     font-size: 2.5vw;
+    /* Underlines the headers */
     text-decoration: underline;
+    /* Sets the underline right under the header */
     text-underline-offset: 1.4vw;
+    /* Thickens the underline */
     text-decoration-thickness: 0.7vw;
+    /* Sets the underline color to red */
     text-decoration-color: red;
 }
+/* Applies to each specific skill listed across all the lists */
 .skills .skills-list li {
     color: rgb(197, 197, 197);
     font-style: proxima nova;
@@ -242,18 +265,17 @@ body {
     text-decoration: none;
     list-style-type: none;
 }
-.skills .skills-list {
-    padding: 0 5vw;
-    text-align: center;
-}
 
-/* projects section styling */
+/* 
+** projects section styling 
+*/
 .projects {
     text-align: center;
     background-color: #000e3b;
     padding-top: 4vw;
     padding-bottom: 2vw;
 }
+/* Centers the div containing the project 1 image */
 .project-1 {
     height: 40vw;
     width: 78.36vw;
@@ -263,6 +285,7 @@ body {
     margin-bottom: 9vw;
     border: 0.3vw solid rgb(56, 80, 80);
 }
+/* Centers the div containing the project 2 image */
 .project-2 {
     height: 40vw;
     width: 78.36vw;
@@ -273,6 +296,8 @@ body {
     margin-bottom: 5vw;
     border: 0.19vw solid rgb(74, 87, 87);
 }
+/* Removes the project 1 image from the normal document flow.
+/* However, it is contained within the div class 'project-1' */
 #project-omedocs {
     height: 40vw;
     width: 78.36vw;
@@ -281,6 +306,8 @@ body {
     /* Transition for hover off */
     transition: 1s;
 }
+/* Removes the project 2 image from the normal document flow.
+/* However, it is contained within the div class 'project-2' */
 #project-movie-search-engine {
     height: 40vw;
     width: 78.36vw;
@@ -289,6 +316,7 @@ body {
     /* Transition for hover off */
     transition: 1s;
 }
+/* Applies to the project 1 description that displays when the mouse hovers over the project image */
 .project-text-container-1 {
     position: absolute;
     color: white;
@@ -297,11 +325,13 @@ body {
     top: 10%;
     left: 10%;
     display: flex;
+    /* Center vertically */
     align-items:center;
-    justify-content:center;
     color: black;
+    /* Hide it */
     visibility: hidden;
 }
+/* Applies to the project 2 description that displays when the mouse hovers over the project image */
 .project-text-container-2 {
     position: absolute;
     color: white;
@@ -310,33 +340,43 @@ body {
     top: 10%;
     left: 10%;
     display: flex;
+    /* Center vertically */
     align-items:center;
-    justify-content:center;
     color: black;
+    /* Hide it */
     visibility: hidden;
 }
-.projects h2 {
+/* Applies to the project section's title 'My projects' */
+.projects .title {
+    font-size: 5vw;
     margin-top: 0;
     margin-bottom: 2vw;
     color: white;
 }
-.projects .title {
-    font-size: 5vw;
-}
+/* Applies to the name of project 1 that is only displayed if the mouse hovers over the project 1 image */
 .project-text-1 h2 {
     font-size: 4vw;
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 2vw;
+    color: white;
 }
+/* Applies to the name of project 2 that is only displayed if the mouse hovers over the project 2 image */
 .project-text-2 h2 {
     font-size: 4vw;
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 2vw;
+    color: white;
 }
+/* Applies to the short set of information containing the team size, my roles, and languages (located right under the project name) */
 .projects h3 {
     font-size: 1.8vw;
     margin-bottom: 2.5vw;
     line-height: 3vw;
     color: rgba(255, 255, 255, 0.815);
 }
+/* Applies to the paragraphs describing each project */
 .projects .paragraph-1 {
     font-size: 2.1vw;
     text-align: left;
@@ -344,93 +384,109 @@ body {
     color: white;
     margin-bottom: 3vw;
 }
+/* Hides the shorter paragraph describing each project (only meant for portrait orientation) */
 .projects .paragraph-2 {
     position: absolute;
     color: transparent;
     display: none;
     z-index: -1;
 }
+/* Aligns each hyperlink item on the same line (for project 1) */
 .project-1-links {
     display: flex;
     align-items: center;
 }
+/* Aligns each hyperlink item on the same line (for project 2) */
 .project-2-links {
     display: flex;
     align-items: center;
 }
+/* Applies to the GitHub logo that links to the project 1 repository */
 .project-1 #github {
     width: 2.5vw;
     height: 2.5vw;
     margin-right: 2.5vw;
     transition: .5s;
 }
+/* Applies to the GitHub logo that links to the project 2 repository */
 .project-2 #github {
     width: 2.5vw;
     height: 2.5vw;
     margin-right: 2.5vw;
     transition: .5s;
 }
+/* Applies to the hyperlink 'View site' to view project 1's website */
 .project-link-text-1 {
     font-size: 2vw;
     font-weight: bold;
     color: rgba(135, 206, 250, 0.733);
     transition: .5s;
 }
+/* Increases the size of the hyperlink 'View site' & adds a text shadow to emphasize it */ 
 .project-link-text-1:hover {
     font-size: 2.5vw;
     color: rgba(135, 206, 250, 0.733);
     text-shadow: black 0.2rem 0.2rem 0.2rem;
     transition: .5s;
 }
+/* Color of the 'View site' hyperlink's underline */
 .project-1 a {
     text-decoration-color: rgba(135, 206, 250, 0.733);
 }
-.project-2 a {
-    text-decoration-color: rgba(135, 206, 250, 0.733);
-}
 
-/* contact section styling */
+/* 
+** contact section styling 
+*/
 .contact {
     margin-top: 7vw;
 }
 .contact .segment {
     margin: 0 auto;
 }
+/* Aligns the left and right columns on the same line */
 .contact-info {
     display: flex;
     margin: 0 auto;
 }
+/* Contains the information 'Get in Touch', which includes my name & email address */
 .contact .left-column {
     width: 50%;
+    /* Leave a space between the screen's border and the text */
     padding-left: 2vw;
 }
+/* Contains the form to send me a message */
 .contact .right-column {
     width: 80%;
 }
+/* My name given in the left column */
 .contact .name {
-    display: flex;
     margin-top: 2.5vw;
 }
+/* My email given in the left column */
 .contact .email {
     display: flex;
 }
+/* Applies to 'Get in Touch' in the left column */
 .contact .text {
     color: white;
     font-size: 3vw;
     font-weight: 600;
     margin: 2vw 0;
 }
+/* Applies to 'Name' & 'Email' in the left column, which explain the type of information that is given */ 
 .contact .head {
     color: white;
     font-size: 2vw;
     font-weight: 600;
 }
+/* Applies to my name & email information in the left column */ 
 .contact .sub-title {
     color: white;
     font-size: 2vw;
     margin-top: 1vw;
     margin-bottom: 6vw;
 }
+/* Aligns the name and email fields */
 .contact .form-name-email {
     display: flex;
 }
@@ -475,7 +531,6 @@ body {
     width: 15vw;
     background: red;
     padding: 0.6vw;
-    margin-top: 0.5vw;
     margin-top: 1vw;
     margin-bottom: 7vw;
     border: 0.1vw solid red;
@@ -490,6 +545,7 @@ body {
 .footer .segment {
     height: 100%;
 }
+/* Applies to the footer text 'Copyright © 2023 Zachary Bournand' */
 .copyright {
     color: white;
     font-size: 1.5vw;
@@ -497,7 +553,11 @@ body {
     padding-top: .5vw;
 }
 
-/* Accomodate screens with high aspect ratios (in landscape orientation) */
+
+/* 
+** Accomodate screens with high aspect ratios (in landscape orientation) 
+*/
+/* Vertically aligns the text and icons in the home section */
 @media (min-aspect-ratio: 653/350) {
     .home .segment {
         margin: 30vh auto;
@@ -508,7 +568,10 @@ body {
     }
 }
 
-/* Media responsive design for portrait orientation */
+
+/* 
+** Media responsive design for portrait orientation 
+*/
 @media (orientation: portrait) {
     .title {
         font-size: 9vw;
@@ -795,6 +858,7 @@ body {
 
 /* Accomodate screens with high aspect ratios (in portrait orientation) */
 @media (max-aspect-ratio: 306/653) {
+    /* Reduces the size of the navigation links */
     .navbar .menu-2 li a {
         font-size: 4.88vw;
     }
