@@ -87,16 +87,19 @@ body {
 .home .home-text {
     text-align: center;
 }
+/* 1st line of text ('Hello, my name is') */
 .home .home-text .text-1 {
     color: white;
     font-size: 2vw;
 }
+/* 2nd line of text ('Zachary Bournand') */
 .home .home-text .text-2 {
     color: white;
     font-size: 6vw;
     font-weight: 550;
     margin: 1.7vw 0;
 }
+/* 3rd line of text */
 .home .home-text .text-3 {
     color: white;
     font-size: 2.5vw;
@@ -216,24 +219,24 @@ body {
     padding: 0 5vw;
     text-align: center;
 }
-/* Elements inside the div that contains the list of front-end skills 
-changes style when the mouse hovers over it */
+/* Elements inside the div containing the list of front-end skills 
+change style when the mouse hovers over it */
 .skills .skills-list .skills-list-front:hover {
     background: black;
     width: 30%;
     border-radius: 1vw;
     transition: 0.2s;
 }
-/* Elements inside the div that contains the list of back-end skills 
-changes style when the mouse hovers over it */
+/* Elements inside the div containing the list of back-end skills 
+change style when the mouse hovers over it */
 .skills .skills-list .skills-list-back:hover {
     background: black;
     width: 30%;
     border-radius: 1vw;
     transition: 0.2s;
 }
-/* Elements inside the div that contains the list of DBMS skills 
-changes style when the mouse hovers over it */
+/* Elements inside the div containing the list of DBMS skills 
+change style when the mouse hovers over it */
 .skills .skills-list .skills-list-dbms:hover {
     background: black;
     width: 29%;
@@ -573,19 +576,32 @@ changes style when the mouse hovers over it */
 ** Media responsive design for portrait orientation 
 */
 @media (orientation: portrait) {
+    /* Applies to every section's header */
     .title {
         font-size: 9vw;
         margin-top: 4vw;
         margin-bottom: 3vw;
     }
 
+    /* 
+    ** navigation bar styling
+    */
     .navbar .segment{
         display: grid;
         justify-content: center;
     }
+    /* The introduction part of the navigation bar: 'Welcome to my Portfolio */
     .navbar .intro a {
         font-size: 9vw;
     }
+    /* The navigation links for landscape orientation are hidden */
+    .navbar .menu-1{
+        position: absolute;
+        color: transparent;
+        display: none;
+        z-index: -1;
+    }
+    /* The navigation links for portrait orientation are displayed */
     .navbar .menu-2 {
         display: block;
         position: relative;
@@ -593,9 +609,11 @@ changes style when the mouse hovers over it */
         z-index: 1;
         margin-bottom: 3vw;
     }
+    /* The navigaiton links */
     .navbar .menu-2 li {
         display: inline-block;
     }
+    /* Displays the navigation links for portrait orientation */
     .navbar .menu-2 li a {
         font-size: 5vw;
         margin-left: 2.5vw;
@@ -603,45 +621,52 @@ changes style when the mouse hovers over it */
         color: white;
         text-decoration: none;
     }
-    .navbar .menu-1{
-        position: absolute;
-        color: transparent;
-        display: none;
-        z-index: -1;
-    }
 
+    /*
+    ** home section styling 
+    */
     .home {
         height: 95vw;
     }
     .home .segment {
         margin-top: 34vw;
     }
+    /* 1st line of text ('Hello, my name is') */
     .home .home-text .text-1 {
         font-size: 5vw;
     }
+    /* 2nd line of text ('Zachary Bournand') */
     .home .home-text .text-2 {
         font-size: 9vw;
         margin: 5vw 0;
     }
+    /* 3rd line of text */
     .home .home-text .text-3 {
         font-size: 5.5vw;
     }
+    /* Applies to the 2 icons: LinkedIn & GitHub */
     .home img {
         width: 7vw;
         height: 7vw;
         margin: 0 8vw;
     }
+    /* Leave the LinkedIn icon unchanged when clicked on or hovered over */
     .home #linkedin:hover {
         width: 7vw;
         height: 7vw;
         margin: 0 8vw;
     }
+    /* Leave the GitHub icon unchanged when clicked on or hovered over */
     .home #github:hover {
         width: 7vw;
         height: 7vw;
         margin: 0 8vw;
     }
 
+    /* 
+    ** about section styling 
+    */
+    /* Separates the left column above & the right column under */
     .about .about-image-text{
         display: grid;
         justify-content: center;   
@@ -670,6 +695,7 @@ changes style when the mouse hovers over it */
         margin-left: 3vw;
         margin-bottom: 2vw;
     }
+    /* The button */
     .about .about-image-text .right-column a {
         font-size: 5vw;
         margin-left: 3vw;
@@ -678,20 +704,26 @@ changes style when the mouse hovers over it */
         border-radius: 1vw;
     }
 
+    /* 
+    ** skills section styling 
+    */
     .skills .skills-list {
         text-align: center;
         padding: 0;
     }
+    /* The headers of each list of skills */
     .skills .skills-list h3 {
         text-decoration: none;
         font-size: 5vw;
         margin-top: 1vw;
         margin-bottom: 7vw;        
     }
+    /* Puts the last word of the first 2 list headers on the next line */
     .skills-list span::before {
         content: "\A";
         white-space: pre;
     }
+    /* Underlines the first 2 headers */
     .skills-list span {
         margin-top: 8vw;
         text-decoration: underline;
@@ -699,29 +731,41 @@ changes style when the mouse hovers over it */
         text-decoration-thickness: 2vw;
         text-decoration-color: red;
     }
+    /* Applies to each specific skill listed across all the lists */
     .skills .skills-list li {
         font-size: 4.5vw;
     }
+    /* Sets the 3rd header on the same line as the last word of the first 2 headers */
     .skills .skills-list .dbms::before{
         content: "\A";
         white-space: pre;
     }
+    /* Underlines the 3rd header */
     .skills .skills-list .dbms {
         text-decoration: underline;
         text-underline-offset: 3vw;
         text-decoration-thickness: 2vw;
         text-decoration-color: red;
     }
+    /* Elements inside the div containing the list of front-end skills 
+    change style when the mouse hovers over it */
     .skills .skills-list .skills-list-front:hover {
         width: 34%;
     }
+    /* Elements inside the div containing the list of back-end skills 
+    change style when the mouse hovers over it */
     .skills .skills-list .skills-list-back:hover {
         width: 34%;
     }
+    /* Elements inside the div containing the list of DBMS skills 
+    change style when the mouse hovers over it */
     .skills .skills-list .skills-list-dbms:hover {
         width: 34%;
     }
 
+    /* 
+    ** projects section styling 
+    */
     .projects .title {
         font-size: 9vw;
         margin-top: 2vw;
@@ -735,31 +779,38 @@ changes style when the mouse hovers over it */
         height: 45vw;
         width: 88.155vw;
     }
+    /* Project 1 image */
     #project-omedocs {
         height: 45vw;
         width: 88.155vw;
     }
+    /* Project 2 image */
     #project-movie-search-engine {
         height: 45vw;
         width: 88.155vw;
     }
+    /* The name of project 1 */
     .project-text-1 h2 {
         font-size: 7vw;
     }
+    /* The name of project 2 */
     .project-text-2 h2 {
         font-size: 7vw;
     }
+    /* The short set of information containing the team size, my roles, and languages (located right under the project name) */
     .projects h3 {
         font-size: 3.3vw;
         margin-bottom: 2.5vw;
         line-height: 4vw;
     }
+    /* Hides the bigger paragraphs describing each project (used in landscape orientation) */
     .projects .paragraph-1 {
         position: absolute;
         color: transparent;
         display: none;
         z-index: -1;
     }
+    /* Displays the smaller paragraphs describing each project */
     .projects .paragraph-2 {
         display: block;
         position: static;
@@ -769,57 +820,71 @@ changes style when the mouse hovers over it */
         color: white;
         margin-bottom: 5vw;
     }
+    /* The GitHub logo that links to the project 1 repository */
     .project-1 #github {
         width: 5vw;
         height: 5vw;
         margin-right: 5vw;
     }
+    /* The GitHub logo that links to the project 2 repository */
     .project-2 #github {
         width: 5vw;
         height: 5vw;
     }
+    /* Prevents the project 1 GitHub logo from changing when clicked on or hovered over */
     .project-1 #github:hover {
         width: 5vw;
         height: 5vw;
         margin-right: 5vw;
     }
+    /* Prevents the project 2 GitHub logo from changing when clicked on or hovered over */
     .project-2 #github:hover {
         width: 5vw;
         height: 5vw;
     }
+    /* The hyperlink 'View site' to view project 1's website */
     .project-link-text-1 {
         font-size: 4.3vw;
     }
+    /* Prevents the hyperlink from changing style when clicked on or hovered over */
     .project-link-text-1:hover {
         font-size: 4.3vw;
         text-shadow: none;
     }
 
+    /* 
+    ** contact section styling 
+    */
+    /* Applies to 'Get in Touch' in the left column */
     .contact .text {
         font-size: 6vw;
     }
     .contact .right-column {
         width: 46%;
     }
+    /* Applies to 'Name' & 'Email' in the left column, which explain the type of information that is given */
     .contact .head {
         font-size: 5vw;
     }
+    /* Applies to my name & email information in the left column */
     .contact .sub-title {
         color: white;
         font-size: 5vw;
         margin-top: 1vw;
         margin-bottom: 6vw;
     }
+    /* Places the last few words 'gmail.com' of my email information on the next line */
     .contact .sub-title span::before{
         content: "\A";
         white-space: pre;
     }
-    .contact .form-name {
-        margin-bottom: 3vw;
-    }
+    /* Sets the name field above & the email field under */
     .contact .form-name-email {
         display: grid;
         justify-content: center;    
+    }
+    .contact .form-name {
+        margin-bottom: 3vw;
     }
     .contact .form-name input {
         font-size: 5vw;
@@ -837,6 +902,7 @@ changes style when the mouse hovers over it */
         font-size: 5vw;
         width: 100%;
     }
+    /* Centers the button within the right column */
     .contact .button {
         display: flex;
         margin-right: auto;
@@ -850,13 +916,14 @@ changes style when the mouse hovers over it */
     .footer {
         height: 6vw;
     }
+    /* Applies to the footer text 'Copyright © 2023 Zachary Bournand' */
     .copyright {
         font-size: 3.5vw;
         padding-top: 0.8vw;
     }
 }
 
-/* Accomodate screens with high aspect ratios (in portrait orientation) */
+/* Accomodate screens with low aspect ratios (in portrait orientation) */
 @media (max-aspect-ratio: 306/653) {
     /* Reduces the size of the navigation links */
     .navbar .menu-2 li a {
