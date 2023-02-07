@@ -923,7 +923,10 @@ change style when the mouse hovers over it */
     }
 }
 
-/* Accomodate screens with low aspect ratios (in portrait orientation) */
+
+/* 
+** Accomodate screens with low aspect ratios (in portrait orientation) 
+*/
 @media (max-aspect-ratio: 306/653) {
     /* Reduces the size of the navigation links */
     .navbar .menu-2 li a {
