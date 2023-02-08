@@ -29,7 +29,6 @@ let dbmsTitle = document.querySelector('.dbms');
 let dbmsList = document.querySelectorAll('.dbms-list');
 
 /* projects section */
-// Project 1 
 let project1 = document.querySelector('.project-1');
 let project2 = document.querySelector('.project-2');
 
@@ -146,26 +145,51 @@ if (window.matchMedia("(orientation: landscape)").matches) {
 /* home section */
 // Only allows icons in the home section to change style when the mouse hovers over them, not clicked on
 if (window.matchMedia("(orientation: landscape)").matches) {
-    linkedinHomeIcon.addEventListener('click', (event) => {
-        linkedinHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
-    });
-    githubHomeIcon.addEventListener('click', (event) => {
-        githubHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
-    });
-    
-    linkedinHomeIcon.addEventListener('mouseover', (event) => {
-        linkedinHomeIcon.style.cssText = 'width: 3.5vw; height: 3.5vw; transition: .5s';
-    });
-    githubHomeIcon.addEventListener('mouseover', (event) => {
-        githubHomeIcon.style.cssText = 'width: 3.5vw; height: 3.5vw; transition: .5s';
-    });
-    
-    linkedinHomeIcon.addEventListener('mouseout', (event) => {
-        linkedinHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
-    });
-    githubHomeIcon.addEventListener('mouseout', (event) => {
-        githubHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
-    });
+    /* Sizes specified are for screens in landscape orientation with a width of up to 700px */
+    if (window.matchMedia("(max-width: 700px)").matches) {
+        linkedinHomeIcon.addEventListener('click', (event) => {
+            linkedinHomeIcon.style.cssText = 'width: 7vw; height: 7vw; transition: .5s';
+        });
+        githubHomeIcon.addEventListener('click', (event) => {
+            githubHomeIcon.style.cssText = 'width: 7vw; height: 7vw; transition: .5s';
+        });
+        
+        linkedinHomeIcon.addEventListener('mouseover', (event) => {
+            linkedinHomeIcon.style.cssText = 'width: 7.5vw; height: 7.5vw; transition: .5s';
+        });
+        githubHomeIcon.addEventListener('mouseover', (event) => {
+            githubHomeIcon.style.cssText = 'width: 7.5vw; height: 7.5vw; transition: .5s';
+        });
+        
+        linkedinHomeIcon.addEventListener('mouseout', (event) => {
+            linkedinHomeIcon.style.cssText = 'width: 7vw; height: 7vw; transition: .5s';
+        });
+        githubHomeIcon.addEventListener('mouseout', (event) => {
+            githubHomeIcon.style.cssText = 'width: 7vw; height: 7vw; transition: .5s';
+        });
+    /* Sizes specified are for screens in landscape orientation with a width greater than 700px */
+    } else {
+        linkedinHomeIcon.addEventListener('click', (event) => {
+            linkedinHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+        });
+        githubHomeIcon.addEventListener('click', (event) => {
+            githubHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+        });
+        
+        linkedinHomeIcon.addEventListener('mouseover', (event) => {
+            linkedinHomeIcon.style.cssText = 'width: 3.5vw; height: 3.5vw; transition: .5s';
+        });
+        githubHomeIcon.addEventListener('mouseover', (event) => {
+            githubHomeIcon.style.cssText = 'width: 3.5vw; height: 3.5vw; transition: .5s';
+        });
+        
+        linkedinHomeIcon.addEventListener('mouseout', (event) => {
+            linkedinHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+        });
+        githubHomeIcon.addEventListener('mouseout', (event) => {
+            githubHomeIcon.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+        });
+    }
 }
 
 
@@ -220,97 +244,137 @@ dbmsSkills.addEventListener('mouseout', (event) => {
 
 
 /* projects section */
-// Only allows icons in the projects section to change style when the mouse hovers over them, not clicked on
+// Only allows icons & the text link in the projects section to change style when the mouse hovers over them, not clicked on
 if (window.matchMedia("(orientation: landscape)").matches) {
-    githubProject1.addEventListener('click', (event) => {
-        githubProject1.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
-    });
-    githubProject2.addEventListener('click', (event) => {
-        githubProject2.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
-    });
-    linkProject1.addEventListener('click', (event) => {
-        linkProject1.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
-    });
-    
-    githubProject1.addEventListener('mouseover', (event) => {
-        githubProject1.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
-    });
-    githubProject2.addEventListener('mouseover', (event) => {
-        githubProject2.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
-    });
-    linkProject1.addEventListener('mouseover', (event) => {
-        linkProject1.style.cssText = 'font-size: 2.5vw; color: rgba(135, 206, 250, 0.733); text-shadow: black 0.2rem 0.2rem 0.2rem; transition: .5s';
-    });
-    
-    githubProject1.addEventListener('mouseout', (event) => {
-        githubProject1.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
-    });
-    githubProject2.addEventListener('mouseout', (event) => {
-        githubProject2.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
-    });
-    linkProject1.addEventListener('mouseout', (event) => {
-        linkProject1.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
-    });
+    /* Sizes specified are for screens in landscape orientation with a width of up to 700px */
+    if (window.matchMedia("(max-width: 700px)").matches) {
+        // When the user clicks on an icon or text link, do not change its size
+        // GitHub icons, 1 each for project 1 & project 2
+        githubProject1.addEventListener('click', (event) => {
+            githubProject1.style.cssText = 'width: 5vw; height: 5vw; transition: .5s';
+        });
+        githubProject2.addEventListener('click', (event) => {
+            githubProject2.style.cssText = 'width: 5vw; height: 5vw; transition: .5s';
+        });
+        // Text link to project 1's website
+        linkProject1.addEventListener('click', (event) => {
+            linkProject1.style.cssText = 'font-size: 4.3vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
+        });
+        
+        // When the user hovers the mouse over an icon or text link, increase its size
+        githubProject1.addEventListener('mouseover', (event) => {
+            githubProject1.style.cssText = 'width: 5.5vw; height: 5.5vw; transition: .5s';
+        });
+        githubProject2.addEventListener('mouseover', (event) => {
+            githubProject2.style.cssText = 'width: 5.5vw; height: 5.5vw; transition: .5s';
+        });
+        linkProject1.addEventListener('mouseover', (event) => {
+            linkProject1.style.cssText = 'font-size: 4.8vw; color: rgba(135, 206, 250, 0.733); text-shadow: black 0.2rem 0.2rem 0.2rem; transition: .5s';
+        });
+        
+        // When the user's mouse does not hover over an icon or text link anymore, set it back to its original size
+        githubProject1.addEventListener('mouseout', (event) => {
+            githubProject1.style.cssText = 'width: 5vw; height: 5vw; transition: .5s';
+        });
+        githubProject2.addEventListener('mouseout', (event) => {
+            githubProject2.style.cssText = 'width: 5vw; height: 5vw; transition: .5s';
+        });
+        linkProject1.addEventListener('mouseout', (event) => {
+            linkProject1.style.cssText = 'font-size: 4.3vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
+        });
+    /* Sizes specified are for screens in landscape orientation with a width greater than 700px */
+    } else {
+        // When the user clicks on an icon or text link, do not change its size
+        githubProject1.addEventListener('click', (event) => {
+            githubProject1.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
+        });
+        githubProject2.addEventListener('click', (event) => {
+            githubProject2.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
+        });
+        linkProject1.addEventListener('click', (event) => {
+            linkProject1.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
+        });
+        
+        // When the user hovers the mouse over an icon or text link, increase its size
+        githubProject1.addEventListener('mouseover', (event) => {
+            githubProject1.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+        });
+        githubProject2.addEventListener('mouseover', (event) => {
+            githubProject2.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+        });
+        linkProject1.addEventListener('mouseover', (event) => {
+            linkProject1.style.cssText = 'font-size: 2.5vw; color: rgba(135, 206, 250, 0.733); text-shadow: black 0.2rem 0.2rem 0.2rem; transition: .5s';
+        });
+        
+        // When the user's mouse does not hover over an icon or text link anymore, set it back to its original size
+        githubProject1.addEventListener('mouseout', (event) => {
+            githubProject1.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
+        });
+        githubProject2.addEventListener('mouseout', (event) => {
+            githubProject2.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
+        });
+        linkProject1.addEventListener('mouseout', (event) => {
+            linkProject1.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
+        });
+    }
 }
 
 
+// Project images change style when the mouse hovers over them or they are clicked on,
+// which then displays information about each project (depending on the one hovered over/clicked on)
 if (window.matchMedia("(orientation: landscape)").matches) {
-    // Project images change style when the mouse hovers over them or they are clicked on,
-    // which then displays information about each project (depending on the one hovered over/clicked on)
+    // When the mouse hovers over the project 1 image, change its style & display information about it
     project1.addEventListener('mouseover', (event) => {
         project1.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
         image1.style.cssText = 'filter: blur(1vh) brightness(25%)';
         text1.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
     });
+    // When the mouse does not hover over the project 1 image anymore, set it back to its original look
     project1.addEventListener('mouseout', (event) => {
         project1.style.cssText = 'border: 0.3rem solid rgb(56, 80, 80);';
         image1.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
         text1.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
     });
     
+    // When the mouse hovers over the project 2 image, change its style & display information about it
     project2.addEventListener('mouseover', (event) => {
         project2.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
         image2.style.cssText = 'filter: blur(1vh) brightness(90%)';
         text2.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
     });
+    // When the mouse does not hover over the project 2 image anymore, set it back to its original look
     project2.addEventListener('mouseout', (event) => {
         project2.style.cssText = 'border: 0.19rem solid rgb(74, 87, 87);';
         image2.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
         text2.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
     });
-    
-    // Only allows the LinkedIn hyperlink in the projects section to change style when the mouse hovers over them, not clicked on
-    linkProject1.addEventListener('click', (event) => {
-        linkProject1.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
-    });
-    linkProject1.addEventListener('mouseover', (event) => {
-        linkProject1.style.cssText = 'font-size: 2.5vw; color: rgba(135, 206, 250, 0.733); text-shadow: black 0.2rem 0.2rem 0.2rem; transition: .5s';
-    });
-    linkProject1.addEventListener('mouseout', (event) => {
-        linkProject1.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
-    });
 }
 
 
-// Only for portrait orientation (width < height)
-// Change the project images' style when they are clicked on & clicked out
+/* Only for portrait orientation (width < height) */
+// Project images change style when they are clicked on, which then displays information about 
+// each project (depending on the one hovered over/clicked on)
 if (window.matchMedia("(orientation: portrait)").matches) {
+    // When the user clicks on the project 1 image, change its style & display information about it
     project1.addEventListener('click', (event) => {
         project1.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
         image1.style.cssText = 'filter: blur(1vh) brightness(25%)';
         text1.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
     });
+    // When the user clicks out of the project 1 image, set it back to its original look
     project1.addEventListener('mouseout', (event) => {
         project1.style.cssText = 'border: 0.3rem solid rgb(56, 80, 80);';
         image1.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
         text1.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
     });
 
+    // When the user clicks on the project 2 image, change its style & display information about it
     project2.addEventListener('click', (event) => {
         project2.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
         image2.style.cssText = 'filter: blur(1vh) brightness(90%)';
         text2.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
     });
+    // When the user clicks out of the project 2 image, set it back to its original look
     project2.addEventListener('mouseout', (event) => {
         project2.style.cssText = 'border: 0.19rem solid rgb(74, 87, 87);';
         image2.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
