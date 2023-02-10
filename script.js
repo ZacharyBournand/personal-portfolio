@@ -12,6 +12,7 @@ let contactNavLink = document.getElementById('menu-1-contact');
 let linkedinHomeIcon = document.querySelector('.home #linkedin');
 let githubHomeIcon = document.querySelector('.home #github');
 
+
 /* skills section */
 // Front-end skills
 let frontEndSkills = document.querySelector('.skills-list-front');
@@ -28,20 +29,27 @@ let dbmsSkills = document.querySelector('.skills-list-dbms');
 let dbmsTitle = document.querySelector('.dbms');
 let dbmsList = document.querySelectorAll('.dbms-list');
 
+
 /* projects section */
+// Project blocks
 let project1 = document.querySelector('.project-1');
 let project2 = document.querySelector('.project-2');
 
+// Project images
 let image1 = document.getElementById('project-omedocs');
 let image2 = document.getElementById('project-movie-search-engine');
 
+// Project descriptions
 let text1 = document.querySelector('.project-text-container-1');
 let text2 = document.querySelector('.project-text-container-2');
 
+// GitHub icons that link to the projects' GitHub repository
 let githubProject1 = document.querySelector('.project-1 #github');
 let githubProject2 = document.querySelector('.project-2 #github');
- 
+
+// Links to project 1's website
 let linkProject1 = document.querySelector('.project-link-text-1');
+
 
 /* contact section */
 // "Send message" button

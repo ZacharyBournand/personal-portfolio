@@ -16,7 +16,7 @@ body {
 .title {
     color: white;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4.8vw;
 }
 
 
@@ -25,7 +25,7 @@ body {
 */
 .navbar {
     width: 100%;
-    /* It does not movve when the page is scrolled */
+    /* It does not move when the page is scrolled */
     position: fixed;
     padding: 1vw 0;
     background: #252d53;
@@ -37,13 +37,13 @@ body {
 .navbar .segment {
     /* Sets the introduction and the list of navigation links on the same line */
     display: flex;
-    /* Vertically center the introduction within the navigation bar */ 
+    /* Vertically centers the introduction within the navigation bar */ 
     align-items: center;
-    /* Separates the introduction and list of navigation links on opposite ends of the navigaiton bar */
+    /* Separates the introduction and list of navigation links on opposite ends of the navigation bar */
     justify-content: space-between;
     margin: 0 auto;
 }
-/* The introduction part of the navigation bar: 'Welcome to my Portfolio */
+/* The introduction part of the navigation bar: 'Welcome to my Portfolio' */
 .navbar .intro a {
     color: white;
     font-size: 3vw;
@@ -53,7 +53,7 @@ body {
 .navbar .intro a span {
     color: red;
 }
-/* The navigaiton links */
+/* The navigation links */
 .navbar .menu-1 li {
     display: inline-block;
 }
@@ -85,7 +85,7 @@ body {
     display: none;
     z-index: -1;
 }
-/* Sets the navigation links' size and remove the default decoration */
+/* Sets the navigation links' size and removes the default decoration */
 .navbar .menu-1 li a {
     color: white;
     text-decoration: none;
@@ -138,7 +138,7 @@ body {
     width: 3vw;
     height: 3vw;
     margin: 0 4vw;
-    /* Occurs when the mouse hovers over one the 2 icons */
+    /* Occurs when the mouse hovers over one of the 2 icons */
     transition: .5s;
 }
 
@@ -327,7 +327,7 @@ change style when the mouse hovers over it */
     width: 78.36vw;
     left: 0;
     position: absolute;
-    /* Transition for hover off */
+    /* Transition for hovering */
     transition: 1s;
 }
 /* Removes the project 2 image from the normal document flow.
@@ -337,7 +337,7 @@ change style when the mouse hovers over it */
     width: 78.36vw;
     left: 0;
     position: absolute;
-    /* Transition for hover off */
+    /* Transition for hovering */
     transition: 1s;
 }
 /* Applies to the project 1 description that displays when the mouse hovers over the project image */
@@ -349,10 +349,10 @@ change style when the mouse hovers over it */
     top: 10%;
     left: 10%;
     display: flex;
-    /* Center vertically */
+    /* Centers vertically */
     align-items:center;
     color: black;
-    /* Hide it */
+    /* Hides it */
     visibility: hidden;
 }
 /* Applies to the project 2 description that displays when the mouse hovers over the project image */
@@ -364,15 +364,15 @@ change style when the mouse hovers over it */
     top: 10%;
     left: 10%;
     display: flex;
-    /* Center vertically */
+    /* Centers vertically */
     align-items:center;
     color: black;
-    /* Hide it */
+    /* Hides it */
     visibility: hidden;
 }
 /* Applies to the project section's title 'My projects' */
 .projects .title {
-    font-size: 5vw;
+    font-size: 4.8vw;
     margin-top: 0;
     margin-bottom: 2vw;
     color: white;
@@ -393,7 +393,7 @@ change style when the mouse hovers over it */
     margin-bottom: 2vw;
     color: white;
 }
-/* Applies to the short set of information containing the team size, my roles, and languages (located right under the project name) */
+/* Applies to the short set of information containing the team size, my roles, and languages (located right underneath the project name) */
 .projects h3 {
     font-size: 1.8vw;
     margin-bottom: 2.5vw;
@@ -475,7 +475,7 @@ change style when the mouse hovers over it */
 /* Contains the information 'Get in Touch', which includes my name & email address */
 .contact .left-column {
     width: 50%;
-    /* Leave a space between the screen's border and the text */
+    /* Leaves a space between the screen's border and the text */
     padding-left: 2vw;
 }
 /* Contains the form to send me a message */
@@ -579,7 +579,7 @@ change style when the mouse hovers over it */
 
 
 /* 
-** Accomodate screens with high aspect ratios (in landscape orientation) 
+** Accomodates screens with high aspect ratios (in landscape orientation) 
 */
 /* Vertically aligns the text and icons in the home section */
 @media (min-aspect-ratio: 653/350) {
@@ -599,6 +599,373 @@ change style when the mouse hovers over it */
 @media (max-height: 391px) and (orientation: landscape) {
     .home .segment {
         margin-top: 21vw;
+    }
+}
+
+
+@media (max-width: 700px) and (orientation: landscape) {
+    /* Applies to every section's header */
+    .title {
+        font-size: 9vw;
+        margin-top: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    /* 
+    ** navigation bar styling
+    */
+    .navbar {
+        position: initial;
+    }
+    .navbar .segment{
+        display: grid;
+        justify-content: center;
+    }
+    .navbar .intro {
+        margin-top: 1vw;
+        text-align: center;
+    }
+    /* The introduction part of the navigation bar: 'Welcome to my Portfolio' */
+    .navbar .intro a {
+        font-size: 8vw;
+    }
+    /* The navigation links for landscape orientation are hidden */
+    .navbar .menu-1{
+        position: absolute;
+        color: transparent;
+        display: none;
+        z-index: -1;
+    }
+    /* The navigation links for small landscape orientation are displayed */
+    .navbar .menu-2 {
+        display: block;
+        position: relative;
+        padding-left: 0;
+        margin-top: 3vw;
+        margin-bottom: 2vw;    
+        z-index: 1;
+    }
+    /* The navigation links for portrait orientation are hidden */
+    .navbar .menu-3 {
+        position: absolute;
+        color: transparent;
+        display: none;
+        z-index: -1;
+    }
+    /* The navigation links for small portrait orientation are hidden */
+    .navbar .menu-4 {
+        position: absolute;
+        color: transparent;
+        display: none;
+        z-index: -1;
+    }
+    /* The navigation links for very small portrait orientation are hidden */
+    .navbar .menu-5 {
+        position: absolute;
+        color: transparent;
+        display: none;
+        z-index: -1;
+    }
+    /* The navigation links */
+    .navbar .menu-2 li {
+        display: inline-block;
+    }
+    /* Displays the navigation links for portrait orientation */
+    .navbar .menu-2 li a {
+        font-size: 4vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        color: white;
+        text-decoration: none;
+    }
+
+    /*
+    ** home section styling 
+    */
+    .home {
+        height: 53vw;
+    }
+    .home .segment {
+        margin-top: 1vw;
+    }
+    /* 1st line of text ('Hello, my name is') */
+    .home .home-text .text-1 {
+        font-size: 5vw;
+    }
+    /* 2nd line of text ('Zachary Bournand') */
+    .home .home-text .text-2 {
+        font-size: 9vw;
+        margin: 3vw 0;
+    }
+    /* 3rd line of text */
+    .home .home-text .text-3 {
+        font-size: 5.3vw;
+    }
+    .home-icons {
+        margin-top: 5vw;
+    }
+    /* Applies to the 2 icons: LinkedIn & GitHub */
+    .home img {
+        width: 7vw;
+        height: 7vw;
+        margin: 0 8vw;
+    }
+    /* Leaves the LinkedIn icon unchanged when clicked on or hovered over */
+    .home #linkedin:hover {
+        width: 7vw;
+        height: 7vw;
+        margin: 0 8vw;
+    }
+    /* Leaves the GitHub icon unchanged when clicked on or hovered over */
+    .home #github:hover {
+        width: 7vw;
+        height: 7vw;
+        margin: 0 8vw;
+    }
+
+    /* 
+    ** about section styling 
+    */
+    /* Separates the left column above & the right column under */
+    .about .about-image-text{
+        display: grid;
+        justify-content: center;   
+    }
+    .about .left-column {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+    .about .left-column img {
+        height: 40vw;
+        width: 40vw;
+    }
+    .about .right-column .text-1 {
+        font-size: 5vw;
+        line-height: 7vw;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+    }
+    .about .right-column .text-1 li {
+        margin-bottom: 7vw;
+    }
+    .about .right-column .text-3 {
+        font-size: 5vw;
+        line-height: 7vw;
+        margin-left: 3vw;
+        margin-bottom: 2vw;
+    }
+    /* The button */
+    .about .about-image-text .right-column a {
+        font-size: 5vw;
+        margin-left: 3vw;
+        margin-bottom: 4vw;
+        padding: 1vw 3vw;
+        border-radius: 1vw;
+    }
+
+    /* 
+    ** skills section styling 
+    */
+    .skills .skills-list {
+        text-align: center;
+        padding: 0;
+    }
+    /* The headers of each list of skills */
+    .skills .skills-list h3 {
+        text-decoration: none;
+        font-size: 5vw;
+        margin-top: 1vw;
+        margin-bottom: 7vw;        
+    }
+    /* Puts the last word of the first 2 list headers on the next line */
+    .skills-list span::before {
+        content: "\A";
+        white-space: pre;
+    }
+    /* Underlines the first 2 headers */
+    .skills-list span {
+        margin-top: 8vw;
+        text-decoration: underline;
+        text-underline-offset: 3vw;
+        text-decoration-thickness: 2vw;
+        text-decoration-color: red;
+    }
+    /* Applies to each specific skill listed across all the lists */
+    .skills .skills-list li {
+        font-size: 4.5vw;
+    }
+    /* Sets the 3rd header on the same line as the last word of the first 2 headers */
+    .skills .skills-list .dbms::before{
+        content: "\A";
+        white-space: pre;
+    }
+    /* Underlines the 3rd header */
+    .skills .skills-list .dbms {
+        text-decoration: underline;
+        text-underline-offset: 3vw;
+        text-decoration-thickness: 2vw;
+        text-decoration-color: red;
+    }
+    /* Elements inside the div containing the list of front-end skills 
+    change style when the mouse hovers over it */
+    .skills .skills-list .skills-list-front:hover {
+        width: 34%;
+    }
+    /* Elements inside the div containing the list of back-end skills 
+    change style when the mouse hovers over it */
+    .skills .skills-list .skills-list-back:hover {
+        width: 34%;
+    }
+    /* Elements inside the div containing the list of DBMS skills 
+    change style when the mouse hovers over it */
+    .skills .skills-list .skills-list-dbms:hover {
+        width: 34%;
+    }
+
+    /* 
+    ** projects section styling 
+    */
+    .projects .title {
+        font-size: 9vw;
+        margin-top: 2vw;
+        margin-bottom: 3vw;
+    }
+    .project-1 {
+        height: 45vw;
+        width: 88.155vw;
+    }
+    .project-2 {
+        height: 45vw;
+        width: 88.155vw;
+    }
+    /* Project 1 image */
+    #project-omedocs {
+        height: 45vw;
+        width: 88.155vw;
+    }
+    /* Project 2 image */
+    #project-movie-search-engine {
+        height: 45vw;
+        width: 88.155vw;
+    }
+    /* The name of project 1 */
+    .project-text-1 h2 {
+        font-size: 7vw;
+    }
+    /* The name of project 2 */
+    .project-text-2 h2 {
+        font-size: 7vw;
+    }
+    /* The short set of information containing the team size, my roles, and languages (located right underneath the project name) */
+    .projects h3 {
+        font-size: 3.3vw;
+        margin-bottom: 2.5vw;
+        line-height: 4vw;
+    }
+    /* Hides the bigger paragraphs describing each project (used in landscape orientation) */
+    .projects .paragraph-1 {
+        position: absolute;
+        color: transparent;
+        display: none;
+        z-index: -1;
+    }
+    /* Displays the smaller paragraphs describing each project */
+    .projects .paragraph-2 {
+        display: block;
+        position: static;
+        text-align: center;
+        font-size: 5vw;
+        line-height: 5vw;
+        color: white;
+        margin-bottom: 5vw;
+    }
+    /* The GitHub logo that links to the project 1 repository */
+    .project-1 #github {
+        width: 5vw;
+        height: 5vw;
+        margin-right: 5vw;
+    }
+    /* The GitHub logo that links to the project 2 repository */
+    .project-2 #github {
+        width: 5vw;
+        height: 5vw;
+    }
+    /* The hyperlink 'View site' to view project 1's website */
+    .project-link-text-1 {
+        font-size: 4.3vw;
+    }
+
+    /* 
+    ** contact section styling 
+    */
+    .contact .text {
+        font-size: 6vw;
+    }
+    .contact .right-column {
+        width: 46%;
+    }
+    /* Applies to 'Name' & 'Email' in the left column, which explain the type of information that is given */
+    .contact .head {
+        font-size: 5vw;
+    }
+    /* Applies to my name & email information in the left column */
+    .contact .sub-title {
+        color: white;
+        font-size: 5vw;
+        margin-top: 1vw;
+        margin-bottom: 6vw;
+    }
+    /* Places the last few words 'gmail.com' of my email information on the next line */
+    .contact .sub-title span::before{
+        content: "\A";
+        white-space: pre;
+    }
+    /* Sets the name field above & the email field under */
+    .contact .form-name-email {
+        display: grid;
+        justify-content: center;    
+    }
+    .contact .form-name {
+        margin-bottom: 3vw;
+    }
+    .contact .form-name input {
+        font-size: 5vw;
+        width: 100%;
+    }
+    .contact .form-email input {
+        font-size: 5vw;
+        width: 100%;
+    }
+    .contact .form-subject input {
+        font-size: 5vw;
+        width: 100%;
+    }
+    .contact .form-message textarea {
+        font-size: 5vw;
+        width: 100%;
+    }
+    /* Centers the button within the right column */
+    .contact .button {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 5vw;
+        width: 41vw;
+        padding: 1vw 3vw;
+        border-radius: 1vw;
+    }
+
+    /* 
+    ** footer section styling 
+    */
+    .footer {
+        height: 6vw;
+    }
+    /* Applies to the footer text 'Copyright © 2023 Zachary Bournand' */
+    .copyright {
+        font-size: 3.5vw;
+        padding-top: 0.8vw;
     }
 }
 
@@ -661,7 +1028,7 @@ change style when the mouse hovers over it */
         display: none;
         z-index: -1;
     }
-    /* The navigaiton links */
+    /* The navigation links */
     .navbar .menu-3 li {
         display: inline-block;
     }
@@ -837,7 +1204,7 @@ change style when the mouse hovers over it */
     .project-text-2 h2 {
         font-size: 7vw;
     }
-    /* The short set of information containing the team size, my roles, and languages (located right under the project name) */
+    /* The short set of information containing the team size, my roles, and languages (located right underneath the project name) */
     .projects h3 {
         font-size: 3.3vw;
         margin-bottom: 2.5vw;
@@ -877,6 +1244,7 @@ change style when the mouse hovers over it */
     }
     /* Prevents the hyperlink from changing style when clicked on or hovered over */
     .project-link-text-1:hover {
+        font-size: 4.3vw;
         text-shadow: none;
     }
 
@@ -977,18 +1345,7 @@ change style when the mouse hovers over it */
 
 
 /*
-** Accommodates screens with low width (in portrait orientation) 
-*/
-@media (max-width: 350px) and (orientation: portrait) {
-    .navbar .menu-3 li a {
-        margin-left: 2.3vw;
-        margin-right: 2.3vw;
-    }
-}
-
-
-/*
-** Accommodates screens with low width (in portrait orientation) 
+** Accommodates screens with an even lower maximum width (in portrait orientation) 
 */
 @media (max-width: 340px) and (orientation: portrait) {
     /* The navigation links for landscape orientation are hidden */
@@ -1027,11 +1384,11 @@ change style when the mouse hovers over it */
        display: none;
        z-index: -1;
    }
-   /* The navigaiton links */
+   /* The navigation links */
    .navbar .menu-4 li {
        display: inline-block;
    }
-    /* Sets the navigation links' size and remove the default decoration */
+    /* Sets the navigation links' size and removes the default decoration */
     .navbar .menu-4 li a {
         font-size: 5vw;
         margin-left: 2.3vw;
@@ -1045,7 +1402,7 @@ change style when the mouse hovers over it */
 /*
 ** Accommodates screens with very low width (in portrait orientation)
 */
-@media (max-width: 252px) and (orientation: portrait) {
+@media (max-width: 267px) and (orientation: portrait) {
      /* The navigation links for landscape orientation are hidden */
      .navbar .menu-1 {
         position: absolute;
@@ -1082,398 +1439,16 @@ change style when the mouse hovers over it */
         z-index: 1;
         margin-bottom: 3vw;
     }
-    /* The navigaiton links */
+    /* The navigation links */
     .navbar .menu-5 li {
         display: inline-block;
     }
-    /* Sets the navigation links' size and remove the default decoration */
+    /* Sets the navigation links' size and removes the default decoration */
     .navbar .menu-5 li a {
         font-size: 5vw;
         margin-left: 2.3vw;
         margin-right: 2.3vw;
         color: white;
         text-decoration: none;
-    }
-}
-
-@media (max-width: 700px) and (orientation: landscape) {
-    /* Applies to every section's header */
-    .title {
-        font-size: 9vw;
-        margin-top: 4vw;
-        margin-bottom: 3vw;
-    }
-
-    /* 
-    ** navigation bar styling
-    */
-    .navbar {
-        position: initial;
-    }
-    .navbar .segment{
-        display: grid;
-        justify-content: center;
-    }
-    .navbar .intro {
-        margin-top: 1vw;
-        text-align: center;
-    }
-    /* The introduction part of the navigation bar: 'Welcome to my Portfolio */
-    .navbar .intro a {
-        font-size: 8vw;
-    }
-    /* The navigation links for landscape orientation are hidden */
-    .navbar .menu-1{
-        position: absolute;
-        color: transparent;
-        display: none;
-        z-index: -1;
-    }
-    /* The navigation links for small landscape orientation are displayed */
-    .navbar .menu-2 {
-        display: block;
-        position: relative;
-        padding-left: 0;
-        margin-top: 3vw;
-        margin-bottom: 2vw;    
-        z-index: 1;
-    }
-    /* The navigation links for portrait orientation are hidden */
-    .navbar .menu-3 {
-        position: absolute;
-        color: transparent;
-        display: none;
-        z-index: -1;
-    }
-    /* The navigation links for small portrait orientation are hidden */
-    .navbar .menu-4 {
-        position: absolute;
-        color: transparent;
-        display: none;
-        z-index: -1;
-    }
-    /* The navigation links for very small portrait orientation are hidden */
-    .navbar .menu-5 {
-        position: absolute;
-        color: transparent;
-        display: none;
-        z-index: -1;
-    }
-    /* The navigaiton links */
-    .navbar .menu-2 li {
-        display: inline-block;
-    }
-    /* Displays the navigation links for portrait orientation */
-    .navbar .menu-2 li a {
-        font-size: 4vw;
-        margin-left: 2.5vw;
-        margin-right: 2.5vw;
-        color: white;
-        text-decoration: none;
-    }
-
-    /*
-    ** home section styling 
-    */
-    .home {
-        height: 53vw;
-    }
-    .home .segment {
-        margin-top: 1vw;
-    }
-    /* 1st line of text ('Hello, my name is') */
-    .home .home-text .text-1 {
-        font-size: 5vw;
-    }
-    /* 2nd line of text ('Zachary Bournand') */
-    .home .home-text .text-2 {
-        font-size: 9vw;
-        margin: 3vw 0;
-    }
-    /* 3rd line of text */
-    .home .home-text .text-3 {
-        font-size: 5.3vw;
-    }
-    .home-icons {
-        margin-top: 5vw;
-    }
-    /* Applies to the 2 icons: LinkedIn & GitHub */
-    .home img {
-        width: 7vw;
-        height: 7vw;
-        margin: 0 8vw;
-    }
-    /* Leave the LinkedIn icon unchanged when clicked on or hovered over */
-    .home #linkedin:hover {
-        width: 7vw;
-        height: 7vw;
-        margin: 0 8vw;
-    }
-    /* Leave the GitHub icon unchanged when clicked on or hovered over */
-    .home #github:hover {
-        width: 7vw;
-        height: 7vw;
-        margin: 0 8vw;
-    }
-
-    /* 
-    ** about section styling 
-    */
-    /* Separates the left column above & the right column under */
-    .about .about-image-text{
-        display: grid;
-        justify-content: center;   
-    }
-    .about .left-column {
-        width: 100%;
-        text-align: center;
-        padding-right: 0;
-    }
-    .about .left-column img {
-        height: 40vw;
-        width: 40vw;
-    }
-    .about .right-column .text-1 {
-        font-size: 5vw;
-        line-height: 7vw;
-        margin-top: 1vw;
-        margin-bottom: 2vw;
-    }
-    .about .right-column .text-1 li {
-        margin-bottom: 7vw;
-    }
-    .about .right-column .text-3 {
-        font-size: 5vw;
-        line-height: 7vw;
-        margin-left: 3vw;
-        margin-bottom: 2vw;
-    }
-    /* The button */
-    .about .about-image-text .right-column a {
-        font-size: 5vw;
-        margin-left: 3vw;
-        margin-bottom: 4vw;
-        padding: 1vw 3vw;
-        border-radius: 1vw;
-    }
-
-    /* 
-    ** skills section styling 
-    */
-    .skills .skills-list {
-        text-align: center;
-        padding: 0;
-    }
-    /* The headers of each list of skills */
-    .skills .skills-list h3 {
-        text-decoration: none;
-        font-size: 5vw;
-        margin-top: 1vw;
-        margin-bottom: 7vw;        
-    }
-    /* Puts the last word of the first 2 list headers on the next line */
-    .skills-list span::before {
-        content: "\A";
-        white-space: pre;
-    }
-    /* Underlines the first 2 headers */
-    .skills-list span {
-        margin-top: 8vw;
-        text-decoration: underline;
-        text-underline-offset: 3vw;
-        text-decoration-thickness: 2vw;
-        text-decoration-color: red;
-    }
-    /* Applies to each specific skill listed across all the lists */
-    .skills .skills-list li {
-        font-size: 4.5vw;
-    }
-    /* Sets the 3rd header on the same line as the last word of the first 2 headers */
-    .skills .skills-list .dbms::before{
-        content: "\A";
-        white-space: pre;
-    }
-    /* Underlines the 3rd header */
-    .skills .skills-list .dbms {
-        text-decoration: underline;
-        text-underline-offset: 3vw;
-        text-decoration-thickness: 2vw;
-        text-decoration-color: red;
-    }
-    /* Elements inside the div containing the list of front-end skills 
-    change style when the mouse hovers over it */
-    .skills .skills-list .skills-list-front:hover {
-        width: 34%;
-    }
-    /* Elements inside the div containing the list of back-end skills 
-    change style when the mouse hovers over it */
-    .skills .skills-list .skills-list-back:hover {
-        width: 34%;
-    }
-    /* Elements inside the div containing the list of DBMS skills 
-    change style when the mouse hovers over it */
-    .skills .skills-list .skills-list-dbms:hover {
-        width: 34%;
-    }
-
-    /* 
-    ** projects section styling 
-    */
-    .projects .title {
-        font-size: 9vw;
-        margin-top: 2vw;
-        margin-bottom: 3vw;
-    }
-    .project-1 {
-        height: 45vw;
-        width: 88.155vw;
-    }
-    .project-2 {
-        height: 45vw;
-        width: 88.155vw;
-    }
-    /* Project 1 image */
-    #project-omedocs {
-        height: 45vw;
-        width: 88.155vw;
-    }
-    /* Project 2 image */
-    #project-movie-search-engine {
-        height: 45vw;
-        width: 88.155vw;
-    }
-    /* The name of project 1 */
-    .project-text-1 h2 {
-        font-size: 7vw;
-    }
-    /* The name of project 2 */
-    .project-text-2 h2 {
-        font-size: 7vw;
-    }
-    /* The short set of information containing the team size, my roles, and languages (located right under the project name) */
-    .projects h3 {
-        font-size: 3.3vw;
-        margin-bottom: 2.5vw;
-        line-height: 4vw;
-    }
-    /* Hides the bigger paragraphs describing each project (used in landscape orientation) */
-    .projects .paragraph-1 {
-        position: absolute;
-        color: transparent;
-        display: none;
-        z-index: -1;
-    }
-    /* Displays the smaller paragraphs describing each project */
-    .projects .paragraph-2 {
-        display: block;
-        position: static;
-        text-align: center;
-        font-size: 5vw;
-        line-height: 5vw;
-        color: white;
-        margin-bottom: 5vw;
-    }
-    /* The GitHub logo that links to the project 1 repository */
-    .project-1 #github {
-        width: 5vw;
-        height: 5vw;
-        margin-right: 5vw;
-    }
-    /* The GitHub logo that links to the project 2 repository */
-    .project-2 #github {
-        width: 5vw;
-        height: 5vw;
-    }
-    /* Prevents the project 1 GitHub logo from changing when clicked on or hovered over */
-    /*.project-1 #github:hover {
-        width: 5vw;
-        height: 5vw;
-        margin-right: 5vw;
-    }
-    /* Prevents the project 2 GitHub logo from changing when clicked on or hovered over */
-    /*.project-2 #github:hover {
-        width: 5vw;
-        height: 5vw;
-    }
-    /* The hyperlink 'View site' to view project 1's website */
-    .project-link-text-1 {
-        font-size: 4.3vw;
-    }
-    /* Prevents the hyperlink from changing style when clicked on or hovered over */
-    /*.project-link-text-1:hover {
-        font-size: 4.3vw;
-        text-shadow: none;
-    }*/
-
-    /* 
-    ** contact section styling 
-    */
-    .contact .text {
-        font-size: 6vw;
-    }
-    .contact .right-column {
-        width: 46%;
-    }
-    /* Applies to 'Name' & 'Email' in the left column, which explain the type of information that is given */
-    .contact .head {
-        font-size: 5vw;
-    }
-    /* Applies to my name & email information in the left column */
-    .contact .sub-title {
-        color: white;
-        font-size: 5vw;
-        margin-top: 1vw;
-        margin-bottom: 6vw;
-    }
-    /* Places the last few words 'gmail.com' of my email information on the next line */
-    .contact .sub-title span::before{
-        content: "\A";
-        white-space: pre;
-    }
-    /* Sets the name field above & the email field under */
-    .contact .form-name-email {
-        display: grid;
-        justify-content: center;    
-    }
-    .contact .form-name {
-        margin-bottom: 3vw;
-    }
-    .contact .form-name input {
-        font-size: 5vw;
-        width: 100%;
-    }
-    .contact .form-email input {
-        font-size: 5vw;
-        width: 100%;
-    }
-    .contact .form-subject input {
-        font-size: 5vw;
-        width: 100%;
-    }
-    .contact .form-message textarea {
-        font-size: 5vw;
-        width: 100%;
-    }
-    /* Centers the button within the right column */
-    .contact .button {
-        display: flex;
-        margin-right: auto;
-        margin-left: auto;
-        font-size: 5vw;
-        width: 41vw;
-        padding: 1vw 3vw;
-        border-radius: 1vw;
-    }
-
-    /* 
-    ** footer section styling 
-    */
-    .footer {
-        height: 6vw;
-    }
-    /* Applies to the footer text 'Copyright © 2023 Zachary Bournand' */
-    .copyright {
-        font-size: 3.5vw;
-        padding-top: 0.8vw;
     }
 }
