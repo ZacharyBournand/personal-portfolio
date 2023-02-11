@@ -598,7 +598,7 @@ change style when the mouse hovers over it */
 */
 @media (max-height: 391px) and (orientation: landscape) {
     .home .segment {
-        margin-top: 21vw;
+        margin-top: 15vw;
     }
 }
 
