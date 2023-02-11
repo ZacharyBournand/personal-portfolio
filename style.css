@@ -443,14 +443,8 @@ change style when the mouse hovers over it */
 .project-link-text-1 {
     font-size: 2vw;
     font-weight: bold;
+    text-shadow: none;
     color: rgba(135, 206, 250, 0.733);
-    transition: .5s;
-}
-/* Increases the size of the hyperlink 'View site' & adds a text shadow to emphasize it */ 
-.project-link-text-1:hover {
-    font-size: 2.5vw;
-    color: rgba(135, 206, 250, 0.733);
-    text-shadow: black 0.2rem 0.2rem 0.2rem;
     transition: .5s;
 }
 /* Color of the 'View site' hyperlink's underline */
@@ -894,6 +888,23 @@ change style when the mouse hovers over it */
     /* The hyperlink 'View site' to view project 1's website */
     .project-link-text-1 {
         font-size: 4.3vw;
+        text-shadow: none;
+    }
+    /* Prevents a GitHub logo style change when clicked on or hovered over */
+    .project-1 #github:hover {
+        width: 5vw;
+        height: 5vw;
+        margin-right: 5vw;
+    }
+    /* Prevents a GitHub logo style change when clicked on or hovered over */
+    .project-2 #github:hover {
+        width: 5vw;
+        height: 5vw;
+    }
+    /* Prevents a hyperlink style change when clicked on or hovered over */
+    .project-link-text-1:hover {
+        font-size: 4.3vw;
+        text-shadow: none;
     }
 
     /* 
@@ -1240,10 +1251,6 @@ change style when the mouse hovers over it */
     }
     /* The hyperlink 'View site' to view project 1's website */
     .project-link-text-1 {
-        font-size: 4.3vw;
-    }
-    /* Prevents the hyperlink from changing style when clicked on or hovered over */
-    .project-link-text-1:hover {
         font-size: 4.3vw;
         text-shadow: none;
     }
