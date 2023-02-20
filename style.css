@@ -108,10 +108,6 @@ body {
 }
 .home .segment {
     margin: auto;
-
-    padding: env(safe-area-inset-left) env(safe-area-inset-right);
-    padding-left: 1vw;
-    padding-right: 1vw;
 }
 .home .home-text {
     text-align: center;
@@ -161,10 +157,6 @@ body {
 }
 .about .segment {
     margin: 0 auto;
-
-    padding: env(safe-area-inset-left) env(safe-area-inset-right);
-    padding-left: 1vw;
-    padding-right: 1vw;
 }
 /* Separates the left column to the left & the right column to the right */
 .about .about-image-text {
@@ -244,10 +236,6 @@ body {
 }
 .skills .segment {
     margin: 0 auto;
-
-    padding: env(safe-area-inset-left) env(safe-area-inset-right);
-    padding-left: 1vw;
-    padding-right: 1vw;
 }
 /* Separates the 3 types of skills (front-end, back-end, DBMS) on the same line */
 .skills .skills-list {
@@ -476,10 +464,6 @@ change style when the mouse hovers over it */
 }
 .contact .segment {
     margin: 0 auto;
-
-    padding: env(safe-area-inset-left) env(safe-area-inset-right);
-    padding-left: 1vw;
-    padding-right: 1vw;
 }
 /* Aligns the left and right columns on the same line */
 .contact-info {
@@ -582,10 +566,6 @@ change style when the mouse hovers over it */
 }
 .footer .segment {
     height: 100%;
-
-    padding: env(safe-area-inset-left) env(safe-area-inset-right);
-    padding-left: 1vw;
-    padding-right: 1vw;
 }
 /* Applies to the footer text 'Copyright © 2023 Zachary Bournand' */
 .copyright {
