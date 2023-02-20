@@ -57,14 +57,17 @@ body {
     color: white;
     font-size: 3vw;
     font-weight: 600;
+    padding: env(safe-area-inset);
 }
 /* The word 'Portfolio' of the introduction */
 .navbar .intro a span {
     color: red;
+    padding: env(safe-area-inset);
 }
 /* The navigation links */
 .navbar .menu-1 li {
     display: inline-block;
+    padding: env(safe-area-inset);
 }
 /* The navigation links for small landscape orientation are hidden */
 .navbar .menu-2 {
@@ -72,6 +75,7 @@ body {
     color: transparent;
     display: none;
     z-index: -1;
+    padding: env(safe-area-inset);
 }
 /* The navigation links for portrait orientation are hidden */
 .navbar .menu-3 {
@@ -79,6 +83,7 @@ body {
     color: transparent;
     display: none;
     z-index: -1;
+    padding: env(safe-area-inset);
 }
 /* The navigation links for small portrait orientation are hidden */
 .navbar .menu-4 {
@@ -86,6 +91,7 @@ body {
     color: transparent;
     display: none;
     z-index: -1;
+    padding: env(safe-area-inset);
 }
 /* The navigation links for very small portrait orientation are hidden */
 .navbar .menu-5 {
@@ -93,6 +99,7 @@ body {
     color: transparent;
     display: none;
     z-index: -1;
+    padding: env(safe-area-inset);
 }
 /* Sets the navigation links' size and removes the default decoration */
 .navbar .menu-1 li a {
@@ -100,6 +107,7 @@ body {
     text-decoration: none;
     font-size: 1.8vw;
     margin-right: 1.8vw;
+    padding: env(safe-area-inset);
 }
 
 /*
