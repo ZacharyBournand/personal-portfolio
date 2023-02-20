@@ -11,6 +11,10 @@ body {
 .segment {
     padding: 0 1vw;
     margin: auto 0;
+
+    padding: env(safe-area-inset-left) env(safe-area-inset-right);
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 /* The h2 header of each section */
 .title {
@@ -42,10 +46,6 @@ body {
     /* Separates the introduction and list of navigation links on opposite ends of the navigation bar */
     justify-content: space-between;
     margin: 0 auto;
-
-    padding: env(safe-area-inset);
-    padding-left: 1vw;
-    padding-right: 1vw;
 }
 /* The introduction part of the navigation bar: 'Welcome to my Portfolio' */
 .navbar .intro a {
