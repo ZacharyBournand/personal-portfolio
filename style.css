@@ -465,9 +465,11 @@ change style when the mouse hovers over it */
 */
 .contact {
     margin-top: 7vw;
+    padding: env(safe-area-inset);
 }
 .contact .segment {
     margin: 0 auto;
+    padding: env(safe-area-inset);
 }
 /* Aligns the left and right columns on the same line */
 .contact-info {
