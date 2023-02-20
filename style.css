@@ -5,10 +5,6 @@ html {
 
 body {
     margin: 0;
-    padding-top: env(safe-area-inset-top, 20px);
-    padding-right: env(safe-area-inset-right, 20px);
-    padding-bottom: env(safe-area-inset-bottom, 20px);
-    padding-left: env(safe-area-inset-left, 20px);
 }
 
 /* Applies to each section */
@@ -36,6 +32,10 @@ body {
     font: Arial;
     /* Sets to the highest position order of any attribute on this website */
     z-index: 1;
+    padding-top: env(safe-area-inset-top, 20px);
+    padding-right: env(safe-area-inset-right, 20px);
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+    padding-left: env(safe-area-inset-left, 20px);
 }
 /* Applies to the elements in the navbar section */
 .navbar .segment {
