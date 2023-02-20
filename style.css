@@ -1,21 +1,16 @@
 /* Background color used in the 'home', 'skills', and 'contact' sections */
 html {
     background: #000029;
-    padding: env(safe-area-inset);
 }
 
 body {
     margin: 0;
-    padding: env(safe-area-inset);
 }
 
 /* Applies to each section */
 .segment {
     padding: 0 1vw;
     margin: auto 0;
-    padding: env(safe-area-inset);
-    padding-right: 1vw;
-    padding-left: 1vw;
 }
 /* The h2 header of each section */
 .title {
@@ -37,9 +32,6 @@ body {
     font: Arial;
     /* Sets to the highest position order of any attribute on this website */
     z-index: 1;
-    padding: env(safe-area-inset);
-    padding-top: 1vw;
-    padding-bottom: 1vw;
 }
 /* Applies to the elements in the navbar section */
 .navbar .segment {
@@ -50,24 +42,20 @@ body {
     /* Separates the introduction and list of navigation links on opposite ends of the navigation bar */
     justify-content: space-between;
     margin: 0 auto;
-    padding: env(safe-area-inset);
 }
 /* The introduction part of the navigation bar: 'Welcome to my Portfolio' */
 .navbar .intro a {
     color: white;
     font-size: 3vw;
     font-weight: 600;
-    padding: env(safe-area-inset);
 }
 /* The word 'Portfolio' of the introduction */
 .navbar .intro a span {
     color: red;
-    padding: env(safe-area-inset);
 }
 /* The navigation links */
 .navbar .menu-1 li {
     display: inline-block;
-    padding: env(safe-area-inset);
 }
 /* The navigation links for small landscape orientation are hidden */
 .navbar .menu-2 {
@@ -75,7 +63,6 @@ body {
     color: transparent;
     display: none;
     z-index: -1;
-    padding: env(safe-area-inset);
 }
 /* The navigation links for portrait orientation are hidden */
 .navbar .menu-3 {
@@ -83,7 +70,6 @@ body {
     color: transparent;
     display: none;
     z-index: -1;
-    padding: env(safe-area-inset);
 }
 /* The navigation links for small portrait orientation are hidden */
 .navbar .menu-4 {
@@ -91,7 +77,6 @@ body {
     color: transparent;
     display: none;
     z-index: -1;
-    padding: env(safe-area-inset);
 }
 /* The navigation links for very small portrait orientation are hidden */
 .navbar .menu-5 {
@@ -99,7 +84,6 @@ body {
     color: transparent;
     display: none;
     z-index: -1;
-    padding: env(safe-area-inset);
 }
 /* Sets the navigation links' size and removes the default decoration */
 .navbar .menu-1 li a {
@@ -107,7 +91,6 @@ body {
     text-decoration: none;
     font-size: 1.8vw;
     margin-right: 1.8vw;
-    padding: env(safe-area-inset);
 }
 
 /*
