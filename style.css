@@ -1,6 +1,7 @@
 /* Background color used in the 'home', 'skills', and 'contact' sections */
 html {
     background: #000029;
+    padding: env(safe-area-inset);
 }
 
 body {
