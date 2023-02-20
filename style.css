@@ -13,6 +13,9 @@ body {
 .segment {
     padding: 0 1vw;
     margin: auto 0;
+    padding: env(safe-area-inset);
+    padding-right: 1vw;
+    padding-left: 1vw;
 }
 /* The h2 header of each section */
 .title {
