@@ -50,6 +50,7 @@ body {
     /* Separates the introduction and list of navigation links on opposite ends of the navigation bar */
     justify-content: space-between;
     margin: 0 auto;
+    padding: env(safe-area-inset);
 }
 /* The introduction part of the navigation bar: 'Welcome to my Portfolio' */
 .navbar .intro a {
@@ -465,17 +466,14 @@ change style when the mouse hovers over it */
 */
 .contact {
     margin-top: 7vw;
-    padding: env(safe-area-inset);
 }
 .contact .segment {
     margin: 0 auto;
-    padding: env(safe-area-inset);
 }
 /* Aligns the left and right columns on the same line */
 .contact-info {
     display: flex;
     margin: 0 auto;
-    padding: env(safe-area-inset);
 }
 /* Contains the information 'Get in Touch', which includes my name & email address */
 .contact .left-column {
