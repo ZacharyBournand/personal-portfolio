@@ -43,11 +43,7 @@ body {
     justify-content: space-between;
     margin: 0 auto;
 
-    padding: 0;
-    padding: 0
-        env(safe-area-inset-right) 
-        0 
-        env(safe-area-inset-left);
+    padding: env(safe-area-inset-right) env(safe-area-inset-left);
 }
 /* The introduction part of the navigation bar: 'Welcome to my Portfolio' */
 .navbar .intro a {
