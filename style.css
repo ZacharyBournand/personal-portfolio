@@ -37,6 +37,9 @@ body {
     font: Arial;
     /* Sets to the highest position order of any attribute on this website */
     z-index: 1;
+    padding: env(safe-area-inset);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 /* Applies to the elements in the navbar section */
 .navbar .segment {
