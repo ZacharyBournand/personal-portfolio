@@ -466,6 +466,12 @@ change style when the mouse hovers over it */
 }
 .contact .segment {
     margin: 0 auto;
+
+    padding: 0;
+    padding: 0
+        env(safe-area-inset-right) 
+        0 
+        env(safe-area-inset-left);
 }
 /* Aligns the left and right columns on the same line */
 .contact-info {
