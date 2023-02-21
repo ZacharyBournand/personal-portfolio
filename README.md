@@ -16,7 +16,7 @@ My portfolio website contains a navigation bar that allows you to access 5 secti
     * List of my database management system skills
   
 4. "Projects" section
-    * 1st project introduced is a medical e-commerce website with links to the GitHub back-end code (the part I primarily worked on) & the site
+    * 1st project introduced is a medical e-commerce website with links to the GitHub back-end code (the part I worked on) & the site
     * 2nd project introduced is a movie search engine program with a link to the GitHub code
 
 7. "Contact" section
