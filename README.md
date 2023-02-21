@@ -1,7 +1,7 @@
 # My portfolio website
 My portfolio website contains a navigation bar that allows you to access 5 sections on my site:
 1. "Home" section
-  -- Quick introduction of myself
+  - Quick introduction of myself
   - Link to my LinkedIn profile
   - Link to my GitHub profile
  
