@@ -44,10 +44,11 @@ body {
     margin: 0 auto;
 
     padding: 0;
-    padding: 0
+    padding:
         env(safe-area-inset-right) 
-        0 
-        env(safe-area-inset-left);
+        env(safe-area-inset-left)
+    ;
+    
 }
 /* The introduction part of the navigation bar: 'Welcome to my Portfolio' */
 .navbar .intro a {
@@ -463,12 +464,6 @@ change style when the mouse hovers over it */
 */
 .contact {
     margin-top: 7vw;
-
-    padding: 0;
-    padding: 0
-        env(safe-area-inset-right) 
-        0 
-        env(safe-area-inset-left);
 }
 .contact .segment {
     margin: 0 auto;
