@@ -10,7 +10,7 @@ body {
 /* Applies to each section */
 .segment {
     margin: auto 0;
-    /* Prevents text from being overlaped by the notch (if the device has a notch) */
+    /* Prevents text from being overlapped by the notch (if the device has a notch) */
     padding-right: calc(1vw + env(safe-area-inset-right));
     padding-left: calc(1vw + env(safe-area-inset-left));
 }
