@@ -9,8 +9,10 @@ body {
 
 /* Applies to each section */
 .segment {
-    padding: 0 1vw;
     margin: auto 0;
+
+    padding-right: calc(1vw + env(safe-area-inset-right));
+    padding-left: calc(1vw + env(safe-area-inset-left));
 }
 /* The h2 header of each section */
 .title {
@@ -42,17 +44,6 @@ body {
     /* Separates the introduction and list of navigation links on opposite ends of the navigation bar */
     justify-content: space-between;
     margin: 0 auto;
-
-    /*padding: 0;
-    padding: 0
-        env(safe-area-inset-right) 
-        0 
-        env(safe-area-inset-left)
-    ;*/
-    padding-right: 1vw;
-    padding-right: calc(1vw + env(safe-area-inset-right));
-    padding-left: 1vw;
-    padding-left: calc(1vw + env(safe-area-inset-left));
 }
 /* The introduction part of the navigation bar: 'Welcome to my Portfolio' */
 .navbar .intro a {
@@ -471,11 +462,6 @@ change style when the mouse hovers over it */
 }
 .contact .segment {
     margin: 0 auto;
-
-    padding-right: 1vw;
-    padding-right: calc(1vw + env(safe-area-inset-right));
-    padding-left: 1vw;
-    padding-left: calc(1vw + env(safe-area-inset-left));
 }
 /* Aligns the left and right columns on the same line */
 .contact-info {
