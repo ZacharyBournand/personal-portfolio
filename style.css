@@ -463,6 +463,12 @@ change style when the mouse hovers over it */
 */
 .contact {
     margin-top: 7vw;
+
+    padding: 0;
+    padding: 0
+        env(safe-area-inset-right) 
+        0 
+        env(safe-area-inset-left);
 }
 .contact .segment {
     margin: 0 auto;
@@ -471,12 +477,6 @@ change style when the mouse hovers over it */
 .contact-info {
     display: flex;
     margin: 0 auto;
-
-    padding: 0;
-    padding: 0
-        env(safe-area-inset-right) 
-        0 
-        env(safe-area-inset-left);
 }
 /* Contains the information 'Get in Touch', which includes my name & email address */
 .contact .left-column {
