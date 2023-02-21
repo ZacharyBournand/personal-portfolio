@@ -50,9 +50,9 @@ body {
         env(safe-area-inset-left)
     ;*/
     padding-right: 1vw;
-    padding-right: env(safe-area-inset-right);
+    padding-right: calc(1vw + env(safe-area-inset-right));
     padding-left: 1vw;
-    padding-left: env(safe-area-inset-left);
+    padding-left: calc(1vw + env(safe-area-inset-left));
 }
 /* The introduction part of the navigation bar: 'Welcome to my Portfolio' */
 .navbar .intro a {
