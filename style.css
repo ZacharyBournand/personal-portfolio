@@ -1335,7 +1335,7 @@ change style when the mouse hovers over it */
 @media (max-aspect-ratio: 306/653) {
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
-        font-size: 4vw;
+        font-size: 4.88vw;
     }
 }
 
