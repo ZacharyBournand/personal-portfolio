@@ -1332,7 +1332,7 @@ change style when the mouse hovers over it */
 /* 
 ** Accommodates screens with low aspect ratios (in portrait orientation) 
 */
-@media (max-aspect-ratio: 306/653) {
+@media (max-aspect-ratio: 0.6) {
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
         font-size: 4.88vw;
