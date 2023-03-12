@@ -1334,9 +1334,9 @@ change style when the mouse hovers over it */
 */
 @media (max-aspect-ratio: 0.6) {
     .navbar .menu-3 li {
-        margin: 0;
-        padding: 0;
-      }
+        flex-wrap: nowrap; /* Prevents the links from wrapping onto the next line */
+        justify-content: center; 
+    }
 
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
@@ -1350,9 +1350,9 @@ change style when the mouse hovers over it */
 
 @media (width: 393px) and (height: 852px) {
     .navbar .menu-3 li {
-        margin: 0;
-        padding: 0;
-      }
+        flex-wrap: nowrap; /* Prevents the links from wrapping onto the next line */
+        justify-content: center; 
+    }
 
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
@@ -1365,9 +1365,9 @@ change style when the mouse hovers over it */
 
 @media (width: 393px) and (height: 660px) {
     .navbar .menu-3 li {
-        margin: 0;
-        padding: 0;
-      }
+        flex-wrap: nowrap; /* Prevents the links from wrapping onto the next line */
+        justify-content: center; 
+    }
 
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
