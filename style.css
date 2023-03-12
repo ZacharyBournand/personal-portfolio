@@ -1003,6 +1003,7 @@ change style when the mouse hovers over it */
     }
     .navbar .intro {
         text-align: center;
+        margin-top: 1.5vw;
     }
     /* The introduction part of the navigation bar: 'Welcome to my Portfolio */
     .navbar .intro a {
