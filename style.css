@@ -1333,46 +1333,26 @@ change style when the mouse hovers over it */
 ** Accommodates screens with low aspect ratios (in portrait orientation) 
 */
 @media (max-aspect-ratio: 0.6) {
-    .navbar .menu-3 li {
-        padding: 0;
-    }
-
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
-        font-size: 4vw;
-        margin-left: 3vw;
-        margin-right: 3vw;
-        padding: 0;
+        font-size: 4.88vw;
     }
 }
 
 
 @media (width: 393px) and (height: 660px) {
-    .navbar .menu-3 li {
-        padding: 0;
-    }
-
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
-        font-size: 4vw;
-        margin-left: 3vw;
-        margin-right: 3vw;
-        padding: 0;
+        font-size: 4.88vw;
     }
 }
 
 
 
 @media (width: 393px) and (height: 852px) {
-    .navbar .menu-3 li {
-        padding: 0;
-    }
-
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
-        font-size: 4vw;
-        margin-left: 3vw;
-        margin-right: 3vw;
+        font-size: 4.88vw;
     }
 }
 
