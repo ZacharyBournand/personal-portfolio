@@ -1005,20 +1005,6 @@ change style when the mouse hovers over it */
     .navbar .intro a {
         font-size: 9vw;
     }
-    
-    .navbar .menu-3 {
-        text-align: center;
-    }
-
-    .navbar .menu-3 li {
-        padding: 0;
-    }
-
-    /* Reduces the size of the navigation links */
-    /*.navbar .menu-3 li a {
-        font-size: 4.88vw;
-    }*/
-    
     /* The navigation links for landscape orientation are hidden */
     .navbar .menu-1{
         position: absolute;
@@ -1040,6 +1026,7 @@ change style when the mouse hovers over it */
         padding-left: 0;
         z-index: 1;
         margin-bottom: 3vw;
+        text-align: center;
     }
     /* The navigation links for small portrait orientation are hidden */
     .navbar .menu-4 {
@@ -1058,6 +1045,7 @@ change style when the mouse hovers over it */
     /* The navigation links */
     .navbar .menu-3 li {
         display: inline-block;
+        padding: 0;
     }
     /* Displays the navigation links for portrait orientation */
     .navbar .menu-3 li a {
