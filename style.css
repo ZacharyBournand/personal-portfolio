@@ -1333,7 +1333,7 @@ change style when the mouse hovers over it */
 ** Accommodates screens with low aspect ratios (in portrait orientation) 
 */
 @media (max-aspect-ratio: 0.6) {
-    .navbar .menu-3 li {
+    .navbar .menu-3 {
         flex-wrap: nowrap; /* Prevents the links from wrapping onto the next line */
         justify-content: center; 
     }
