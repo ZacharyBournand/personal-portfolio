@@ -1061,7 +1061,7 @@ change style when the mouse hovers over it */
     }
     /* Displays the navigation links for portrait orientation */
     .navbar .menu-3 li a {
-        font-size: 5vw;
+        font-size: 4.88vw;
         margin-left: 2.5vw;
         margin-right: 2.5vw;
         color: white;
