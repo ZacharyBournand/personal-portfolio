@@ -1001,9 +1001,12 @@ change style when the mouse hovers over it */
         display: grid;
         justify-content: center;
     }
+    .navbar .intro {
+        text-align: center;
+    }
     /* The introduction part of the navigation bar: 'Welcome to my Portfolio */
     .navbar .intro a {
-        font-size: 9vw;
+        font-size: 7.5vw;
     }
     /* The navigation links for landscape orientation are hidden */
     .navbar .menu-1{
@@ -1049,7 +1052,7 @@ change style when the mouse hovers over it */
     }
     /* Displays the navigation links for portrait orientation */
     .navbar .menu-3 li a {
-        font-size: 4.88vw;
+        font-size: 4.35vw;
         margin-left: 2.5vw;
         margin-right: 2.5vw;
         color: white;
