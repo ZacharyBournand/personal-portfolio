@@ -1334,14 +1334,12 @@ change style when the mouse hovers over it */
 */
 @media (max-aspect-ratio: 0.6) {
     .navbar .menu-3 li {
-        flex-wrap: nowrap; /* Prevents the links from wrapping onto the next line */
-        justify-content: center; 
         padding: 0;
     }
 
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
-        font-size: 4.88vw;
+        font-size: 2.88vw;
         margin-left: 0;
         margin-right: 0;
         padding: 0;
