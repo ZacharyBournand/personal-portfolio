@@ -1342,6 +1342,25 @@ change style when the mouse hovers over it */
 }
 
 
+@media (width: 393px) and (height: 852px) {
+    /* Reduces the size of the navigation links */
+    .navbar .menu-3 li a {
+        font-size: 3vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+}
+
+@media (width: 393px) and (height: 660px) {
+    /* Reduces the size of the navigation links */
+    .navbar .menu-3 li a {
+        font-size: 3vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+}
+
+
 /*
 ** Accommodates screens with a low width (in portrait orientation) 
 */
