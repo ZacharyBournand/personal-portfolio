@@ -1340,12 +1340,12 @@ change style when the mouse hovers over it */
 }
 
 
-/*@media (width: 393px) and (height: 660px) {*/
+@media (width: 393px) and (height: 660px) {
     /* Reduces the size of the navigation links */
-   /* .navbar .menu-3 li a {
+   .navbar .menu-3 li a {
         font-size: 4.88vw;
     }
-}*/
+}
 
 
 
