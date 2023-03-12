@@ -1340,10 +1340,7 @@ change style when the mouse hovers over it */
 
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
-        font-size: 2.88vw;
-        margin-left: 1.3vw;
-        margin-right: 1.3vw;
-        padding: 0;
+        font-size: 4.88vw;
     }
 }
 
