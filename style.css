@@ -1348,20 +1348,20 @@ change style when the mouse hovers over it */
 }
 
 
-/*@media (width: 393px) and (height: 660px) {
+@media (min-width: 393px) and (max-aspect-ratio: 0.6) {
     .navbar .menu-3 {
         text-align: center;
     }
 
     .navbar .menu-3 li {
         padding: 0;
-    }*/
+    }
 
     /* Reduces the size of the navigation links */
-    /*.navbar .menu-3 li a {
+    .navbar .menu-3 li a {
         font-size: 4.88vw;
     }
-}*/
+}
 
 
 /*
