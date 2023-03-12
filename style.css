@@ -1333,6 +1333,14 @@ change style when the mouse hovers over it */
 ** Accommodates screens with low aspect ratios (in portrait orientation) 
 */
 @media (max-aspect-ratio: 0.6) {
+    .navbar .menu-3 {
+        text-align: center;
+    }
+
+    .navbar .menu-3 li {
+        padding: 0;
+    }
+
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
         font-size: 4.88vw;
@@ -1341,21 +1349,19 @@ change style when the mouse hovers over it */
 
 
 @media (width: 393px) and (height: 660px) {
-    /* Reduces the size of the navigation links */
-   .navbar .menu-3 li a {
-        font-size: 4.88vw;
+    .navbar .menu-3 {
+        text-align: center;
     }
-}
 
+    .navbar .menu-3 li {
+        padding: 0;
+    }
 
-
-@media (width: 393px) and (height: 852px) {
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
         font-size: 4.88vw;
     }
 }
-
 
 
 /*
