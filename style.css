@@ -1340,12 +1340,45 @@ change style when the mouse hovers over it */
 
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
-        font-size: 4.88vw;
-        margin-left: 1.3vw;
-        margin-right: 1.3vw;
+        font-size: 2.88vw;
+        margin-left: 0;
+        margin-right: 0;
         padding: 0;
     }
 }
+
+
+@media (idth: 393px) and (height: 852px) {
+    .navbar .menu-3 li {
+        flex-wrap: nowrap; /* Prevents the links from wrapping onto the next line */
+        justify-content: center; 
+    }
+
+    /* Reduces the size of the navigation links */
+    .navbar .menu-3 li a {
+        font-size: 2.88vw;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+}
+
+
+@media (width: 393px) and (height: 660px) {
+    .navbar .menu-3 li {
+        flex-wrap: nowrap; /* Prevents the links from wrapping onto the next line */
+        justify-content: center; 
+    }
+
+    /* Reduces the size of the navigation links */
+    .navbar .menu-3 li a {
+        font-size: 2.88vw;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+}
+
 
 
 /*
