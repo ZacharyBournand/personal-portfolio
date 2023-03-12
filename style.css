@@ -1339,7 +1339,7 @@ change style when the mouse hovers over it */
 
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
-        font-size: 2.85vw;
+        font-size: 2.84vw;
         margin-left: 0;
         margin-right: 0;
         padding: 0;
@@ -1354,7 +1354,23 @@ change style when the mouse hovers over it */
 
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
-        font-size: 2.85vw;
+        font-size: 2.84vw;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+}
+
+
+
+@media (width: 393px) and (height: 852px) {
+    .navbar .menu-3 li {
+        padding: 0;
+    }
+
+    /* Reduces the size of the navigation links */
+    .navbar .menu-3 li a {
+        font-size: 2.84vw;
         margin-left: 0;
         margin-right: 0;
         padding: 0;
