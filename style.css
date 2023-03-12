@@ -1005,6 +1005,20 @@ change style when the mouse hovers over it */
     .navbar .intro a {
         font-size: 9vw;
     }
+    
+    .navbar .menu-3 {
+        text-align: center;
+    }
+
+    .navbar .menu-3 li {
+        padding: 0;
+    }
+
+    /* Reduces the size of the navigation links */
+    /*.navbar .menu-3 li a {
+        font-size: 4.88vw;
+    }*/
+    
     /* The navigation links for landscape orientation are hidden */
     .navbar .menu-1{
         position: absolute;
@@ -1332,36 +1346,36 @@ change style when the mouse hovers over it */
 /* 
 ** Accommodates screens with low aspect ratios (in portrait orientation) 
 */
-@media (max-aspect-ratio: 0.6) {
+/*@media (max-aspect-ratio: 0.6) {
     .navbar .menu-3 {
         text-align: center;
     }
 
     .navbar .menu-3 li {
         padding: 0;
-    }
+    }*/
 
     /* Reduces the size of the navigation links */
-    .navbar .menu-3 li a {
+    /*.navbar .menu-3 li a {
         font-size: 4.88vw;
     }
-}
+}*/
 
 
-@media (min-width: 393px) and (max-aspect-ratio: 0.6) {
+/*@media (min-width: 393px) and (max-aspect-ratio: 0.6) {
     .navbar .menu-3 {
         text-align: center;
     }
 
     .navbar .menu-3 li {
         padding: 0;
-    }
+    }*/
 
     /* Reduces the size of the navigation links */
-    .navbar .menu-3 li a {
+    /*.navbar .menu-3 li a {
         font-size: 4.88vw;
     }
-}
+}*/
 
 
 /*
@@ -1372,8 +1386,6 @@ change style when the mouse hovers over it */
         margin-left: 2.3vw;
         margin-right: 2.3vw;
     }
-
-    
 }
 
 
