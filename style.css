@@ -1336,6 +1336,7 @@ change style when the mouse hovers over it */
     .navbar .menu-3 li {
         flex-wrap: nowrap; /* Prevents the links from wrapping onto the next line */
         justify-content: center; 
+        padding: 0;
     }
 
     /* Reduces the size of the navigation links */
@@ -1352,6 +1353,7 @@ change style when the mouse hovers over it */
     .navbar .menu-3 li {
         flex-wrap: nowrap; /* Prevents the links from wrapping onto the next line */
         justify-content: center; 
+        padding: 0;
     }
 
     /* Reduces the size of the navigation links */
@@ -1368,6 +1370,7 @@ change style when the mouse hovers over it */
     .navbar .menu-3 li {
         flex-wrap: nowrap; /* Prevents the links from wrapping onto the next line */
         justify-content: center; 
+        padding: 0;
     }
 
     /* Reduces the size of the navigation links */
