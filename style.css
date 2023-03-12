@@ -1340,8 +1340,8 @@ change style when the mouse hovers over it */
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
         font-size: 4vw;
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
         padding: 0;
     }
 }
@@ -1355,8 +1355,8 @@ change style when the mouse hovers over it */
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
         font-size: 4vw;
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
         padding: 0;
     }
 }
@@ -1371,8 +1371,8 @@ change style when the mouse hovers over it */
     /* Reduces the size of the navigation links */
     .navbar .menu-3 li a {
         font-size: 4vw;
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
     }
 }
 
