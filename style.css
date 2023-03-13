@@ -593,8 +593,30 @@ change style when the mouse hovers over it */
 ** Accommodates screens with a low height (in landscape orientation) 
 */
 @media (max-height: 391px) and (orientation: landscape) {
+    /*
+    ** home section styling 
+    */
     .home .segment {
         margin-top: 15vw;
+    }
+
+    /* 
+    ** skills section styling 
+    */
+    /* Elements inside the div containing the list of front-end skills 
+    change style when the mouse hovers over it */
+    .skills .skills-list .skills-list-front:hover {
+        width: 34%;
+    }
+    /* Elements inside the div containing the list of back-end skills 
+    change style when the mouse hovers over it */
+    .skills .skills-list .skills-list-back:hover {
+        width: 34%;
+    }
+    /* Elements inside the div containing the list of DBMS skills 
+    change style when the mouse hovers over it */
+    .skills .skills-list .skills-list-dbms:hover {
+        width: 34%;
     }
 }
 
