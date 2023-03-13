@@ -1217,11 +1217,11 @@ change style when the mouse hovers over it */
     }
     /* The name of project 1 */
     .project-text-1 h2 {
-        font-size: 7vw;
+        font-size: 6.5vw;
     }
     /* The name of project 2 */
     .project-text-2 h2 {
-        font-size: 7vw;
+        font-size: 6.5vw;
     }
     /* The short set of information containing the team size, my roles, and languages (located right underneath the project name) */
     .projects h3 {
