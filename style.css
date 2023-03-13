@@ -623,7 +623,7 @@ change style when the mouse hovers over it */
     }
     /* The introduction part of the navigation bar: 'Welcome to my Portfolio' */
     .navbar .intro a {
-        font-size: 8vw;
+        font-size: 7.8vw;
     }
     /* The navigation links for landscape orientation are hidden */
     .navbar .menu-1{
