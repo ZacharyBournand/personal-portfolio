@@ -1358,6 +1358,17 @@ change style when the mouse hovers over it */
 
 
 /*
+** Accommodates screens with a lower width (in portrait orientation) 
+*/
+@media (max-width: 450px) and (orientation: portrait) {
+    /* Displays the smaller paragraphs describing each project */
+    .projects .paragraph-2 {
+        font-size: 4.5vw;
+    }
+}
+
+
+/*
 ** Accommodates screens with a low width (in portrait orientation) 
 */
 @media (max-width: 350px) and (orientation: portrait) {
