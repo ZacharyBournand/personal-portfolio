@@ -205,8 +205,6 @@ if (window.matchMedia("(orientation: landscape)").matches) {
 
 
 /* skills sections */
-skillsHeaders.style.cssText = 'color: white; font-style: serif; font-size: 2.5vw; text-decoration: underline; text-underline-offset: 1.4vw; text-decoration-thickness: 0.7vw; text-decoration-color: red;';
-
 // Changes the style of the list of my front-end skills
 frontEndSkills.addEventListener('mouseover', (event) => {
     for (i = 0; i < frontEndList.length; i++) {
