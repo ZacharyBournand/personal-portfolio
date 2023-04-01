@@ -1365,6 +1365,22 @@ change style when the mouse hovers over it */
     .projects .paragraph-2 {
         font-size: 4.5vw;
     }
+    /* The GitHub logo that links to the project 1 repository */
+    .project-1 #github {
+        width: 4.5vw;
+        height: 4.5vw;
+        margin-right: 4.5vw;
+    }
+    /* The GitHub logo that links to the project 2 repository */
+    .project-2 #github {
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+    /* The hyperlink 'View site' to view project 1's website */
+    .project-link-text-1 {
+        font-size: 3.8vw;
+        text-shadow: none;
+    }
 }
 
 
