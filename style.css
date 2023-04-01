@@ -267,19 +267,19 @@ change style when the mouse hovers over it */
     transition: 0.2s;
 }
 /* Applies to the headers for each list of skills */
-.skills .skills-list h3 {
+/*.skills .skills-list h3 {
     color: white;
     font-style: serif;
     font-size: 2.5vw;
-    /* Underlines the headers */
+     Underlines the headers 
     text-decoration: underline;
-    /* Sets the underline right under the header */
+     Sets the underline right under the header 
     text-underline-offset: 1.4vw;
-    /* Thickens the underline */
+     Thickens the underline 
     text-decoration-thickness: 0.7vw;
-    /* Sets the underline color to red */
+     Sets the underline color to red
     text-decoration-color: red;
-}
+}*/
 /* Applies to each specific skill listed across all the lists */
 .skills .skills-list li {
     color: rgb(197, 197, 197);
