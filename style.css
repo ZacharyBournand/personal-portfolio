@@ -272,7 +272,7 @@ change style when the mouse hovers over it */
     font-style: serif;
     font-size: 2.5vw;
     /* Underlines the headers */
-    text-decoration: underline;
+    text-decoration: underline red;
     /* Sets the underline right under the header */
     text-underline-offset: 1.4vw;
     /* Thickens the underline */
