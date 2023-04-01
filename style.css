@@ -246,7 +246,7 @@ body {
 change style when the mouse hovers over it */
 .skills .skills-list .skills-list-front:hover {
     background: black;
-    width: 30%;
+    width: 35%;
     border-radius: 1vw;
     transition: 0.2s;
 }
