@@ -14,9 +14,6 @@ let githubHomeIcon = document.querySelector('.home #github');
 
 
 /* skills section */
-// Skills headers
-let skillsHeaders = document.querySelector('.skills .skills-list h3')
-
 // Front-end skills
 let frontEndSkills = document.querySelector('.skills-list-front');
 let frontEndTitle = document.querySelector('.front-end');
