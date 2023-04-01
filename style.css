@@ -1346,6 +1346,9 @@ change style when the mouse hovers over it */
         border-radius: 1vw;
     }
 
+    /* 
+    ** footer section styling 
+    */
     .footer {
         height: 6vw;
     }
@@ -1361,6 +1364,18 @@ change style when the mouse hovers over it */
 ** Accommodates screens with a lower width (in portrait orientation) 
 */
 @media (max-width: 450px) and (orientation: portrait) {
+    /* 
+    ** navigation bar styling
+    */
+    /* Displays the navigation links for portrait orientation */
+    .navbar .menu-3 li a {
+        font-size: 3vw;
+    }
+
+
+    /* 
+    ** projects section styling 
+    */
     /* Displays the smaller paragraphs describing each project */
     .projects .paragraph-2 {
         font-size: 4.5vw;
