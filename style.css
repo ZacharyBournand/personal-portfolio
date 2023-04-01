@@ -618,26 +618,6 @@ change style when the mouse hovers over it */
     .skills .skills-list .skills-list-dbms:hover {
         width: 34%;
     }
-
-    /* 
-    ** projects section styling 
-    */
-    /* Applies to the name of project 1 that is only displayed if the mouse hovers over the project 1 image */
-    /*.project-text-1 h2 {
-        font-size: 3vw;
-        font-weight: bold;
-        margin-top: 0;
-        margin-bottom: 2vw;
-        color: white;
-    }*/
-    /* Applies to the name of project 2 that is only displayed if the mouse hovers over the project 2 image */
-    /*.project-text-2 h2 {
-        font-size: 3vw;
-        font-weight: bold;
-        margin-top: 0;
-        margin-bottom: 2vw;
-        color: white;
-    }*/
 }
 
 
