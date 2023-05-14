@@ -48,7 +48,7 @@ let githubProject1 = document.querySelector('.project-1 #github');
 let githubProject2 = document.querySelector('.project-2 #github');
 
 // Links to project 1's website
-let linkProject1 = document.querySelector('.project-link-text-1');
+let linkProject1 = document.querySelector('.project-2-link-text');
 
 
 /* contact section */

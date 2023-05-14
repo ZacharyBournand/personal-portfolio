@@ -442,7 +442,7 @@ change style when the mouse hovers over it */
     transition: .5s;
 }
 /* Applies to the hyperlink 'View site' to view project 1's website */
-.project-link-text-1 {
+.project-2-link-text {
     font-size: 2vw;
     font-weight: bold;
     text-shadow: none;
@@ -450,7 +450,7 @@ change style when the mouse hovers over it */
     transition: .5s;
 }
 /* Color of the 'View site' hyperlink's underline */
-.project-1 a {
+.project-2 a {
     text-decoration-color: rgba(135, 206, 250, 0.733);
 }
 
@@ -910,7 +910,7 @@ change style when the mouse hovers over it */
         height: 5vw;
     }
     /* The hyperlink 'View site' to view project 1's website */
-    .project-link-text-1 {
+    .project-2-link-text {
         font-size: 4.3vw;
         text-shadow: none;
     }
@@ -926,7 +926,7 @@ change style when the mouse hovers over it */
         height: 5vw;
     }
     /* Prevents a hyperlink style change when clicked on or hovered over */
-    .project-link-text-1:hover {
+    .project-2-link-text:hover {
         font-size: 4.3vw;
         text-shadow: none;
     }
@@ -1280,7 +1280,7 @@ change style when the mouse hovers over it */
         height: 5vw;
     }
     /* The hyperlink 'View site' to view project 1's website */
-    .project-link-text-1 {
+    .project-2-link-text {
         font-size: 4.3vw;
         text-shadow: none;
     }
@@ -1391,7 +1391,7 @@ change style when the mouse hovers over it */
         height: 4.5vw;
     }
     /* The hyperlink 'View site' to view project 1's website */
-    .project-link-text-1 {
+    .project-2-link-text {
         font-size: 3.8vw;
         text-shadow: none;
     }
