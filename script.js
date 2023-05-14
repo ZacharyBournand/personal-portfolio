@@ -36,8 +36,8 @@ let project1 = document.querySelector('.project-1');
 let project2 = document.querySelector('.project-2');
 
 // Project images
-let image1 = document.getElementById('project-omedocs');
-let image2 = document.getElementById('project-movie-search-engine');
+let image1 = document.getElementById('project-1-image');
+let image2 = document.getElementById('project-2-image');
 
 // Project descriptions
 let text1 = document.querySelector('.project-text-container-1');
@@ -347,7 +347,7 @@ if (window.matchMedia("(orientation: landscape)").matches) {
     // When the mouse hovers over the project 2 image, change its style & display information about it
     project2.addEventListener('mouseover', (event) => {
         project2.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
-        image2.style.cssText = 'filter: blur(1vh) brightness(90%)';
+        image2.style.cssText = 'filter: blur(1vh) brightness(25%)';
         text2.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
     });
     // When the mouse does not hover over the project 2 image anymore, set it back to its original look
@@ -379,7 +379,7 @@ if (window.matchMedia("(orientation: portrait)").matches) {
     // When the user clicks on the project 2 image, change its style & display information about it
     project2.addEventListener('click', (event) => {
         project2.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
-        image2.style.cssText = 'filter: blur(1vh) brightness(90%)';
+        image2.style.cssText = 'filter: blur(1vh) brightness(25%)';
         text2.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
     });
     // When the user clicks out of the project 2 image, set it back to its original look

@@ -324,7 +324,7 @@ change style when the mouse hovers over it */
 }
 /* Removes the project 1 image from the normal document flow.
 /* However, it is contained within the div class 'project-1' */
-#project-omedocs {
+#project-1-image {
     height: 40vw;
     width: 78.36vw;
     left: 0;
@@ -334,7 +334,7 @@ change style when the mouse hovers over it */
 }
 /* Removes the project 2 image from the normal document flow.
 /* However, it is contained within the div class 'project-2' */
-#project-movie-search-engine {
+#project-2-image {
     height: 40vw;
     width: 78.36vw;
     left: 0;
@@ -858,12 +858,12 @@ change style when the mouse hovers over it */
         width: 88.155vw;
     }
     /* Project 1 image */
-    #project-omedocs {
+    #project-1-image {
         height: 45vw;
         width: 88.155vw;
     }
     /* Project 2 image */
-    #project-movie-search-engine {
+    #project-2-image {
         height: 45vw;
         width: 88.155vw;
     }
@@ -1228,12 +1228,12 @@ change style when the mouse hovers over it */
         width: 88.155vw;
     }
     /* Project 1 image */
-    #project-omedocs {
+    #project-1-image {
         height: 45vw;
         width: 88.155vw;
     }
     /* Project 2 image */
-    #project-movie-search-engine {
+    #project-2-image {
         height: 45vw;
         width: 88.155vw;
     }
