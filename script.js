@@ -34,21 +34,25 @@ let dbmsList = document.querySelectorAll('.dbms-list');
 // Project blocks
 let project1 = document.querySelector('.project-1');
 let project2 = document.querySelector('.project-2');
+let project3 = document.querySelector('.project-3');
 
 // Project images
 let image1 = document.getElementById('project-1-image');
 let image2 = document.getElementById('project-2-image');
+let image3 = document.getElementById('project-3-image');
 
 // Project descriptions
 let text1 = document.querySelector('.project-text-container-1');
 let text2 = document.querySelector('.project-text-container-2');
+let text3 = document.querySelector('.project-text-container-3');
 
 // GitHub icons that link to the projects' GitHub repository
 let githubProject1 = document.querySelector('.project-1 #github');
 let githubProject2 = document.querySelector('.project-2 #github');
+let githubProject3 = document.querySelector('.project-3 #github');
 
-// Links to project 1's website
-let linkProject1 = document.querySelector('.project-2-link-text');
+// Links to project 2's website
+let linkProject2 = document.querySelector('.project-2-link-text');
 
 
 /* contact section */
@@ -264,9 +268,12 @@ if (window.matchMedia("(orientation: landscape)").matches) {
         githubProject2.addEventListener('click', (event) => {
             githubProject2.style.cssText = 'width: 5vw; height: 5vw; transition: .5s';
         });
-        // Text link to project 1's website
-        linkProject1.addEventListener('click', (event) => {
-            linkProject1.style.cssText = 'font-size: 4.3vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
+        githubProject3.addEventListener('click', (event) => {
+            githubProject3.style.cssText = 'width: 5vw; height: 5vw; transition: .5s';
+        });
+        // Text link to project 2's website
+        linkProject2.addEventListener('click', (event) => {
+            linkProject2.style.cssText = 'font-size: 4.3vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
         });
         
         // When the user hovers the mouse over an icon or text link, increase its size
@@ -276,8 +283,11 @@ if (window.matchMedia("(orientation: landscape)").matches) {
         githubProject2.addEventListener('mouseover', (event) => {
             githubProject2.style.cssText = 'width: 5.5vw; height: 5.5vw; transition: .5s';
         });
-        linkProject1.addEventListener('mouseover', (event) => {
-            linkProject1.style.cssText = 'font-size: 4.8vw; color: rgba(135, 206, 250, 0.733); text-shadow: black 0.2rem 0.2rem 0.2rem; transition: .5s';
+        githubProject3.addEventListener('mouseover', (event) => {
+            githubProject3.style.cssText = 'width: 5.5vw; height: 5.5vw; transition: .5s';
+        });
+        linkProject2.addEventListener('mouseover', (event) => {
+            linkProject2.style.cssText = 'font-size: 4.8vw; color: rgba(135, 206, 250, 0.733); text-shadow: black 0.2rem 0.2rem 0.2rem; transition: .5s';
         });
         
         // When the user's mouse does not hover over an icon or text link anymore, set it back to its original size
@@ -287,8 +297,11 @@ if (window.matchMedia("(orientation: landscape)").matches) {
         githubProject2.addEventListener('mouseout', (event) => {
             githubProject2.style.cssText = 'width: 5vw; height: 5vw; transition: .5s';
         });
-        linkProject1.addEventListener('mouseout', (event) => {
-            linkProject1.style.cssText = 'font-size: 4.3vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
+        githubProject3.addEventListener('mouseout', (event) => {
+            githubProject3.style.cssText = 'width: 5vw; height: 5vw; transition: .5s';
+        });
+        linkProject2.addEventListener('mouseout', (event) => {
+            linkProject2.style.cssText = 'font-size: 4.3vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
         });
     /* Sizes specified are for screens in landscape orientation with a width greater than 700px */
     } else {
@@ -299,8 +312,11 @@ if (window.matchMedia("(orientation: landscape)").matches) {
         githubProject2.addEventListener('click', (event) => {
             githubProject2.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
         });
-        linkProject1.addEventListener('click', (event) => {
-            linkProject1.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
+        githubProject3.addEventListener('click', (event) => {
+            githubProject3.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
+        });
+        linkProject2.addEventListener('click', (event) => {
+            linkProject2.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
         });
         
         // When the user hovers the mouse over an icon or text link, increase its size
@@ -310,8 +326,11 @@ if (window.matchMedia("(orientation: landscape)").matches) {
         githubProject2.addEventListener('mouseover', (event) => {
             githubProject2.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
         });
-        linkProject1.addEventListener('mouseover', (event) => {
-            linkProject1.style.cssText = 'font-size: 2.5vw; color: rgba(135, 206, 250, 0.733); text-shadow: black 0.2rem 0.2rem 0.2rem; transition: .5s';
+        githubProject3.addEventListener('mouseover', (event) => {
+            githubProject3.style.cssText = 'width: 3vw; height: 3vw; transition: .5s';
+        });
+        linkProject2.addEventListener('mouseover', (event) => {
+            linkProject2.style.cssText = 'font-size: 2.5vw; color: rgba(135, 206, 250, 0.733); text-shadow: black 0.2rem 0.2rem 0.2rem; transition: .5s';
         });
         
         // When the user's mouse does not hover over an icon or text link anymore, set it back to its original size
@@ -321,8 +340,11 @@ if (window.matchMedia("(orientation: landscape)").matches) {
         githubProject2.addEventListener('mouseout', (event) => {
             githubProject2.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
         });
-        linkProject1.addEventListener('mouseout', (event) => {
-            linkProject1.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
+        githubProject3.addEventListener('mouseout', (event) => {
+            githubProject3.style.cssText = 'width: 2.5vw; height: 2.5vw; transition: .5s';
+        });
+        linkProject2.addEventListener('mouseout', (event) => {
+            linkProject2.style.cssText = 'font-size: 2vw; font-weight: bold; color: rgba(135, 206, 250, 0.733); text-shadow: none; transition: .5s';
         });
     }
 }
@@ -356,6 +378,19 @@ if (window.matchMedia("(orientation: landscape)").matches) {
         image2.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
         text2.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
     });
+
+    // When the mouse hovers over the project 3 image, change its style & display information about it
+    project3.addEventListener('mouseover', (event) => {
+        project3.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
+        image3.style.cssText = 'filter: blur(1vh) brightness(90%)';
+        text3.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
+    });
+    // When the mouse does not hover over the project 3 image anymore, set it back to its original look
+    project3.addEventListener('mouseout', (event) => {
+        project3.style.cssText = 'border: 0.19rem solid rgb(74, 87, 87);';
+        image3.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
+        text3.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
+    });
 }
 
 
@@ -387,6 +422,19 @@ if (window.matchMedia("(orientation: portrait)").matches) {
         project2.style.cssText = 'border: 0.19rem solid rgb(74, 87, 87);';
         image2.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
         text2.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
+    });
+
+    // When the user clicks on the project 3 image, change its style & display information about it
+    project3.addEventListener('click', (event) => {
+        project3.style.cssText = 'border: 0.19rem solid rgb(61, 102, 102); border-radius: 0.5rem;';
+        image3.style.cssText = 'filter: blur(1vh) brightness(90%)';
+        text3.style.cssText = 'visibility: visible; opacity: 1; transition: opacity 1.5s linear;';
+    });
+    // When the user clicks out of the project 3 image, set it back to its original look
+    project3.addEventListener('mouseout', (event) => {
+        project3.style.cssText = 'border: 0.19rem solid rgb(74, 87, 87);';
+        image3.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
+        text3.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
     });
 }
 
