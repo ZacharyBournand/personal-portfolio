@@ -514,6 +514,9 @@ change style when the mouse hovers over it */
     transition: .5s;
 }
 /* Color of the 'View site' hyperlink's underline */
+.project-1 a {
+    text-decoration-color: rgba(135, 206, 250, 0.733);
+}
 .project-2 a {
     text-decoration-color: rgba(135, 206, 250, 0.733);
 }
