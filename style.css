@@ -308,8 +308,8 @@ change style when the mouse hovers over it */
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 9vw;
-    border: 0.3vw solid rgb(56, 80, 80);
+    margin-bottom: 5vw;
+    border: 0.19vw solid rgb(74, 87, 87);
 }
 /* Centers the div containing the project 2 image */
 .project-2 {
@@ -988,11 +988,13 @@ change style when the mouse hovers over it */
     .project-2 #github {
         width: 5vw;
         height: 5vw;
+        margin-right: 5vw;
     }
     /* The GitHub logo that links to the project 3 repository */
     .project-3 #github {
         width: 5vw;
         height: 5vw;
+        margin-right: 5vw;
     }
     /* The hyperlink 'View site' to view project 1's website */
     .project-1-link-text {
@@ -1014,11 +1016,13 @@ change style when the mouse hovers over it */
     .project-2 #github:hover {
         width: 5vw;
         height: 5vw;
+        margin-right: 5vw;
     }
     /* Prevents a GitHub logo style change when clicked on or hovered over */
     .project-3 #github:hover {
         width: 5vw;
         height: 5vw;
+        margin-right: 5vw;
     }
     /* Prevents a hyperlink style change when clicked on or hovered over */
     .project-1-link-text:hover {
@@ -1391,11 +1395,13 @@ change style when the mouse hovers over it */
     .project-2 #github {
         width: 5vw;
         height: 5vw;
+        margin-right: 5vw;
     }
     /* The GitHub logo that links to the project 3 repository */
     .project-3 #github {
         width: 5vw;
         height: 5vw;
+        margin-right: 5vw;
     }
     /* The hyperlink 'View site' to view project 1's website */
     .project-1-link-text {
@@ -1512,11 +1518,13 @@ change style when the mouse hovers over it */
     .project-2 #github {
         width: 4.5vw;
         height: 4.5vw;
+        margin-right: 4.5vw;
     }
     /* The GitHub logo that links to the project 3 repository */
     .project-3 #github {
         width: 4.5vw;
         height: 4.5vw;
+        margin-right: 4.5vw;
     }
     /* The hyperlink 'View site' to view project 1's website */
     .project-1-link-text {

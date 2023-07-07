@@ -382,7 +382,7 @@ if (window.matchMedia("(orientation: landscape)").matches) {
     });
     // When the mouse does not hover over the project 1 image anymore, set it back to its original look
     project1.addEventListener('mouseout', (event) => {
-        project1.style.cssText = 'border: 0.3rem solid rgb(56, 80, 80);';
+        project1.style.cssText = 'border: 0.19rem solid rgb(74, 87, 87);';
         image1.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
         text1.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
     });
@@ -427,7 +427,7 @@ if (window.matchMedia("(orientation: portrait)").matches) {
     });
     // When the user clicks out of the project 1 image, set it back to its original look
     project1.addEventListener('mouseout', (event) => {
-        project1.style.cssText = 'border: 0.3rem solid rgb(56, 80, 80);';
+        project1.style.cssText = 'border: 0.3rem solid rgb(74, 87, 87);';
         image1.style.cssText = 'filter: blur(0) brightness(100%); transition: 1s';
         text1.style.cssText = 'visibility: hidden; opacity: 0; transition: opacity 0.5s linear;';
     });
