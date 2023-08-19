@@ -292,14 +292,63 @@ change style when the mouse hovers over it */
     list-style-type: none;
 }
 
+/*
+** experience section styling
+*/
+.experience {
+    background-color: #000e3b;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+.experience .title {
+    margin-bottom: 3vw;
+}
+.experience-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experience-1-container {
+    max-width: 80%;
+}
+.experience-1 h2 {
+    font-size: 2.5vw;
+    color: rgba(197, 197, 197, 0.684);
+}
+.experience-1 h2 span {
+    font-size: 1.5vw;
+    color: rgb(124, 124, 124);
+}
+.experience-1 p {
+    font-size: 1.8vw;
+    line-height: 2.5vw;
+    color: white;
+}
+.experience-1 li {
+    font-size: 1.8vw;
+    line-height: 3vw;
+    color: white;
+}
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2vw;
+}
+.technology {
+    background-color: #193757;
+    font-size: 1.5vw;
+    color: #49B5BC;
+    margin: 0 .5vw;
+    padding: .3vw .5vw;
+    border-radius: 5%;
+}
+
 /* 
 ** projects section styling 
 */
 .projects {
     text-align: center;
-    background-color: #000e3b;
     padding-top: 4vw;
-    padding-bottom: 2vw;
 }
 /* Centers the div containing the project 1 image */
 .project-1 {
@@ -526,6 +575,10 @@ change style when the mouse hovers over it */
 */
 .contact {
     margin-top: 7vw;
+    background-color: #000e3b;
+}
+.contact .title {
+    padding-top: 3vw;
 }
 .contact .segment {
     margin: 0 auto;
@@ -1180,8 +1233,8 @@ change style when the mouse hovers over it */
     /* Displays the navigation links for portrait orientation */
     .navbar .menu-3 li a {
         font-size: 4.35vw;
-        margin-left: 2.5vw;
-        margin-right: 2.5vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
         color: white;
         text-decoration: none;
     }
@@ -1313,6 +1366,58 @@ change style when the mouse hovers over it */
     change style when the mouse hovers over it */
     .skills .skills-list .skills-list-dbms:hover {
         width: 34%;
+    }
+
+    /* 
+    ** experience section styling 
+    */
+    .experience {
+        background-color: #000e3b;
+        padding-top: 1vw;
+        padding-bottom: 2vw;
+    }
+    .experience .title {
+        margin-bottom: 3vw;
+    }
+    .experience-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .experience-1-container {
+        max-width: 80%;
+    }
+    .experience-1 h2 {
+        font-size: 5.1vw;
+        color: rgba(197, 197, 197, 0.684);
+    }
+    .experience-1 h2 span {
+        font-size: 3.5vw;
+        color: rgb(124, 124, 124);
+    }
+    .experience-1 p {
+        font-size: 4.4vw;
+        line-height: 5.7vw;
+        color: white;
+    }
+    .experience-1 li {
+        font-size: 4.4vw;
+        line-height: 5.7vw;
+        margin: 3vw 0;
+        color: white;
+    }
+    .technology-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 6vw;
+    }
+    .technology {
+        background-color: #193757;
+        font-size: 3.2vw;
+        color: #49B5BC;
+        margin: 0 .5vw;
+        padding: .3vw .5vw;
+        border-radius: 5%;
     }
 
     /* 
@@ -1544,8 +1649,8 @@ change style when the mouse hovers over it */
 */
 @media (max-width: 350px) and (orientation: portrait) {
     .navbar .menu-3 li a {
-        margin-left: 2.3vw;
-        margin-right: 2.3vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 }
 
@@ -1554,6 +1659,9 @@ change style when the mouse hovers over it */
 ** Accommodates screens with an even lower maximum width (in portrait orientation) 
 */
 @media (max-width: 340px) and (orientation: portrait) {
+    /* 
+    ** navigation bar styling
+    */
     /* The navigation links for landscape orientation are hidden */
     .navbar .menu-1 {
        position: absolute;
@@ -1581,7 +1689,10 @@ change style when the mouse hovers over it */
         position: relative;
         padding-left: 0;
         z-index: 1;
-        margin-bottom: 3vw;
+        margin-top: 4vw;
+        margin-bottom: 1vw;
+        text-align: center;
+        line-height: 8vw;
     }
    /* The navigation links for very small portrait orientation are hidden */
    .navbar .menu-5 {
@@ -1601,6 +1712,13 @@ change style when the mouse hovers over it */
         margin-right: 2.3vw;
         color: white;
         text-decoration: none;
+    }
+
+    /* 
+    ** home bar styling
+    */
+    .home .segment {
+        margin-top: 36vw;
     }
 }
 
@@ -1643,7 +1761,10 @@ change style when the mouse hovers over it */
         position: relative;
         padding-left: 0;
         z-index: 1;
-        margin-bottom: 3vw;
+        margin-top: 4vw;
+        margin-bottom: 1vw;
+        text-align: center;
+        line-height: 8vw;
     }
     /* The navigation links */
     .navbar .menu-5 li {

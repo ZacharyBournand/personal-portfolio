@@ -3,6 +3,7 @@
 let homeNavLink = document.getElementById('menu-1-home');
 let aboutNavLink = document.getElementById('menu-1-about');
 let skillsNavLink = document.getElementById('menu-1-skills');
+let experienceNavLink = document.getElementById('menu-1-experience');
 let projectsNavLink = document.getElementById('menu-1-projects');
 let contactNavLink = document.getElementById('menu-1-contact');
 
@@ -130,6 +131,17 @@ if (window.matchMedia("(orientation: landscape)").matches) {
     });
     skillsNavLink.addEventListener('mouseout', (event) => {
         skillsNavLink.style.cssText = 'color: white';
+    });
+
+    // experience navigation link
+    experienceNavLink.addEventListener('click', (event) => {
+        experienceNavLink.style.cssText = 'color: white';
+    });
+    experienceNavLink.addEventListener('mouseover', (event) => {
+        experienceNavLink.style.cssText = 'color: red';
+    });
+    experienceNavLink.addEventListener('mouseout', (event) => {
+        experienceNavLink.style.cssText = 'color: white';
     });
 
     // projects navigation link
