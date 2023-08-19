@@ -333,11 +333,11 @@ change style when the mouse hovers over it */
 .technology-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2vw;
+    margin-top: 2.5vw;
 }
 .technology {
     background-color: #193757;
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     color: #49B5BC;
     margin: 0 .5vw;
     padding: .3vw .5vw;
