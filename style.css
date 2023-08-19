@@ -326,7 +326,8 @@ change style when the mouse hovers over it */
 }
 .experience-1 li {
     font-size: 1.8vw;
-    line-height: 3vw;
+    line-height: 2.5vw;
+    margin: 1.5vw 0;
     color: white;
 }
 .technology-list {
