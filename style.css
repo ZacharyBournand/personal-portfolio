@@ -383,6 +383,17 @@ change style when the mouse hovers over it */
     margin-bottom: 5vw;
     border: 0.19vw solid rgb(74, 87, 87);
 }
+/* Centers the div containing the project 4 image */
+.project-4 {
+    height: 40vw;
+    width: 78.36vw;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    border: 0.19vw solid rgb(74, 87, 87);
+}
 /* Removes the project 1 image from the normal document flow.
 /* However, it is contained within the div class 'project-1' */
 #project-1-image {
@@ -406,6 +417,16 @@ change style when the mouse hovers over it */
 /* Removes the project 3 image from the normal document flow.
 /* However, it is contained within the div class 'project-3' */
 #project-3-image {
+    height: 40vw;
+    width: 78.36vw;
+    left: 0;
+    position: absolute;
+    /* Transition for hovering */
+    transition: 1s;
+}
+/* Removes the project 3 image from the normal document flow.
+/* However, it is contained within the div class 'project-4' */
+#project-4-image {
     height: 40vw;
     width: 78.36vw;
     left: 0;
@@ -458,6 +479,21 @@ change style when the mouse hovers over it */
     /* Hides it */
     visibility: hidden;
 }
+/* Applies to the project 4 description that displays when the mouse hovers over the project image */
+.project-text-container-4 {
+    position: absolute;
+    color: white;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    /* Centers vertically */
+    align-items:center;
+    color: black;
+    /* Hides it */
+    visibility: hidden;
+}
 /* Applies to the project section's title 'My projects' */
 .projects .title {
     font-size: 4.8vw;
@@ -481,8 +517,16 @@ change style when the mouse hovers over it */
     margin-bottom: 2vw;
     color: white;
 }
-/* Applies to the name of project 3 that is only displayed if the mouse hovers over the project 2 image */
+/* Applies to the name of project 3 that is only displayed if the mouse hovers over the project 3 image */
 .project-text-3 h2 {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 2vw;
+    color: white;
+}
+/* Applies to the name of project 4 that is only displayed if the mouse hovers over the project 4 image */
+.project-text-4 h2 {
     font-size: 4vw;
     font-weight: bold;
     margin-top: 0;
@@ -526,6 +570,11 @@ change style when the mouse hovers over it */
     display: flex;
     align-items: center;
 }
+/* Aligns each hyperlink item on the same line (for project 4) */
+.project-4-links {
+    display: flex;
+    align-items: center;
+}
 /* Applies to the GitHub logo that links to the project 1 repository */
 .project-1 #github {
     width: 2.5vw;
@@ -547,6 +596,13 @@ change style when the mouse hovers over it */
     margin-right: 2.5vw;
     transition: .5s;
 }
+/* Applies to the GitHub logo that links to the project 4 repository */
+.project-4 #github {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-right: 2.5vw;
+    transition: .5s;
+}
 /* Applies to the hyperlink 'View site' to view project 1's website */
 .project-1-link-text {
     font-size: 2vw;
@@ -563,11 +619,22 @@ change style when the mouse hovers over it */
     color: rgba(135, 206, 250, 0.733);
     transition: .5s;
 }
+/* Applies to the hyperlink 'View site' to view project 4's website */
+.project-4-link-text {
+    font-size: 2vw;
+    font-weight: bold;
+    text-shadow: none;
+    color: rgba(135, 206, 250, 0.733);
+    transition: .5s;
+}
 /* Color of the 'View site' hyperlink's underline */
 .project-1 a {
     text-decoration-color: rgba(135, 206, 250, 0.733);
 }
 .project-2 a {
+    text-decoration-color: rgba(135, 206, 250, 0.733);
+}
+.project-4 a {
     text-decoration-color: rgba(135, 206, 250, 0.733);
 }
 
@@ -982,6 +1049,10 @@ change style when the mouse hovers over it */
         height: 45vw;
         width: 88.155vw;
     }
+    .project-4 {
+        height: 45vw;
+        width: 88.155vw;
+    }
     /* Project 1 image */
     #project-1-image {
         height: 45vw;
@@ -997,6 +1068,11 @@ change style when the mouse hovers over it */
         height: 45vw;
         width: 88.155vw;
     }
+    /* Project 4 image */
+    #project-4-image {
+        height: 45vw;
+        width: 88.155vw;
+    }
     /* The name of project 1 */
     .project-text-1 h2 {
         font-size: 6vw;
@@ -1007,6 +1083,10 @@ change style when the mouse hovers over it */
     }
     /* The name of project 3 */
     .project-text-3 h2 {
+        font-size: 6vw;
+    }
+    /* The name of project 4 */
+    .project-text-4 h2 {
         font-size: 6vw;
     }
     /* The short set of information containing the team size, my roles, and languages (located right underneath the project name) */
@@ -1050,6 +1130,12 @@ change style when the mouse hovers over it */
         height: 5vw;
         margin-right: 5vw;
     }
+    /* The GitHub logo that links to the project 4 repository */
+    .project-4 #github {
+        width: 5vw;
+        height: 5vw;
+        margin-right: 5vw;
+    }
     /* The hyperlink 'View site' to view project 1's website */
     .project-1-link-text {
         font-size: 4.3vw;
@@ -1057,6 +1143,11 @@ change style when the mouse hovers over it */
     }
     /* The hyperlink 'View site' to view project 2's website */
     .project-2-link-text {
+        font-size: 4.3vw;
+        text-shadow: none;
+    }
+    /* The hyperlink 'View site' to view project 4's website */
+    .project-4-link-text {
         font-size: 4.3vw;
         text-shadow: none;
     }
@@ -1078,6 +1169,12 @@ change style when the mouse hovers over it */
         height: 5vw;
         margin-right: 5vw;
     }
+    /* Prevents a GitHub logo style change when clicked on or hovered over */
+    .project-4 #github:hover {
+        width: 5vw;
+        height: 5vw;
+        margin-right: 5vw;
+    }
     /* Prevents a hyperlink style change when clicked on or hovered over */
     .project-1-link-text:hover {
         font-size: 4.3vw;
@@ -1085,6 +1182,11 @@ change style when the mouse hovers over it */
     }
     /* Prevents a hyperlink style change when clicked on or hovered over */
     .project-2-link-text:hover {
+        font-size: 4.3vw;
+        text-shadow: none;
+    }
+    /* Prevents a hyperlink style change when clicked on or hovered over */
+    .project-4-link-text:hover {
         font-size: 4.3vw;
         text-shadow: none;
     }
@@ -1441,6 +1543,10 @@ change style when the mouse hovers over it */
         height: 45vw;
         width: 88.155vw;
     }
+    .project-4 {
+        height: 45vw;
+        width: 88.155vw;
+    }
     /* Project 1 image */
     #project-1-image {
         height: 45vw;
@@ -1456,6 +1562,11 @@ change style when the mouse hovers over it */
         height: 45vw;
         width: 88.155vw;
     }
+    /* Project 4 image */
+    #project-4-image {
+        height: 45vw;
+        width: 88.155vw;
+    }
     /* The name of project 1 */
     .project-text-1 h2 {
         font-size: 6.5vw;
@@ -1466,6 +1577,10 @@ change style when the mouse hovers over it */
     }
     /* The name of project 3 */
     .project-text-3 h2 {
+        font-size: 6.5vw;
+    }
+    /* The name of project 4 */
+    .project-text-4 h2 {
         font-size: 6.5vw;
     }
     /* The short set of information containing the team size, my roles, and languages (located right underneath the project name) */
@@ -1505,6 +1620,12 @@ change style when the mouse hovers over it */
     }
     /* The GitHub logo that links to the project 3 repository */
     .project-3 #github {
+        width: 5vw;
+        height: 5vw;
+        margin-right: 5vw;
+    }
+    /* The GitHub logo that links to the project 4 repository */
+    .project-4 #github {
         width: 5vw;
         height: 5vw;
         margin-right: 5vw;
@@ -1628,6 +1749,12 @@ change style when the mouse hovers over it */
     }
     /* The GitHub logo that links to the project 3 repository */
     .project-3 #github {
+        width: 4.5vw;
+        height: 4.5vw;
+        margin-right: 4.5vw;
+    }
+    /* The GitHub logo that links to the project 4 repository */
+    .project-4 #github {
         width: 4.5vw;
         height: 4.5vw;
         margin-right: 4.5vw;
