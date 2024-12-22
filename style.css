@@ -358,6 +358,7 @@ change style when the mouse hovers over it */
     position: relative;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 5vw;
     margin-bottom: 5vw;
     border: 0.19vw solid rgb(74, 87, 87);
 }
@@ -390,7 +391,6 @@ change style when the mouse hovers over it */
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 5vw;
     margin-bottom: 5vw;
     border: 0.19vw solid rgb(74, 87, 87);
 }
