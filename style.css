@@ -1362,7 +1362,7 @@ change style when the mouse hovers over it */
     }
     /* 3rd line of text */
     .home .home-text .text-3 {
-        font-size: 4.7vw;
+        font-size: 4.5vw;
     }
     /* Applies to the 2 icons: LinkedIn & GitHub */
     .home img {
@@ -1640,6 +1640,11 @@ change style when the mouse hovers over it */
         font-size: 4.3vw;
         text-shadow: none;
     }
+    /* The hyperlink 'View site' to view project 4's website */
+    .project-4-link-text {
+        font-size: 4.3vw;
+        text-shadow: none;
+    }
 
     /* 
     ** contact section styling 
@@ -1766,6 +1771,11 @@ change style when the mouse hovers over it */
     }
     /* The hyperlink 'View site' to view project 2's website */
     .project-2-link-text {
+        font-size: 3.8vw;
+        text-shadow: none;
+    }
+    /* The hyperlink 'View site' to view project 4's website */
+    .project-4-link-text {
         font-size: 3.8vw;
         text-shadow: none;
     }
