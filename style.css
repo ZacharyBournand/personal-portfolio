@@ -1389,7 +1389,7 @@ change style when the mouse hovers over it */
         width: 40vw;
     }
     .about .right-column .text-1 {
-        font-size: 5vw;
+        font-size: 4.7vw;
         line-height: 7vw;
         margin-top: 1vw;
         margin-bottom: 2vw;
@@ -1398,14 +1398,14 @@ change style when the mouse hovers over it */
         margin-bottom: 7vw;
     }
     .about .right-column .text-3 {
-        font-size: 5vw;
+        font-size: 4.7vw;
         line-height: 7vw;
         margin-left: 3vw;
         margin-bottom: 2vw;
     }
     /* The button */
     .about .about-image-text .right-column a {
-        font-size: 5vw;
+        font-size: 4.7vw;
         margin-left: 3vw;
         margin-bottom: 4vw;
         padding: 1vw 3vw;
