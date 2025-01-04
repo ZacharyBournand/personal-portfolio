@@ -168,7 +168,7 @@ body {
     padding-right: 1.5vw;
 }
 .about .left-column img {
-    height: 20vw;
+    height: 26.67vw;
     width: 20vw;
     margin-top: 1.5vw;
 }
@@ -943,7 +943,7 @@ change style when the mouse hovers over it */
         padding-right: 0;
     }
     .about .left-column img {
-        height: 40vw;
+        height: 53.33vw;
         width: 40vw;
     }
     .about .right-column .text-1 {
@@ -1385,7 +1385,7 @@ change style when the mouse hovers over it */
         padding-right: 0;
     }
     .about .left-column img {
-        height: 40vw;
+        height: 53.33vw;
         width: 40vw;
     }
     .about .right-column .text-1 {
