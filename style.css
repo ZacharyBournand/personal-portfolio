@@ -1585,7 +1585,7 @@ change style when the mouse hovers over it */
     }
     /* The short set of information containing the team size, my roles, and languages (located right underneath the project name) */
     .projects h3 {
-        font-size: 3.3vw;
+        font-size: 3.2vw;
         margin-bottom: 2.5vw;
         line-height: 4vw;
     }
